@@ -1,0 +1,64 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-primary-50: #ddf4fd;
+  --color-primary-100: #a9e2f9;
+  --color-primary-200: #6ccff6;
+  --color-primary-300: #12bcf2;
+  --color-primary-400: #00aef0;
+  --color-primary-500: #009fed;
+  --color-primary-600: #0092de;
+  --color-primary-700: #007fcb;
+  --color-primary-800: #006eb7;
+  --color-primary-900: #004f96;
+
+  --color-secondary-50: #fef8e0;
+  --color-secondary-100: #fdedb1;
+  --color-secondary-200: #fbe17e;
+  --color-secondary-300: #fad748;
+  --color-secondary-400: #facc15;
+  --color-secondary-500: #fac300;
+  --color-secondary-600: #fbb500;
+  --color-secondary-700: #fca200;
+  --color-secondary-800: #fd9100;
+  --color-secondary-900: #fe7000;
+
+  --color-background-50: #fafbfb;
+  --color-background-100: #ebeef7;
+  --color-background-200: #dfe3eb;
+  --color-background-300: #cdd1d9;
+  --color-background-400: #a8acb4;
+  --color-background-500: #888b93;
+  --color-background-600: #60646b;
+  --color-background-700: #26282e;
+  --color-background-800: #212429;
+  --color-background-900: #101319;
+
+  --shadow-elevation: 0px 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+@layer base {
+  /* disable chrome cancel button */
+  input[type='search']::-webkit-search-cancel-button {
+    display: none;
+  }
+
+  button,
+  [role='button'] {
+    cursor: pointer;
+  }
+  button:disabled,
+  [role='button']:disabled {
+    cursor: default;
+  }
+
+  html.dark {
+    color-scheme: dark;
+  }
+
+  html:not(.dark) {
+    color-scheme: light;
+  }
+}
