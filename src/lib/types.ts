@@ -1,6 +1,13 @@
 import type { z } from 'zod/v4';
 
-import type { ACHIEVEMENT, COLLECTION, PET, QUEST } from '$lib/util/schema';
+import type { SKILLS } from '$lib/constants';
+import type { ACHIEVEMENT, COLLECTION, PET, QUEST, SKILL } from '$lib/util/schema';
+
+/* SKILLS */
+
+export type Skill = z.infer<typeof SKILL> & { currentLevel: number; isComplete: boolean; isUnlocked: boolean };
+
+export type SkillLiteral = (typeof SKILLS)[number];
 
 /* ACHIEVEMENTS */
 

@@ -7,11 +7,13 @@
   import { collectionStore } from '$lib/stores/collection.store.svelte';
   import { petStore } from '$lib/stores/pet.store.svelte';
   import { questStore } from '$lib/stores/quest.store.svelte';
+  import { skillStore } from '$lib/stores/skill.store.svelte';
 
   let { totalAchievements, totalAchievementsComplete } = $derived(achievementStore);
   let { totalCollections, totalCollectionsComplete } = $derived(collectionStore);
   let { totalPets, totalPetsComplete } = $derived(petStore);
   let { currentQuestPoints, totalQuestPoints, totalQuests, totalQuestsComplete } = $derived(questStore);
+  let { totalSkills, totalSkillsComplete } = $derived(skillStore);
 </script>
 
 <div class="flex flex-col h-screen w-full overflow-auto">
@@ -30,8 +32,8 @@
       <div class="flex-none grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:flex lg:flex-col">
         <Progress
           colour={{ dark: 'bg-amber-400', light: 'bg-amber-200' }}
-          complete={0}
-          total={10}
+          complete={totalSkillsComplete}
+          total={totalSkills}
           title="Skills"
         />
 

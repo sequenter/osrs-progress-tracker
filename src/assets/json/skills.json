@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Agility",
+    "minLevel": 1,
+    "maxLevel": 99,
+    "combat": false
+  },
+  {
+    "name": "Attack",
+    "minLevel": 1,
+    "maxLevel": 99,
+    "combat": true
+  },
+  {
+    "name": "Construction",
+    "minLevel": 1,
+    "maxLevel": 99,
+    "combat": false
+  },
+  {
+    "name": "Cooking",
+    "minLevel": 1,
+    "maxLevel": 99,
+    "combat": false
+  },
+  {
+    "name": "Crafting",
+    "minLevel": 1,
+    "maxLevel": 99,
+    "combat": false
+  },
+  {
+    "name": "Defence",
+    "minLevel": 1,
+    "maxLevel": 99,
+    "combat": true
+  },
+  {
+    "name": "Farming",
+    "minLevel": 1,
+    "maxLevel": 99,
+    "combat": false
+  },
+  {
+    "name": "Firemaking",
+    "minLevel": 1,
+    "maxLevel": 99,
+    "combat": false
+  },
+  {
+    "name": "Fishing",
+    "minLevel": 1,
+    "maxLevel": 99,
+    "combat": false
+  },
+  {
+    "name": "Fletching",
+    "minLevel": 1,
+    "maxLevel": 99,
+    "combat": false
+  },
+  {
+    "name": "Herblore",
+    "minLevel": 1,
+    "maxLevel": 99,
+    "combat": false
+  },
+  {
+    "name": "Hitpoints",
+    "minLevel": 10,
+    "maxLevel": 99,
+    "combat": true
+  },
+  {
+    "name": "Hunter",
+    "minLevel": 1,
+    "maxLevel": 99,
+    "combat": false
+  },
+  {
+    "name": "Magic",
+    "minLevel": 1,
+    "maxLevel": 99,
+    "combat": true
+  },
+  {
+    "name": "Mining",
+    "minLevel": 1,
+    "maxLevel": 99,
+    "combat": false
+  },
+  {
+    "name": "Prayer",
+    "minLevel": 1,
+    "maxLevel": 99,
+    "combat": true
+  },
+  {
+    "name": "Ranged",
+    "minLevel": 1,
+    "maxLevel": 99,
+    "combat": true
+  },
+  {
+    "name": "Runecraft",
+    "minLevel": 1,
+    "maxLevel": 99,
+    "combat": false
+  },
+  {
+    "name": "Runecraft",
+    "minLevel": 1,
+    "maxLevel": 99,
+    "combat": false
+  },
+  {
+    "name": "Slayer",
+    "minLevel": 1,
+    "maxLevel": 99,
+    "combat": false
+  },
+  {
+    "name": "Smithing",
+    "minLevel": 1,
+    "maxLevel": 99,
+    "combat": false
+  },
+  {
+    "name": "Strength",
+    "minLevel": 1,
+    "maxLevel": 99,
+    "combat": true
+  },
+  {
+    "name": "Thieving",
+    "minLevel": 1,
+    "maxLevel": 99,
+    "combat": false
+  },
+  {
+    "name": "Woodcutting",
+    "minLevel": 1,
+    "maxLevel": 99,
+    "combat": false
+  }
+]

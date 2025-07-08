@@ -1,5 +1,7 @@
 import * as z from 'zod/v4';
 
+import { ACHIEVEMENT_DIARIES, ACHIEVEMENT_DIFFICULTY, QUEST_DIFFICULTY, QUEST_LENGTH, SKILLS } from '$lib/constants';
+
 /* UTILS */
 
 /**
@@ -20,53 +22,21 @@ export const parseJSONArray = <T extends z.ZodObject>(schema: T, json: unknown) 
   return [];
 };
 
-/* UNION ARRAYS */
+/* SKILL */
 
-export const SUMMARY_ITEMS = ['skills', 'achievements', 'quests', 'collections', 'pets'] as const;
-
-export const ACHIEVEMENT_DIFFICULTY = ['Easy', 'Medium', 'Hard', 'Elite'] as const;
-
-export const ACHIEVEMENT_DIARIES = [
-  'Ardougne',
-  'Desert',
-  'Falador',
-  'Fremennik',
-  'Kandarin',
-  'Karamja',
-  'Kourend & Kebos',
-  'Lumbridge & Draynor',
-  'Morytania',
-  'Varrock',
-  'Western Provinces',
-  'Wilderness'
-] as const;
-
-export const QUEST_DIFFICULTY = ['Novice', 'Intermediate', 'Experienced', 'Master', 'Grandmaster', 'Special'] as const;
-
-export const QUEST_LENGTH = ['Very Short', 'Short', 'Medium', 'Long', 'Very Long'] as const;
-
-export const COMBAT_SKILLS = ['Attack', 'Strength', 'Defence', 'Ranged', 'Prayer', 'Magic', 'Hitpoints'] as const;
-
-export const SKILLING_SKILLS = [
-  'Runecraft',
-  'Construction',
-  'Agility',
-  'Herblore',
-  'Thieving',
-  'Crafting',
-  'Fletching',
-  'Slayer',
-  'Hunter',
-  'Mining',
-  'Smithing',
-  'Fishing',
-  'Cooking',
-  'Firemaking',
-  'Woodcutting',
-  'Farming'
-] as const;
-
-export const SKILLS = [...COMBAT_SKILLS, ...SKILLING_SKILLS] as const;
+/**
+ * An object containing skill details.
+ * combat: Whether or not the skill contributes to combat level
+ * name: The name of the skill
+ * minLevel: The minimum level
+ * maxLevel: The maximum level
+ */
+export const SKILL = z.object({
+  combat: z.boolean(),
+  name: z.literal(SKILLS),
+  minLevel: z.number(),
+  maxLevel: z.number()
+});
 
 /* COMMON SCHEMAS */
 
