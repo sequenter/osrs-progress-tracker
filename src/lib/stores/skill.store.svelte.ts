@@ -1,6 +1,7 @@
 import { createStore } from './data.store.svelte';
 
 import { default as skillsJson } from '$assets/json/skills.json';
+
 import type { Skill, SkillLiteral } from '$lib/types';
 import { SKILL, parseJSONArray } from '$lib/util/schema';
 
@@ -21,6 +22,11 @@ const createSkillStore = () => {
    * @param increment The amount to increment the skill by
    */
   const handleIncrement = (name: SkillLiteral, increment: number) => {
+    // Set unlocked state if level were to go below 1
+    if (store.value[store.map[name]].currentLevel + increment === 0) {
+      store.value[store.map[name]].isUnlocked = false;
+    }
+
     // Clamp level to min and max
     store.value[store.map[name]].currentLevel = Math.min(
       Math.max(store.value[store.map[name]].currentLevel + increment, store.value[store.map[name]].minLevel),

@@ -1,6 +1,7 @@
 import { createStore } from './data.store.svelte';
 
 import { default as achievementsJson } from '$assets/json/achievements.json';
+
 import type { Achievement } from '$lib/types';
 import { ACHIEVEMENT, parseJSONArray } from '$lib/util/schema';
 

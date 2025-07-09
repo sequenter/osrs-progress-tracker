@@ -1,6 +1,7 @@
 import { createStore } from './data.store.svelte';
 
 import { default as petsJson } from '$assets/json/pets.json';
+
 import type { Pet } from '$lib/types';
 import { PET, parseJSONArray } from '$lib/util/schema';
 

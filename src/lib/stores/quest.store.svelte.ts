@@ -1,6 +1,7 @@
 import { createStore } from './data.store.svelte';
 
 import { default as questsJson } from '$assets/json/quests.json';
+
 import type { Quest } from '$lib/types';
 import { QUEST, parseJSONArray } from '$lib/util/schema';
 

@@ -2,6 +2,7 @@
   import '../app.css';
 
   import DarkMode from '$lib/components/DarkMode.svelte';
+  import Drawer from '$lib/components/Drawer.svelte';
   import Progress from '$lib/components/Progress.svelte';
   import { achievementStore } from '$lib/stores/achievement.store.svelte';
   import { collectionStore } from '$lib/stores/collection.store.svelte';
@@ -17,7 +18,7 @@
 </script>
 
 <div class="flex flex-col h-screen w-full overflow-auto">
-  <header class="h-16 shadow-elevation z-40 bg-primary-200 text-gray-800">
+  <header class="h-16 shadow-elevation z-40 bg-primary-800 dark:bg-primary-200 text-white dark:text-gray-800">
     <div class="flex h-full w-full items-center justify-between px-4 py-1.5">
       <span class="text-xl">OSRS Progress Tracker</span>
 
@@ -69,5 +70,7 @@
     </aside>
 
     <div class="p-4"></div>
+
+    <Drawer />
   </div>
 </div>

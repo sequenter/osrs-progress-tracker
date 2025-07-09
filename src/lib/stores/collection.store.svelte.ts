@@ -1,6 +1,7 @@
 import { createStore } from './data.store.svelte';
 
 import { default as collectionsJson } from '$assets/json/collections.json';
+
 import type { Collection } from '$lib/types';
 import { COLLECTION, parseJSONArray } from '$lib/util/schema';
 

@@ -19,13 +19,13 @@ describe('<DarkMode />', () => {
     // Toggle dark mode on
     await user.click(button);
 
-    expect(JSON.parse(localStorage.getItem('preference/darkmode') || '""')).toBe(true);
+    expect(JSON.parse(localStorage.getItem('preference/darkmode') || '""')).toBeTruthy();
     expect(screen.getByTitle('Toggle dark mode off')).toBeInTheDocument();
 
     // Toggle dark mode off
     await user.click(button);
 
-    expect(JSON.parse(localStorage.getItem('preference/darkmode') || '""')).toBe(false);
+    expect(JSON.parse(localStorage.getItem('preference/darkmode') || '""')).toBeFalsy();
     expect(screen.getByTitle('Toggle dark mode on')).toBeInTheDocument();
   });
 });

@@ -37,7 +37,10 @@ A button component utilised to toggle dark mode on and off.
 </script>
 
 <button
-  class={clsx('p-2.5 rounded-lg text-gray-800 focus:outline-hidden hover:bg-primary-100 hover:text-black', !darkMode && 'bg-primary-100')}
+  class={clsx(
+    'p-2.5 rounded-lg focus:outline-hidden hover:bg-primary-600 dark:hover:bg-primary-100 dark:text-gray-800',
+    !darkMode && 'bg-primary-600'
+  )}
   onclick={() => {
     darkMode = !darkMode;
   }}
