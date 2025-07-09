@@ -23,7 +23,7 @@ const createSkillStore = () => {
    */
   const handleIncrement = (name: SkillLiteral, increment: number) => {
     // Set unlocked state if level were to go below 1
-    if (store.value[store.map[name]].currentLevel + increment === 0) {
+    if (store.value[store.map[name]].currentLevel + increment === store.value[store.map[name]].minLevel - 1) {
       store.value[store.map[name]].isUnlocked = false;
     }
 
