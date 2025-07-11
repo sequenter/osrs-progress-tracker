@@ -5,6 +5,7 @@
   import Drawer from '$lib/components/Drawer.svelte';
   import Icon from '$lib/components/Icon.svelte';
   import Progress from '$lib/components/Progress.svelte';
+  import TabHandler from '$lib/components/TabHandler.svelte';
   import { achievementStore } from '$lib/stores/achievement.store.svelte';
   import { collectionStore } from '$lib/stores/collection.store.svelte';
   import { petStore } from '$lib/stores/pet.store.svelte';
@@ -19,9 +20,9 @@
   let { totalSkills, totalSkillsComplete } = $derived(skillStore);
 </script>
 
-<div class="flex flex-col h-screen w-full overflow-auto">
-  <header class="h-16 shadow-elevation z-40 bg-primary-800 dark:bg-primary-200 text-white dark:text-gray-800">
-    <div class="flex h-full w-full items-center justify-between px-4 py-1.5">
+<div class="flex flex-col h-screen w-full overflow-y-scroll">
+  <header class="shadow-elevation sticky top-0 z-40 bg-primary-800 dark:bg-primary-200 text-white dark:text-gray-800">
+    <div class="flex h-16 items-center justify-between px-4">
       <span class="text-xl">OSRS Progress Tracker</span>
 
       <DarkMode />
@@ -29,7 +30,9 @@
   </header>
 
   <div class="flex flex-col grow lg:flex-row">
-    <aside class="flex flex-col gap-4 p-4 shadow-elevation z-30 lg:h-full lg:w-96 bg-background-50 dark:bg-background-800">
+    <aside
+      class="flex flex-col gap-4 p-4 shadow-elevation shrink-0 whitespace-nowrap z-30 lg:h-[calc(100vh-64px)] lg:sticky lg:top-16 lg:w-96 bg-background-50 dark:bg-background-800"
+    >
       <div class="flex align-center gap-4">
         <Icon
           src={progressIcon}
@@ -78,8 +81,8 @@
       </div>
     </aside>
 
-    <div class="p-4"></div>
-
-    <Drawer />
+    <main class="w-full"><TabHandler /></main>
   </div>
+
+  <Drawer />
 </div>

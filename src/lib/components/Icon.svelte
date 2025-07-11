@@ -41,6 +41,7 @@ A component utilised to display an icon through rendering either an SVG or an im
   </svg>
 {:else if src}
   <img
+    class="aspect-square"
     alt={title}
     height="32"
     width="32"
