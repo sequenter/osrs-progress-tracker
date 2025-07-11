@@ -5,7 +5,7 @@ import userEvent from '@testing-library/user-event';
 
 describe('<IconButton />', () => {
   it('renders a button with an icon', () => {
-    render(IconButton, { label: 'foo', path: '', onclick: () => {} });
+    render(IconButton, { label: 'foo', path: 'test', onclick: () => {} });
 
     expect(screen.getByRole('button')).toBeInTheDocument();
     expect(screen.getByRole('img')).toBeInTheDocument();
@@ -15,7 +15,7 @@ describe('<IconButton />', () => {
   it('calls the onclick callback', async () => {
     const callback = vi.fn();
 
-    render(IconButton, { label: 'foo', path: '', onclick: callback });
+    render(IconButton, { label: 'foo', path: 'test', onclick: callback });
     expect(screen.getByRole('button')).toBeInTheDocument();
 
     await userEvent.click(screen.getByRole('button'));

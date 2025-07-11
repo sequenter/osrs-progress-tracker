@@ -67,7 +67,6 @@
   </div>
 
   <button
-    aria-label={`${isOpen ? 'Close' : 'Open'} skills drawer`}
     class="absolute rounded-full bottom-6 left-[-5.5rem] p-4 drop-shadow-lg transition-all brightness-100 hover:brightness-80 text-white dark:text-gray-800 bg-primary-800 dark:bg-primary-200"
     data-testid="drawer-button"
     type="button"
@@ -75,6 +74,9 @@
       isOpen = !isOpen;
     }}
   >
-    <Icon path={mdiChartBar} />
+    <Icon
+      path={mdiChartBar}
+      title={`${isOpen ? 'Close' : 'Open'} skills drawer`}
+    />
   </button>
 </div>

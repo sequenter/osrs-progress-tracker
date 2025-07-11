@@ -24,6 +24,7 @@ import { default as WoodcuttingIcon } from '$assets/icon/skills/woodcutting.png'
 
 import type { SkillLiteral } from '$lib/types';
 
+export { default as progressIcon } from '$assets/icon/progress.png';
 export { default as statsIcon } from '$assets/icon/stats.png';
 
 export const skillIconMap: Record<SkillLiteral, string> = {

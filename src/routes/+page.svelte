@@ -3,12 +3,14 @@
 
   import DarkMode from '$lib/components/DarkMode.svelte';
   import Drawer from '$lib/components/Drawer.svelte';
+  import Icon from '$lib/components/Icon.svelte';
   import Progress from '$lib/components/Progress.svelte';
   import { achievementStore } from '$lib/stores/achievement.store.svelte';
   import { collectionStore } from '$lib/stores/collection.store.svelte';
   import { petStore } from '$lib/stores/pet.store.svelte';
   import { questStore } from '$lib/stores/quest.store.svelte';
   import { skillStore } from '$lib/stores/skill.store.svelte';
+  import { progressIcon } from '$lib/util/icon';
 
   let { totalAchievements, totalAchievementsComplete } = $derived(achievementStore);
   let { totalCollections, totalCollectionsComplete } = $derived(collectionStore);
@@ -28,7 +30,14 @@
 
   <div class="flex flex-col grow lg:flex-row">
     <aside class="flex flex-col gap-4 p-4 shadow-elevation z-30 lg:h-full lg:w-96 bg-background-50 dark:bg-background-800">
-      <span class="text-2xl">Progress</span>
+      <div class="flex align-center gap-4">
+        <Icon
+          src={progressIcon}
+          title="Progress"
+        />
+
+        <span class="text-2xl">Progress</span>
+      </div>
 
       <div class="flex-none grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:flex lg:flex-col">
         <Progress
