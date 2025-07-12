@@ -22,6 +22,7 @@ import { default as StrengthIcon } from '$assets/icon/skills/strength.png';
 import { default as ThievingIcon } from '$assets/icon/skills/thieving.png';
 import { default as WoodcuttingIcon } from '$assets/icon/skills/woodcutting.png';
 
+import { WIKI_IMAGES_URL } from '$lib/constants';
 import type { SkillLiteral } from '$lib/types';
 
 export { default as achievementsIcon } from '$assets/icon/achievements.png';
@@ -56,3 +57,5 @@ export const skillIconMap: Record<SkillLiteral, string> = {
   Thieving: ThievingIcon,
   Woodcutting: WoodcuttingIcon
 };
+
+export const wikiIcon = (icon: string) => `${WIKI_IMAGES_URL}${icon.replaceAll(' ', '_')}.png`;

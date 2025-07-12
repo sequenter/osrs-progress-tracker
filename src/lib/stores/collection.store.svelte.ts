@@ -16,6 +16,7 @@ const createCollectionStore = () => {
     parseJSONArray(COLLECTION, collectionsJson).map(({ items, ...rest }) => ({
       ...rest,
       items: items.map((item) => ({ ...item, isComplete: false })),
+      id: rest.name,
       isComplete: false
     }))
   );

@@ -13,7 +13,7 @@ const createQuestStore = () => {
   const store = createStore<Quest>(
     'data/quests',
     'name',
-    parseJSONArray(QUEST, questsJson).map((quest) => ({ ...quest, isComplete: false }))
+    parseJSONArray(QUEST, questsJson).map((quest) => ({ ...quest, id: quest.name, isComplete: false }))
   );
 
   // Total amount of quest points from complete quests

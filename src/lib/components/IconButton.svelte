@@ -15,6 +15,8 @@ A button component that specifically renders an SVG icon.
 -->
 
 <script lang="ts">
+  import { clsx } from 'clsx';
+
   import Icon from '$lib/components/Icon.svelte';
   import { longpress } from '$lib/util/actions';
 
@@ -30,7 +32,9 @@ A button component that specifically renders an SVG icon.
 
 <button
   aria-label={label}
-  class="rounded-full transition-opacity opacity-90 hover:opacity-100 text-primary-800 dark:text-primary-200 hover:bg-primary-200/10"
+  class={clsx(
+    'rounded-full transition-opacity opacity-90 hover:opacity-100 text-primary-800 dark:text-primary-200 hover:bg-primary-200/10'
+  )}
   type="button"
   use:longpress={{ enabled: useLongpress, callback: onclick }}
   {onclick}

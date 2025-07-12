@@ -13,7 +13,13 @@ const createSkillStore = () => {
   const store = createStore<Skill>(
     'data/skills',
     'name',
-    parseJSONArray(SKILL, skillsJson).map((skill) => ({ ...skill, currentLevel: skill.minLevel, isComplete: false, isUnlocked: false }))
+    parseJSONArray(SKILL, skillsJson).map((skill) => ({
+      ...skill,
+      currentLevel: skill.minLevel,
+      id: skill.name,
+      isComplete: false,
+      isUnlocked: false
+    }))
   );
 
   /**

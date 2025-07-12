@@ -9,7 +9,7 @@ import { getJSONObject, setJSONObject } from '$lib/util/localStorage';
  * @param defaultValue {Array<T>} JSON object corresponding to the given schema to base the store on
  * @returns Store accessors
  */
-export const createStore = <T extends { isComplete: boolean }>(key: string, mapId: string, defaultValue: Array<T>) => {
+export const createStore = <T extends { id: string; isComplete: boolean }>(key: string, mapId: string, defaultValue: Array<T>) => {
   const value: Array<T> = $state(getJSONObject(key) ?? defaultValue);
 
   // Split the store into complete and incomplete arrays

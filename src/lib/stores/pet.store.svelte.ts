@@ -13,7 +13,7 @@ const createPetStore = () => {
   const store = createStore<Pet>(
     'data/pets',
     'name',
-    parseJSONArray(PET, petsJson).map((pet) => ({ ...pet, isComplete: false }))
+    parseJSONArray(PET, petsJson).map((pet) => ({ ...pet, id: pet.name, isComplete: false }))
   );
 
   /**

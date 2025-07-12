@@ -9,7 +9,9 @@ A component utilised to display an icon through rendering either an SVG or an im
 
 @param {string} path The SVG path
 @param {string} [src=undefined] Optional image source
+@param {string} [size=undefined] Optional tailwind size
 @param {string} [title=undefined] Optional title of the icon
+@param {() => void} [onerror=undefined] Optional onerror callback
 
 @example
 
@@ -19,18 +21,23 @@ A component utilised to display an icon through rendering either an SVG or an im
 -->
 
 <script lang="ts">
+  import { clsx } from 'clsx';
+
   interface Props {
+    ignoreAspect?: boolean;
     path?: string;
     src?: string;
+    size?: string;
     title: string;
+    onerror?: () => void;
   }
 
-  let { path, src, title }: Props = $props();
+  let { ignoreAspect = false, path, src, size = 'h-6 w-6', title, onerror }: Props = $props();
 </script>
 
 {#if path}
   <svg
-    class="h-6 w-6"
+    class={clsx(size)}
     fill="currentColor"
     role="img"
     viewBox="0 0 24 24"
@@ -41,10 +48,9 @@ A component utilised to display an icon through rendering either an SVG or an im
   </svg>
 {:else if src}
   <img
-    class="aspect-square"
+    class={clsx(size, !ignoreAspect && 'aspect-square')}
     alt={title}
-    height="32"
-    width="32"
+    {onerror}
     {src}
   />
 {/if}

@@ -13,7 +13,7 @@ const createAchievementStore = () => {
   const store = createStore<Achievement>(
     'data/achievements',
     'task',
-    parseJSONArray(ACHIEVEMENT, achievementsJson).map((achievement) => ({ ...achievement, isComplete: false }))
+    parseJSONArray(ACHIEVEMENT, achievementsJson).map((achievement) => ({ ...achievement, id: achievement.task, isComplete: false }))
   );
 
   /**
