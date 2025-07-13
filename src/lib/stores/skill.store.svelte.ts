@@ -22,6 +22,8 @@ const createSkillStore = () => {
     }))
   );
 
+  const unlockedSkills = $derived(store.value.filter((skill) => skill.isUnlocked));
+
   /**
    * Increments a skill by a given increment value and updates the complete state if required.
    * @param name The name of the skill
@@ -88,6 +90,9 @@ const createSkillStore = () => {
     },
     get totalSkillsComplete() {
       return store.totalComplete;
+    },
+    get unlockedSkills() {
+      return unlockedSkills;
     },
     get decrementSkill() {
       return decrement;

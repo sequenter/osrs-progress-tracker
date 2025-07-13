@@ -1,8 +1,10 @@
 import { createStore } from './data.store.svelte';
+import { skillStore } from './skill.store.svelte';
 
 import { default as achievementsJson } from '$assets/json/achievements.json';
 
 import type { Achievement } from '$lib/types';
+import { bifilter, isFulfilled } from '$lib/util/array';
 import { ACHIEVEMENT, parseJSONArray } from '$lib/util/schema';
 
 /**
@@ -14,6 +16,12 @@ const createAchievementStore = () => {
     'data/achievements',
     'task',
     parseJSONArray(ACHIEVEMENT, achievementsJson).map((achievement) => ({ ...achievement, id: achievement.task, isComplete: false }))
+  );
+
+  const { unlockedSkills } = $derived(skillStore);
+
+  const [lockedAchievements, unlockedAchievements] = $derived(
+    bifilter(store.incomplete, ({ requirements }) => isFulfilled(requirements, unlockedSkills))
   );
 
   /**
@@ -30,11 +38,17 @@ const createAchievementStore = () => {
     get incompleteAchievements() {
       return store.incomplete;
     },
+    get lockedAchievements() {
+      return lockedAchievements;
+    },
     get totalAchievements() {
       return store.total;
     },
     get totalAchievementsComplete() {
       return store.totalComplete;
+    },
+    get unlockedAchievements() {
+      return unlockedAchievements;
     },
     get setAchievementComplete() {
       return setComplete;

@@ -1,11 +1,15 @@
 import type { z } from 'zod/v4';
 
 import type { SKILLS } from '$lib/constants';
-import type { ACHIEVEMENT, COLLECTION, PET, QUEST, SKILL } from '$lib/util/schema';
+import type { ACHIEVEMENT, COLLECTION, PET, QUEST, REQUIREMENTS, SKILL, SKILLS_REQUIREMENT } from '$lib/util/schema';
 
 /* COMMON */
 
 export type ItemState = 'complete' | 'locked' | 'unlocked';
+
+export type Requirements = z.infer<typeof REQUIREMENTS>;
+
+export type SkillsRequirements = z.infer<typeof SKILLS_REQUIREMENT>;
 
 /* SKILLS */
 

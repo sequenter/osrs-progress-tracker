@@ -9,12 +9,21 @@
   const { icon }: Props = $props();
 
   let iconSrc = $state(`${WIKI_IMAGES_URL}${icon.replaceAll(' ', '_')}.png`);
+  let title = $state(icon);
+
+  /**
+   * On wiki icon error, set to the bank filler icon.
+   */
+  const handleError = () => {
+    iconSrc = WIKI_IMAGES_ERROR;
+    title = `${icon} not found`;
+  };
 </script>
 
 <Icon
   src={iconSrc}
   size="w-4"
-  title={icon}
-  onerror={() => (iconSrc = WIKI_IMAGES_ERROR)}
+  onerror={handleError}
+  {title}
   ignoreAspect
 />

@@ -52,7 +52,7 @@ const SKILL_LEVEL = z.partialRecord(z.literal(SKILLS), z.number()).optional();
  * any: At least one {@link SKILL_LEVEL} must be fulfilled
  * @example { "all": {...}, "any": {...} }
  */
-const SKILLS_REQUIREMENT = z.object({
+export const SKILLS_REQUIREMENT = z.object({
   all: SKILL_LEVEL.optional(),
   any: SKILL_LEVEL.optional()
 });
@@ -106,7 +106,7 @@ const ALL_REQUIREMENT = z.object({
  *   ironman: [...]
  * }
  */
-const REQUIREMENTS = z.object({
+export const REQUIREMENTS = z.object({
   main: z.array(ALL_REQUIREMENT).optional(),
   ironman: z.array(ALL_REQUIREMENT).optional()
 });

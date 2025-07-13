@@ -6,7 +6,7 @@
   import { difficultyColourMap } from '$lib/constants';
   import type { ItemState } from '$lib/types';
 
-  import { mdiCloseCircle, mdiHelpCircle } from '@mdi/js';
+  import { mdiCheckCircle, mdiCloseCircle, mdiHelpCircle } from '@mdi/js';
 
   interface Props {
     icon: string;
@@ -19,7 +19,7 @@
 
   const { description, difficulty, icon, state, title, oncomplete }: Props = $props();
 
-  console.log(title);
+  console.log(description);
 </script>
 
 <div class="flex flex-col p-4 gap-2 rounded-md shadow-elevation bg-white dark:bg-background-800">
@@ -48,6 +48,12 @@
         path={mdiCloseCircle}
         label="Mark as incomplete"
         onclick={() => oncomplete(false)}
+      />
+    {:else if state === 'unlocked'}
+      <IconButton
+        path={mdiCheckCircle}
+        label="Mark as complete"
+        onclick={() => oncomplete(true)}
       />
     {/if}
 

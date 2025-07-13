@@ -10,6 +10,7 @@
   interface Props {
     complete: Array<T>;
     locked: Array<T>;
+    unlocked: Array<T>;
     snippet: Snippet<[T, ItemState]>;
   }
 
@@ -18,9 +19,13 @@
     items: Array<T>;
   }
 
-  let { complete, locked, snippet }: Props = $props();
+  let { complete, locked, unlocked, snippet }: Props = $props();
 
   const sections: Array<Section> = $derived([
+    {
+      title: 'unlocked',
+      items: unlocked
+    },
     {
       title: 'locked',
       items: locked
