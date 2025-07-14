@@ -2,7 +2,11 @@ import { createStore } from './data.store.svelte';
 
 import { default as petsJson } from '$assets/json/pets.json';
 
+import { questStore } from '$lib/stores/quest.store.svelte';
+import { skillStore } from '$lib/stores/skill.store.svelte';
+import { userStore } from '$lib/stores/user.store.svelte';
 import type { Pet } from '$lib/types';
+import { bifilter, isFulfilled } from '$lib/util/array';
 import { PET, parseJSONArray } from '$lib/util/schema';
 
 /**
@@ -14,6 +18,17 @@ const createPetStore = () => {
     'data/pets',
     'name',
     parseJSONArray(PET, petsJson).map((pet) => ({ ...pet, id: pet.name, isComplete: false }))
+  );
+
+  const { unlockedSkills } = $derived(skillStore);
+  const { completeQuestsByName, currentQuestPoints } = $derived(questStore);
+  const { combat, combatLevel, ironman } = $derived(userStore);
+
+  // Locked and unlocked pets
+  const [lockedPets, unlockedPets] = $derived(
+    bifilter(store.incomplete, ({ requirements }) =>
+      isFulfilled(requirements, unlockedSkills, completeQuestsByName, currentQuestPoints, combatLevel, combat, ironman)
+    )
   );
 
   /**
@@ -30,11 +45,17 @@ const createPetStore = () => {
     get incompletePets() {
       return store.incomplete;
     },
+    get lockedPets() {
+      return lockedPets;
+    },
     get totalPets() {
       return store.total;
     },
     get totalPetsComplete() {
       return store.totalComplete;
+    },
+    get unlockedPets() {
+      return unlockedPets;
     },
     get setPetComplete() {
       return setComplete;
