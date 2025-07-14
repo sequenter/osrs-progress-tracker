@@ -26,13 +26,13 @@ export const parseJSONArray = <T extends z.ZodObject>(schema: T, json: unknown) 
 
 /**
  * An object containing skill details.
- * combat: Whether or not the skill contributes to combat level
+ * isCombat: Whether or not the skill contributes to combat level
  * name: The name of the skill
  * minLevel: The minimum level
  * maxLevel: The maximum level
  */
 export const SKILL = z.object({
-  combat: z.boolean(),
+  isCombat: z.boolean(),
   name: z.literal(SKILLS),
   minLevel: z.number(),
   maxLevel: z.number()

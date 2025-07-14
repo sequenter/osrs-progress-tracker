@@ -1,4 +1,5 @@
 import { createStore } from './data.store.svelte';
+import { userStore } from './user.store.svelte';
 
 import { default as skillsJson } from '$assets/json/skills.json';
 
@@ -22,9 +23,19 @@ const createSkillStore = () => {
     }))
   );
 
+  const { setCombatLevel } = $derived(userStore);
+
   // Unlocked skills as an object
   const unlockedSkills: SkillsLevel = $derived(
-    store.value.reduce((acc, { name, isUnlocked, currentLevel }) => (isUnlocked ? { ...acc, [name]: currentLevel } : acc), {})
+    store.value.reduce((acc, { currentLevel, name, isUnlocked }) => (isUnlocked ? { ...acc, [name]: currentLevel } : acc), {})
+  );
+
+  // Unlocked skills that are combat skills
+  const unlockedSkillsByCombat: SkillsLevel = $derived(
+    store.value.reduce(
+      (acc, { currentLevel, name, isCombat, isUnlocked }) => (isUnlocked && isCombat ? { ...acc, [name]: currentLevel } : acc),
+      {}
+    )
   );
 
   // Unlocked skills by skill name
@@ -49,6 +60,19 @@ const createSkillStore = () => {
 
     // Update complete state
     store.value[store.map[name]].isComplete = store.value[store.map[name]].currentLevel === store.value[store.map[name]].maxLevel;
+
+    // Update combat level
+    if (store.value[store.map[name]].isCombat) {
+      setCombatLevel(
+        store.value[store.map['Attack']].currentLevel,
+        store.value[store.map['Defence']].currentLevel,
+        store.value[store.map['Hitpoints']].currentLevel,
+        store.value[store.map['Magic']].currentLevel,
+        store.value[store.map['Prayer']].currentLevel,
+        store.value[store.map['Ranged']].currentLevel,
+        store.value[store.map['Strength']].currentLevel
+      );
+    }
 
     store.storeValue();
   };
@@ -99,6 +123,9 @@ const createSkillStore = () => {
     },
     get unlockedSkills() {
       return unlockedSkills;
+    },
+    get unlockedSkillsByCombat() {
+      return unlockedSkillsByCombat;
     },
     get unlockedSkillsByName() {
       return unlockedSkillsByName;

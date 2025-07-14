@@ -60,7 +60,8 @@ export const isFulfilled = (
   requirements: Requirements,
   unlockedSkills: SkillsLevel,
   completeQuests: Array<string>,
-  questPoints: number
+  questPoints: number,
+  combatLevel: number
 ) => {
   if (Object.keys(requirements).length) {
     const requirement = [...(requirements?.main ?? [])];
@@ -69,6 +70,7 @@ export const isFulfilled = (
       required.some(
         (req) =>
           (!req.combat || false) &&
+          (!req.combatLevel || combatLevel >= req.combatLevel) &&
           (!req.QP || questPoints >= req.QP) &&
           (!req.skills || isSkillsFulfilled(unlockedSkills, req.skills)) &&
           (!req.quests || req.quests.every((quest) => completeQuests.includes(quest)))

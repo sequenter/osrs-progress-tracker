@@ -1,8 +1,8 @@
-import { createStore } from './data.store.svelte';
-
 import { default as questsJson } from '$assets/json/quests.json';
 
+import { createStore } from '$lib/stores/data.store.svelte';
 import { skillStore } from '$lib/stores/skill.store.svelte';
+import { userStore } from '$lib/stores/user.store.svelte';
 import type { Quest } from '$lib/types';
 import { bifilter, isFulfilled, isRewardsFulfilled } from '$lib/util/array';
 import { QUEST, parseJSONArray } from '$lib/util/schema';
@@ -19,6 +19,7 @@ const createQuestStore = () => {
   );
 
   const { unlockedSkills, unlockedSkillsByName } = $derived(skillStore);
+  const { combatLevel } = $derived(userStore);
 
   // Completed quests by quest name
   const completeQuestsByName = $derived(store.complete.map(({ name }) => name));
@@ -34,7 +35,7 @@ const createQuestStore = () => {
     bifilter(
       store.incomplete,
       ({ requirements, rewards }) =>
-        isFulfilled(requirements, unlockedSkills, completeQuestsByName, currentQuestPoints) &&
+        isFulfilled(requirements, unlockedSkills, completeQuestsByName, currentQuestPoints, combatLevel) &&
         isRewardsFulfilled(rewards, unlockedSkillsByName)
     )
   );

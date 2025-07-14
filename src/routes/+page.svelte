@@ -11,6 +11,7 @@
   import { petStore } from '$lib/stores/pet.store.svelte';
   import { questStore } from '$lib/stores/quest.store.svelte';
   import { skillStore } from '$lib/stores/skill.store.svelte';
+  import { userStore } from '$lib/stores/user.store.svelte';
   import { progressIcon } from '$lib/util/icon';
 
   let { totalAchievements, totalAchievementsComplete } = $derived(achievementStore);
@@ -18,6 +19,7 @@
   let { totalPets, totalPetsComplete } = $derived(petStore);
   let { currentQuestPoints, totalQuestPoints, totalQuests, totalQuestsComplete } = $derived(questStore);
   let { totalSkills, totalSkillsComplete } = $derived(skillStore);
+  let { combatLevel } = $derived(userStore);
 </script>
 
 <div class="flex flex-col h-screen w-full overflow-y-scroll">
@@ -45,6 +47,7 @@
 
       <div class="flex-none grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3 lg:flex lg:flex-col">
         <Progress
+          adornment={`CL: ${combatLevel}`}
           colour={{ dark: 'bg-amber-400', light: 'bg-amber-200' }}
           complete={totalSkillsComplete}
           total={totalSkills}
