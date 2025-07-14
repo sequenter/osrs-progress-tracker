@@ -46,12 +46,21 @@
     }
   });
 
+  /**
+   * Update the tabs selected state.
+   * @param {string} title The selected tab
+   */
   const handleSelected = (title: string) => {
     Object.keys(tabs).forEach((tab) => {
       tabs[tab as TabHeader].selected = tab === title;
     });
   };
 
+  /**
+   * Update the tabs unlocked count.
+   * @param {string} title The tab to update
+   * @param {number} count The total amount of unlocked items
+   */
   const handleUnlocked = (title: string, count: number) => {
     tabs[title as TabHeader].unlocked = count;
   };

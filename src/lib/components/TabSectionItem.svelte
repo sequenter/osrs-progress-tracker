@@ -18,8 +18,6 @@
   }
 
   const { description, difficulty, icon, state, title, oncomplete }: Props = $props();
-
-  console.log(description);
 </script>
 
 <div class="flex flex-col p-4 gap-2 rounded-md shadow-elevation bg-white dark:bg-background-800">
