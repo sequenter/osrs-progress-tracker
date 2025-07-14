@@ -35,7 +35,7 @@
         </div>
 
         {#if isUnlocked}
-          <div class="flex items-center justify-between px-2 text-md w-full">
+          <div class="flex items-center justify-between px-2 w-full">
             <IconButton
               label={`Decrement ${name}`}
               path={mdiMinusCircle}
@@ -45,7 +45,8 @@
 
             <span
               aria-label={`${name} level`}
-              aria-live="polite">{currentLevel}</span
+              aria-live="polite"
+              class="text-base">{currentLevel}</span
             >
 
             <IconButton

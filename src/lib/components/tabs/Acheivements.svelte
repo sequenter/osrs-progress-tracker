@@ -1,11 +1,8 @@
 <script lang="ts">
-  import TabSectionItem from '../TabSectionItem.svelte';
-
   import Tab from '$lib/components/Tab.svelte';
+  import TabSectionItem from '$lib/components/TabSectionItem.svelte';
   import { achievementStore } from '$lib/stores/achievement.store.svelte';
-  import { skillStore } from '$lib/stores/skill.store.svelte';
   import type { Achievement, ItemState } from '$lib/types';
-  import { bifilter, isFulfilled } from '$lib/util/array';
 
   interface Props {
     onUnlocked: (items: number) => void;

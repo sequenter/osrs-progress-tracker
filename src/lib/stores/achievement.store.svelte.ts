@@ -3,6 +3,7 @@ import { skillStore } from './skill.store.svelte';
 
 import { default as achievementsJson } from '$assets/json/achievements.json';
 
+import { questStore } from '$lib/stores/quest.store.svelte';
 import type { Achievement } from '$lib/types';
 import { bifilter, isFulfilled } from '$lib/util/array';
 import { ACHIEVEMENT, parseJSONArray } from '$lib/util/schema';
@@ -19,9 +20,11 @@ const createAchievementStore = () => {
   );
 
   const { unlockedSkills } = $derived(skillStore);
+  const { completeQuestsByName, currentQuestPoints } = $derived(questStore);
 
+  // Locked and unlocked achievements
   const [lockedAchievements, unlockedAchievements] = $derived(
-    bifilter(store.incomplete, ({ requirements }) => isFulfilled(requirements, unlockedSkills))
+    bifilter(store.incomplete, ({ requirements }) => isFulfilled(requirements, unlockedSkills, completeQuestsByName, currentQuestPoints))
   );
 
   /**

@@ -2,7 +2,7 @@ import { createStore } from './data.store.svelte';
 
 import { default as skillsJson } from '$assets/json/skills.json';
 
-import type { Skill, SkillLiteral } from '$lib/types';
+import type { Skill, SkillLiteral, SkillsLevel } from '$lib/types';
 import { SKILL, parseJSONArray } from '$lib/util/schema';
 
 /**
@@ -22,7 +22,13 @@ const createSkillStore = () => {
     }))
   );
 
-  const unlockedSkills = $derived(store.value.filter((skill) => skill.isUnlocked));
+  // Unlocked skills as an object
+  const unlockedSkills: SkillsLevel = $derived(
+    store.value.reduce((acc, { name, isUnlocked, currentLevel }) => (isUnlocked ? { ...acc, [name]: currentLevel } : acc), {})
+  );
+
+  // Unlocked skills by skill name
+  const unlockedSkillsByName = $derived(Object.keys(unlockedSkills) as Array<SkillLiteral>);
 
   /**
    * Increments a skill by a given increment value and updates the complete state if required.
@@ -93,6 +99,9 @@ const createSkillStore = () => {
     },
     get unlockedSkills() {
       return unlockedSkills;
+    },
+    get unlockedSkillsByName() {
+      return unlockedSkillsByName;
     },
     get decrementSkill() {
       return decrement;

@@ -1,5 +1,8 @@
 <script lang="ts">
-  import type { Quest } from '$lib/types';
+  import Tab from '$lib/components/Tab.svelte';
+  import TabSectionItem from '$lib/components/TabSectionItem.svelte';
+  import { questStore } from '$lib/stores/quest.store.svelte';
+  import type { ItemState, Quest } from '$lib/types';
 
   interface Props {
     onUnlocked: (items: number) => void;
@@ -7,11 +10,27 @@
 
   const { onUnlocked }: Props = $props();
 
-  setTimeout(() => {
-    onUnlocked(20);
-  }, 2000);
+  const { completeQuests, lockedQuests, unlockedQuests, setQuestComplete } = $derived(questStore);
 
-  console.log('QUESTS');
+  $effect(() => {
+    onUnlocked(unlockedQuests.length);
+  });
 </script>
 
-test2
+{#snippet snippet({ name, difficulty, icon, length, release }: Quest, state: ItemState)}
+  <TabSectionItem
+    description={`${release}, ${length}`}
+    title={name}
+    oncomplete={(isComplete: boolean) => setQuestComplete(name, isComplete)}
+    {difficulty}
+    {icon}
+    {state}
+  />
+{/snippet}
+
+<Tab
+  complete={completeQuests}
+  locked={lockedQuests}
+  unlocked={unlockedQuests}
+  {snippet}
+/>

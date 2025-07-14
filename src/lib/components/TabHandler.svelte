@@ -95,7 +95,7 @@
   </div>
 
   {#each Object.entries(tabs) as [title, { Component, selected }] (title)}
-    <div class={clsx('p-4', !selected && 'hidden')}>
+    <div class={clsx('flex flex-col p-4 gap-4', !selected && 'hidden')}>
       <Component onUnlocked={(count) => handleUnlocked(title, count)} />
     </div>
   {/each}

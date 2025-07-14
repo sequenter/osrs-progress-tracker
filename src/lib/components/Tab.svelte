@@ -38,7 +38,10 @@
 </script>
 
 {#each sections as { title, items } (title)}
-  <TabSection {title}>
+  <TabSection
+    count={items.length}
+    {title}
+  >
     {#each items as item (item.id)}
       {@render snippet(item, title)}
     {/each}

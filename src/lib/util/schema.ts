@@ -156,7 +156,7 @@ const SKILL_REWARDS = z.object({
  * skills: {@link SKILL_REWARDS}
  * @example { "QP": 2, "skills": {...} }
  */
-const REWARDS = z.object({
+export const REWARDS = z.object({
   QP: z.number().optional(),
   skills: SKILL_REWARDS.optional()
 });
