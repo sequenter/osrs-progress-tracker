@@ -19,7 +19,7 @@ const createQuestStore = () => {
   );
 
   const { unlockedSkills, unlockedSkillsByName } = $derived(skillStore);
-  const { combatLevel } = $derived(userStore);
+  const { combat, combatLevel, ironman } = $derived(userStore);
 
   // Completed quests by quest name
   const completeQuestsByName = $derived(store.complete.map(({ name }) => name));
@@ -35,7 +35,7 @@ const createQuestStore = () => {
     bifilter(
       store.incomplete,
       ({ requirements, rewards }) =>
-        isFulfilled(requirements, unlockedSkills, completeQuestsByName, currentQuestPoints, combatLevel) &&
+        isFulfilled(requirements, unlockedSkills, completeQuestsByName, currentQuestPoints, combatLevel, combat, ironman) &&
         isRewardsFulfilled(rewards, unlockedSkillsByName)
     )
   );

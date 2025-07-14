@@ -22,7 +22,7 @@
 
 <Icon
   src={iconSrc}
-  size="w-4"
+  size="max-h-6 max-w-6"
   onerror={handleError}
   {title}
   ignoreAspect

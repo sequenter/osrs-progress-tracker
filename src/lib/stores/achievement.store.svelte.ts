@@ -21,12 +21,12 @@ const createAchievementStore = () => {
 
   const { unlockedSkills } = $derived(skillStore);
   const { completeQuestsByName, currentQuestPoints } = $derived(questStore);
-  const { combatLevel } = $derived(userStore);
+  const { combat, combatLevel, ironman } = $derived(userStore);
 
   // Locked and unlocked achievements
   const [lockedAchievements, unlockedAchievements] = $derived(
     bifilter(store.incomplete, ({ requirements }) =>
-      isFulfilled(requirements, unlockedSkills, completeQuestsByName, currentQuestPoints, combatLevel)
+      isFulfilled(requirements, unlockedSkills, completeQuestsByName, currentQuestPoints, combatLevel, combat, ironman)
     )
   );
 

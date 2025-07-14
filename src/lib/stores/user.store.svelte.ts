@@ -1,7 +1,10 @@
 import { getJSONObject, setJSONObject } from '$lib/util/localStorage';
 
 interface UserStore {
+  combat: boolean;
   combatLevel: number;
+  darkMode: boolean;
+  ironman: boolean;
 }
 
 /**
@@ -11,7 +14,10 @@ interface UserStore {
 const createUserStore = () => {
   const store: UserStore = $state(
     getJSONObject('data/user') ?? {
-      combatLevel: 3
+      combat: false,
+      combatLevel: 3,
+      darkMode: !!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),
+      ironman: false
     }
   );
 
@@ -19,6 +25,26 @@ const createUserStore = () => {
    * Set the localStorage user store.
    */
   const storeValue = () => setJSONObject('data/user', store);
+
+  /**
+   * Set the combat state.
+   * @param {boolean} value
+   */
+  const setCombat = (value: boolean) => {
+    store.combat = value;
+
+    storeValue();
+  };
+
+  /**
+   * Set dark mode state.
+   * @param value
+   */
+  const setDarkMode = (value: boolean) => {
+    store.darkMode = value;
+
+    storeValue();
+  };
 
   /**
    * Calculate and update combat level - https://oldschool.runescape.wiki/w/Combat_level
@@ -47,12 +73,40 @@ const createUserStore = () => {
     storeValue();
   };
 
+  /**
+   * Set the ironman state.
+   * @param {boolean} value
+   */
+  const setIronman = (value: boolean) => {
+    store.ironman = value;
+
+    storeValue();
+  };
+
   return {
+    get combat() {
+      return store.combat;
+    },
     get combatLevel() {
       return store.combatLevel;
     },
+    get darkMode() {
+      return store.darkMode;
+    },
+    get ironman() {
+      return store.ironman;
+    },
+    get setCombat() {
+      return setCombat;
+    },
     get setCombatLevel() {
       return setCombatLevel;
+    },
+    get setDarkMode() {
+      return setDarkMode;
+    },
+    get setIronman() {
+      return setIronman;
     }
   };
 };

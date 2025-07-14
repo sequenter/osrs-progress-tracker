@@ -1,8 +1,8 @@
 <script lang="ts">
   import '../app.css';
 
-  import DarkMode from '$lib/components/DarkMode.svelte';
   import Drawer from '$lib/components/Drawer.svelte';
+  import Header from '$lib/components/Header.svelte';
   import Icon from '$lib/components/Icon.svelte';
   import Progress from '$lib/components/Progress.svelte';
   import TabHandler from '$lib/components/TabHandler.svelte';
@@ -23,13 +23,7 @@
 </script>
 
 <div class="flex flex-col h-screen w-full overflow-y-scroll">
-  <header class="shadow-elevation sticky top-0 z-40 bg-primary-800 dark:bg-primary-200 text-white dark:text-gray-800">
-    <div class="flex h-16 items-center justify-between px-4">
-      <span class="text-xl">OSRS Progress Tracker</span>
-
-      <DarkMode />
-    </div>
-  </header>
+  <Header />
 
   <div class="flex flex-col grow lg:flex-row">
     <aside
