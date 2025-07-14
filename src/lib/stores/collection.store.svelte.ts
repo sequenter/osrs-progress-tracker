@@ -1,8 +1,11 @@
-import { createStore } from './data.store.svelte';
-
 import { default as collectionsJson } from '$assets/json/collections.json';
 
+import { createStore } from '$lib/stores/data.store.svelte';
+import { questStore } from '$lib/stores/quest.store.svelte';
+import { skillStore } from '$lib/stores/skill.store.svelte';
+import { userStore } from '$lib/stores/user.store.svelte';
 import type { Collection } from '$lib/types';
+import { bifilter, isFulfilled } from '$lib/util/array';
 import { COLLECTION, parseJSONArray } from '$lib/util/schema';
 
 /**
@@ -19,6 +22,17 @@ const createCollectionStore = () => {
       id: rest.name,
       isComplete: false
     }))
+  );
+
+  const { unlockedSkills } = $derived(skillStore);
+  const { completeQuestsByName, currentQuestPoints } = $derived(questStore);
+  const { combat, combatLevel, ironman } = $derived(userStore);
+
+  // Locked and unlocked collections
+  const [lockedCollections, unlockedCollections] = $derived(
+    bifilter(store.incomplete, ({ requirements }) =>
+      isFulfilled(requirements, unlockedSkills, completeQuestsByName, currentQuestPoints, combatLevel, combat, ironman)
+    )
   );
 
   /**
@@ -53,9 +67,8 @@ const createCollectionStore = () => {
         store.value[store.map[collectionName]].items[itemIndex].isComplete = isComplete;
 
         // Set collection complete state if all items are complete
-        if (isComplete && store.value[store.map[collectionName]].items.every(({ isComplete }) => isComplete)) {
-          store.value[store.map[collectionName]].isComplete = true;
-        }
+        store.value[store.map[collectionName]].isComplete =
+          isComplete && store.value[store.map[collectionName]].items.every(({ isComplete }) => isComplete);
 
         store.storeValue();
       }
@@ -69,11 +82,17 @@ const createCollectionStore = () => {
     get incompleteCollections() {
       return store.incomplete;
     },
+    get lockedCollections() {
+      return lockedCollections;
+    },
     get totalCollections() {
       return store.total;
     },
     get totalCollectionsComplete() {
       return store.totalComplete;
+    },
+    get unlockedCollections() {
+      return unlockedCollections;
     },
     get setCollectionComplete() {
       return setComplete;

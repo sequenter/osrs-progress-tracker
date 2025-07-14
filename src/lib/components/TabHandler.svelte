@@ -4,6 +4,7 @@
 
   import Icon from '$lib/components/Icon.svelte';
   import Achievements from '$lib/components/tabs/Acheivements.svelte';
+  import Collections from '$lib/components/tabs/Collections.svelte';
   import Pets from '$lib/components/tabs/Pets.svelte';
   import Quests from '$lib/components/tabs/Quests.svelte';
   import { achievementsIcon, collectionsIcon, petsIcon, questsIcon } from '$lib/util/icon';
@@ -33,7 +34,7 @@
       unlocked: 0
     },
     Collections: {
-      Component: null,
+      Component: Collections,
       icon: collectionsIcon,
       selected: false,
       unlocked: 0

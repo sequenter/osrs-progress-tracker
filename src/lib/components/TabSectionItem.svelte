@@ -1,5 +1,6 @@
 <script lang="ts">
   import { clsx } from 'clsx';
+  import type { Snippet } from 'svelte';
 
   import IconButton from '$lib/components/IconButton.svelte';
   import IconWiki from '$lib/components/IconWiki.svelte';
@@ -14,16 +15,18 @@
     difficulty?: string;
     state: ItemState;
     title: string;
+    children?: Snippet;
     oncomplete: (isComplete: boolean) => void;
   }
 
-  const { description, difficulty, icon, state, title, oncomplete }: Props = $props();
+  const { description, difficulty, icon, state, title, children, oncomplete }: Props = $props();
 </script>
 
 <div class="flex flex-col p-4 gap-2 rounded-md shadow-elevation bg-white dark:bg-background-800">
   <div class="flex items-center justify-between">
     <div class="flex items-center gap-2">
-      <IconWiki {icon} />
+      <div class="flex justify-center w-6"><IconWiki {icon} /></div>
+
       <span class="text-xl">{title}</span>
     </div>
 
@@ -34,7 +37,11 @@
 
   <hr class="h-px border-0 bg-background-300 dark:bg-background-600" />
 
-  {#if description}
+  {#if children}
+    {@render children()}
+
+    <hr class="h-px border-0 bg-background-300 dark:bg-background-600" />
+  {:else if description}
     <span class="grow text-md text-black dark:text-yellow-300">{description}</span>
 
     <hr class="h-px border-0 bg-background-300 dark:bg-background-600" />

@@ -1,7 +1,6 @@
-import { createStore } from './data.store.svelte';
-
 import { default as petsJson } from '$assets/json/pets.json';
 
+import { createStore } from '$lib/stores/data.store.svelte';
 import { questStore } from '$lib/stores/quest.store.svelte';
 import { skillStore } from '$lib/stores/skill.store.svelte';
 import { userStore } from '$lib/stores/user.store.svelte';
