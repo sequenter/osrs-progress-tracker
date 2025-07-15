@@ -704,8 +704,7 @@
                   "Crafting": 45,
                   "Smithing": 50,
                   "Ranged": 40
-                },
-                "any": {}
+                }
               }
             }
           ]
@@ -5243,8 +5242,7 @@
                   "Ranged": 37,
                   "Mining": 37,
                   "Thieving": 37
-                },
-                "any": {}
+                }
               }
             }
           ]
