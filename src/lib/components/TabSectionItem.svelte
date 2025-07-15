@@ -2,24 +2,30 @@
   import { clsx } from 'clsx';
   import type { Snippet } from 'svelte';
 
+  import Dialog from '$lib/components/Dialog.svelte';
   import IconButton from '$lib/components/IconButton.svelte';
   import IconWiki from '$lib/components/IconWiki.svelte';
   import { difficultyColourMap } from '$lib/constants';
-  import type { ItemState } from '$lib/types';
+  import type { ItemState, QuestRewards, Requirements } from '$lib/types';
 
   import { mdiCheckCircle, mdiCloseCircle, mdiHelpCircle } from '@mdi/js';
 
   interface Props {
     icon: string;
     description?: string;
+    dialogTitle: string;
     difficulty?: string;
+    requirements: Requirements;
+    rewards?: QuestRewards;
     state: ItemState;
     title: string;
     children?: Snippet;
     oncomplete: (isComplete: boolean) => void;
   }
 
-  const { description, difficulty, icon, state, title, children, oncomplete }: Props = $props();
+  const { description, dialogTitle, difficulty, icon, requirements, rewards, state, title, children, oncomplete }: Props = $props();
+
+  let dialog: Dialog;
 </script>
 
 <div class="flex flex-col p-4 gap-2 rounded-md shadow-elevation bg-white dark:bg-background-800">
@@ -65,7 +71,15 @@
     <IconButton
       path={mdiHelpCircle}
       label="Requirements"
-      onclick={() => oncomplete(true)}
+      onclick={() => dialog.open()}
     />
   </div>
 </div>
+
+<Dialog
+  bind:this={dialog}
+  title={dialogTitle}
+  {icon}
+  {requirements}
+  {rewards}
+/>

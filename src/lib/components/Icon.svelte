@@ -24,6 +24,7 @@ A component utilised to display an icon through rendering either an SVG or an im
   import { clsx } from 'clsx';
 
   interface Props {
+    class?: string;
     ignoreAspect?: boolean;
     path?: string;
     src?: string;
@@ -32,12 +33,12 @@ A component utilised to display an icon through rendering either an SVG or an im
     onerror?: () => void;
   }
 
-  let { ignoreAspect = false, path, src, size = 'h-6 w-6', title, onerror }: Props = $props();
+  let { ignoreAspect = false, path, src, size = 'h-6 w-6', title, onerror, ...rest }: Props = $props();
 </script>
 
 {#if path}
   <svg
-    class={clsx(size)}
+    class={clsx(size, rest.class)}
     fill="currentColor"
     role="img"
     viewBox="0 0 24 24"
@@ -48,7 +49,7 @@ A component utilised to display an icon through rendering either an SVG or an im
   </svg>
 {:else if src}
   <img
-    class={clsx(size, !ignoreAspect && 'aspect-square')}
+    class={clsx(size, rest.class, !ignoreAspect && 'aspect-square')}
     alt={title}
     {onerror}
     {src}

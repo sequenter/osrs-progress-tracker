@@ -25,12 +25,14 @@
   });
 </script>
 
-{#snippet snippet({ icon, items, name }: Collection, state: ItemState)}
+{#snippet snippet({ icon, items, name, requirements }: Collection, state: ItemState)}
   <TabSectionItem
+    dialogTitle={name}
     title={name}
     oncomplete={(isComplete: boolean) => setCollectionComplete(name, isComplete)}
     difficulty={`${items.filter(({ isComplete }) => isComplete).length}/${items.length}`}
     {icon}
+    {requirements}
     {state}
   >
     <div class="flex flex-col gap-2 grow max-h-32 pr-4 overflow-y-scroll">

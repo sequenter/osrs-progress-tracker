@@ -23,11 +23,13 @@ A button component that specifically renders an SVG icon.
   interface Props {
     label: string;
     path: string;
+    popovertarget?: string;
+    popovertargetaction?: 'toggle' | 'show' | 'hide' | null | undefined;
     onclick: () => void;
     useLongpress?: boolean;
   }
 
-  let { label, useLongpress = false, path, onclick }: Props = $props();
+  let { label, popovertarget, popovertargetaction, useLongpress = false, path, onclick }: Props = $props();
 </script>
 
 <button
@@ -37,6 +39,8 @@ A button component that specifically renders an SVG icon.
   )}
   type="button"
   use:longpress={{ enabled: useLongpress, callback: onclick }}
+  {popovertarget}
+  {popovertargetaction}
   {onclick}
 >
   <Icon

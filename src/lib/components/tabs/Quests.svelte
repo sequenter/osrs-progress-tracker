@@ -17,13 +17,16 @@
   });
 </script>
 
-{#snippet snippet({ name, difficulty, icon, length, release }: Quest, state: ItemState)}
+{#snippet snippet({ name, difficulty, icon, length, release, requirements, rewards }: Quest, state: ItemState)}
   <TabSectionItem
     description={`${release}, ${length}`}
+    dialogTitle={name}
     title={name}
     oncomplete={(isComplete: boolean) => setQuestComplete(name, isComplete)}
     {difficulty}
     {icon}
+    {requirements}
+    {rewards}
     {state}
   />
 {/snippet}

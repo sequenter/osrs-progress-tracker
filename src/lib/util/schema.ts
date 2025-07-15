@@ -91,7 +91,7 @@ const ANY_REQUIREMENT = z.object({
  *   "required": [...]
  * }
  */
-const ALL_REQUIREMENT = z.object({
+export const ALL_REQUIREMENT = z.object({
   description: z.string().optional(),
   required: z.array(ANY_REQUIREMENT)
 });

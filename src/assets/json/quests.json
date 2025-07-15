@@ -443,7 +443,7 @@
             },
             {
               "skills": {
-                "any": {
+                "all": {
                   "Woodcutting": 1,
                   "Firemaking": 50
                 }
@@ -1820,7 +1820,7 @@
             },
             {
               "skills": {
-                "any": {
+                "all": {
                   "Woodcutting": 1,
                   "Firemaking": 50
                 }
@@ -1881,7 +1881,7 @@
             },
             {
               "skills": {
-                "any": {
+                "all": {
                   "Woodcutting": 1,
                   "Firemaking": 50
                 }
@@ -2824,7 +2824,7 @@
             },
             {
               "skills": {
-                "any": {
+                "all": {
                   "Woodcutting": 1,
                   "Firemaking": 50
                 }
@@ -3608,7 +3608,7 @@
             },
             {
               "skills": {
-                "any": {
+                "all": {
                   "Woodcutting": 1,
                   "Firemaking": 50
                 }
@@ -6169,7 +6169,7 @@
             },
             {
               "skills": {
-                "any": {
+                "all": {
                   "Woodcutting": 1,
                   "Firemaking": 50
                 }
@@ -7045,23 +7045,23 @@
                   "Thieving": 72
                 }
               }
-            },
+            }
+          ]
+        },
+        {
+          "description": "Ability to enter the Warrior's Guild",
+          "required": [
             {
-              "description": "Ability to enter the Warrior's Guild",
-              "required": [
-                {
-                  "skills": {
-                    "all": {
-                      "Attack": 65,
-                      "Strength": 65
-                    },
-                    "any": {
-                      "Attack": 99,
-                      "Strength": 99
-                    }
-                  }
+              "skills": {
+                "all": {
+                  "Attack": 65,
+                  "Strength": 65
+                },
+                "any": {
+                  "Attack": 99,
+                  "Strength": 99
                 }
-              ]
+              }
             }
           ]
         }

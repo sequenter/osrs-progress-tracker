@@ -17,11 +17,13 @@
   });
 </script>
 
-{#snippet snippet({ name, icon }: Pet, state: ItemState)}
+{#snippet snippet({ name, icon, requirements }: Pet, state: ItemState)}
   <TabSectionItem
+    dialogTitle={name}
     title={name}
     oncomplete={(isComplete: boolean) => setPetComplete(name, isComplete)}
     {icon}
+    {requirements}
     {state}
   />
 {/snippet}
