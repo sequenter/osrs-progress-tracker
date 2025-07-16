@@ -1,3 +1,21 @@
+<!--
+@component
+
+#### TabSectionItem
+A component that renders an item card within a tab section.
+
+@param {number} icon The icon to display alongside the title
+@param {string} [description=undefined] Optional description of the item
+@param {string} dialogTitle The title for the requirements dialog
+@param {string} [difficulty=undefined] Optional difficulty to display alongside the icon and title
+@param {Requirements} requirements The requirements to display within the requirements dialog
+@param {QuestRewards} [rewards=undefined] Optional rewards from a quest to pass to the requirements dialog
+@param {ItemState} state The unlocked/locked/complete state of the item
+@param {string} title The title of the item
+@param {Snippet} [children=undefined] Optional children to render instead of a description
+@param oncomplete callback for complete/incomplete button press
+-->
+
 <script lang="ts">
   import { clsx } from 'clsx';
   import type { Snippet } from 'svelte';

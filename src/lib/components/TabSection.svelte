@@ -1,3 +1,15 @@
+<!--
+@component
+
+#### TabSection
+A component that renders a section within an unlocked/locked/complete section within a tab. Also displays an item count, and provides a 
+control to hide/show the section.
+
+@param {number} count Total count of the items
+@param {string} title The title of the sectiom
+@param {Snippet} children Items to display within the section
+-->
+
 <script lang="ts">
   import { clsx } from 'clsx';
   import type { Snippet } from 'svelte';

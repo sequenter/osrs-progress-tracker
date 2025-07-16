@@ -1,3 +1,11 @@
+<!--
+@component
+
+#### Drawer
+A sidebar component with a button that allows the drawer to open/close.  Displays skills and provides the ability to unlock and update skill 
+levels.
+-->
+
 <script lang="ts">
   import { clsx } from 'clsx';
 

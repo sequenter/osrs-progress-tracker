@@ -1,3 +1,18 @@
+<!--
+@component
+
+#### IconWiki
+A component utilised to display an icon from the wiki, which defaults to an error icon onerror.
+
+@param {string} icon The name of the item to get from the wiki
+
+@example
+
+```svelte
+<IconWiki icon="..." />
+```
+-->
+
 <script lang="ts">
   import Icon from '$lib/components/Icon.svelte';
   import { WIKI_IMAGES_ERROR, WIKI_IMAGES_URL } from '$lib/constants';

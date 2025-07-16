@@ -1,3 +1,15 @@
+<!--
+@component
+
+#### Tab
+A generic component that renders the three unlocked, locked, and complete sections, with snippet items.
+
+@param {Array<T>} complete An array of complete items
+@param {Array<T>} locked An array of locked items
+@param {Array<T>} unlocked An array of unlocked items
+@param {Snippet<[T, ItemState]>} snippet The snippet of the item to display
+-->
+
 <script
   lang="ts"
   generics="T extends { id: string }"

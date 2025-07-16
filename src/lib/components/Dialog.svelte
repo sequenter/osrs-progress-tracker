@@ -1,3 +1,15 @@
+<!--
+@component
+
+#### Dialog
+A dialog component rendered within a portal in the body to display requirements.
+
+@param {string} icon The icon to display alongside the title
+@param {string} title The title of the task to display requirements for
+@param {string} requirements The requirements to display
+@param {string} [rewards=undefined] Optional rewards from a quest 
+-->
+
 <script lang="ts">
   import { clsx } from 'clsx';
   import Portal from 'svelte-portal';

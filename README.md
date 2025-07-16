@@ -1,3 +1,3 @@
 # osrs-progress-tracker
 
-TODO
+osrs-progress-tracker is deployed on [GitHub Pages](https://sequenter.github.io/osrs-progress-tracker/).

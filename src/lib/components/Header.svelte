@@ -1,3 +1,14 @@
+<!--
+@component
+
+#### Header
+An app bar header component that displays the app name and toggle button controls.
+
+- Combat: enable/disable tasks that require combat
+- Ironman: enable/disable ironman mode
+- Dark mode: toggle dark mode
+-->
+
 <script lang="ts">
   import ToggleButton from '$lib/components/ToggleButton.svelte';
   import { userStore } from '$lib/stores/user.store.svelte';

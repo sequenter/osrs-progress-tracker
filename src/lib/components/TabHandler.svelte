@@ -1,3 +1,10 @@
+<!--
+@component
+
+#### TabHandler
+A component that controls and renders both tab headers and tab content for achievements, collections, pets, and quests.
+-->
+
 <script lang="ts">
   import { clsx } from 'clsx';
   import type { Component } from 'svelte';
@@ -9,7 +16,7 @@
   import Quests from '$lib/components/tabs/Quests.svelte';
   import { achievementsIcon, collectionsIcon, petsIcon, questsIcon } from '$lib/util/icon';
 
-  type TabHeader = 'Achievements' | 'Quests';
+  type TabHeader = 'Achievements' | 'Collections' | 'Pets' | 'Quests';
 
   type Tabs = {
     [key in TabHeader]: {
