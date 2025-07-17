@@ -569,6 +569,22 @@
     }
   },
   {
+    "icon": "Moxi",
+    "name": "Moxi",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "quests": ["The Heart of Darkness"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "icon": "Muphin (ranged)",
     "name": "Muphin",
     "requirements": {
@@ -627,6 +643,27 @@
                   "Ranged": 90,
                   "Magic": 90,
                   "Prayer": 74
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Nid",
+    "name": "Nid",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "quests": ["Priest in Peril"],
+              "skills": {
+                "all": {
+                  "Slayer": 92
                 }
               }
             }
@@ -1264,6 +1301,25 @@
                   "Defence": 80,
                   "Hitpoints": 70,
                   "Prayer": 74
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "icon": "Quetzin",
+    "name": "Quetzin",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Hunter": 46
                 }
               }
             }
