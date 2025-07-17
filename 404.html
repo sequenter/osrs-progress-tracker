@@ -28,14 +28,25 @@
     />
 
     
-		<link rel="modulepreload" href="/osrs-progress-tracker/_app/immutable/entry/start.4GjHDOvO.js">
-		<link rel="modulepreload" href="/osrs-progress-tracker/_app/immutable/chunks/jD3JOyHA.js">
+		<link rel="modulepreload" href="/osrs-progress-tracker/_app/immutable/entry/start.CMQyiy0e.js">
+		<link rel="modulepreload" href="/osrs-progress-tracker/_app/immutable/chunks/cjccQjKL.js">
 		<link rel="modulepreload" href="/osrs-progress-tracker/_app/immutable/chunks/CnC7MXTt.js">
 		<link rel="modulepreload" href="/osrs-progress-tracker/_app/immutable/chunks/g7QaVxDS.js">
 		<link rel="modulepreload" href="/osrs-progress-tracker/_app/immutable/chunks/BsaB2T7M.js">
-		<link rel="modulepreload" href="/osrs-progress-tracker/_app/immutable/entry/app.CQKNjk_z.js">
+		<link rel="modulepreload" href="/osrs-progress-tracker/_app/immutable/entry/app.OfSx3P0d.js">
 		<link rel="modulepreload" href="/osrs-progress-tracker/_app/immutable/chunks/CWj6FrbW.js">
 		<link rel="modulepreload" href="/osrs-progress-tracker/_app/immutable/chunks/Crq3orK_.js">
+
+    <script>
+      // FEATURE FLAG: Update localStorage achievements task -> name
+      const LOCALSTORAGE_KEY = 'data/achievements';
+
+      const achievements = JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY) ?? '[]');
+      localStorage.setItem(
+        LOCALSTORAGE_KEY,
+        JSON.stringify(achievements.map((item) => ({ ...item, name: item.task ?? item.id ?? item.name })))
+      );
+    </script>
   </head>
   <body
     data-sveltekit-preload-data="hover"
@@ -44,7 +55,7 @@
     <div style="display: contents">
 			<script>
 				{
-					__sveltekit_1xgwr20 = {
+					__sveltekit_arfcwi = {
 						base: "/osrs-progress-tracker",
 						assets: "/osrs-progress-tracker"
 					};
@@ -52,8 +63,8 @@
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("/osrs-progress-tracker/_app/immutable/entry/start.4GjHDOvO.js"),
-						import("/osrs-progress-tracker/_app/immutable/entry/app.CQKNjk_z.js")
+						import("/osrs-progress-tracker/_app/immutable/entry/start.CMQyiy0e.js"),
+						import("/osrs-progress-tracker/_app/immutable/entry/app.OfSx3P0d.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});
