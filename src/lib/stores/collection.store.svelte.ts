@@ -15,11 +15,9 @@ import { COLLECTION, parseJSONArray } from '$lib/util/schema';
 const createCollectionStore = () => {
   const store = createStore<Collection>(
     'data/collections',
-    'name',
     parseJSONArray(COLLECTION, collectionsJson).map(({ items, ...rest }) => ({
       ...rest,
       items: items.map((item) => ({ ...item, isComplete: false })),
-      id: rest.name,
       isComplete: false
     }))
   );

@@ -118,14 +118,14 @@ export const REQUIREMENTS = z.object({
  * diary: The name of the {@link ACHIEVEMENT_DIARIES}
  * difficulty: The {@link ACHIEVEMENT_DIFFICULTY} of the achievement
  * icon: The name of the icon from the wiki
- * task: The task to complete for the achievement
+ * name: The task to complete for the achievement
  * requirements: A record of {@link REQUIREMENTS}
  * @example
  * {
  *   "diary": "Ardougne",
  *   "difficulty": "Medium",
  *   "icon": "Banner (Kandarin)"
- *   "task": "Cast the Ardougne Teleport spell",
+ *   "name": "Cast the Ardougne Teleport spell",
  *   "requirements": {...}
  * }
  */
@@ -133,7 +133,7 @@ export const ACHIEVEMENT = z.object({
   diary: z.literal(ACHIEVEMENT_DIARIES),
   difficulty: z.literal(ACHIEVEMENT_DIFFICULTY),
   icon: z.string(),
-  task: z.string(),
+  name: z.string(),
   requirements: REQUIREMENTS
 });
 

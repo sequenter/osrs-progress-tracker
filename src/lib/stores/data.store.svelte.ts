@@ -9,7 +9,7 @@ import { getJSONObject, setJSONObject } from '$lib/util/localStorage';
  * @param defaultValue {Array<T>} JSON object corresponding to the given schema to base the store on
  * @returns Store accessors
  */
-export const createStore = <T extends { id: string; isComplete: boolean }>(key: string, mapId: string, defaultValue: Array<T>) => {
+export const createStore = <T extends { name: string; isComplete: boolean }>(key: string, defaultValue: Array<T>) => {
   const value: Array<T> = $state(getJSONObject(key) ?? defaultValue);
 
   // Split the store into complete and incomplete arrays
@@ -19,10 +19,7 @@ export const createStore = <T extends { id: string; isComplete: boolean }>(key: 
   const totalComplete = $derived(complete.length);
 
   // Map the store to id/index pairs for quicker lookup
-  const map = value.reduce(
-    (acc, item, index) => ({ ...acc, ...(mapId in item && { [item[mapId as keyof typeof item] as string]: index }) }),
-    {} as Record<string, number>
-  );
+  const map = value.reduce((acc, item, index) => ({ ...acc, [item.name as string]: index }), {} as Record<string, number>);
 
   /**
    * Set the given localStorage key with the store value.
@@ -31,12 +28,12 @@ export const createStore = <T extends { id: string; isComplete: boolean }>(key: 
 
   /**
    * Sets the complete state of an item - corresponding to the given id - within the store.
-   * @param id ID of the object to update within the store
+   * @param name Name of the object to update within the store
    * @param isComplete Whether or not the item is complete
    */
-  const setComplete = (id: string, isComplete: boolean) => {
-    if (id in map) {
-      value[map[id]].isComplete = isComplete;
+  const setComplete = (name: string, isComplete: boolean) => {
+    if (name in map) {
+      value[map[name]].isComplete = isComplete;
       storeValue();
     }
   };

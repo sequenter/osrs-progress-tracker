@@ -13,11 +13,9 @@ import { SKILL, parseJSONArray } from '$lib/util/schema';
 const createSkillStore = () => {
   const store = createStore<Skill>(
     'data/skills',
-    'name',
     parseJSONArray(SKILL, skillsJson).map((skill) => ({
       ...skill,
       currentLevel: skill.minLevel,
-      id: skill.name,
       isComplete: false,
       isUnlocked: false
     }))

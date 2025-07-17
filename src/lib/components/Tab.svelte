@@ -12,7 +12,7 @@ A generic component that renders the three unlocked, locked, and complete sectio
 
 <script
   lang="ts"
-  generics="T extends { id: string }"
+  generics="T extends { name: string }"
 >
   import type { Snippet } from 'svelte';
 
@@ -54,7 +54,7 @@ A generic component that renders the three unlocked, locked, and complete sectio
     count={items.length}
     {title}
   >
-    {#each items as item (item.id)}
+    {#each items as item (item.name)}
       {@render snippet(item, title)}
     {/each}
   </TabSection>

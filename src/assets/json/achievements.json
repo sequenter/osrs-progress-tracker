@@ -3,14 +3,14 @@
     "diary": "Ardougne",
     "difficulty": "Easy",
     "icon": "Banner (Kandarin)",
-    "task": "Check what pets you have insured with Probita in East Ardougne",
+    "name": "Check what pets you have insured with Probita in East Ardougne",
     "requirements": {}
   },
   {
     "diary": "Ardougne",
     "difficulty": "Easy",
     "icon": "Banner (Kandarin)",
-    "task": "Enter the Combat Training Camp north of West Ardougne",
+    "name": "Enter the Combat Training Camp north of West Ardougne",
     "requirements": {
       "main": [
         {
@@ -27,14 +27,14 @@
     "diary": "Ardougne",
     "difficulty": "Easy",
     "icon": "Banner (Kandarin)",
-    "task": "Go out fishing on the Fishing Trawler",
+    "name": "Go out fishing on the Fishing Trawler",
     "requirements": {}
   },
   {
     "diary": "Ardougne",
     "difficulty": "Easy",
     "icon": "Banner (Kandarin)",
-    "task": "Have Tindel Marchant identify a rusty sword for you",
+    "name": "Have Tindel Marchant identify a rusty sword for you",
     "requirements": {
       "main": [
         {
@@ -60,7 +60,7 @@
     "diary": "Ardougne",
     "difficulty": "Easy",
     "icon": "Banner (Kandarin)",
-    "task": "Have Wizard Cromperty teleport you to the Rune essence mine",
+    "name": "Have Wizard Cromperty teleport you to the Rune essence mine",
     "requirements": {
       "main": [
         {
@@ -77,14 +77,14 @@
     "diary": "Ardougne",
     "difficulty": "Easy",
     "icon": "Banner (Kandarin)",
-    "task": "Sell silk to the Silk trader in East Ardougne for 60 coins each",
+    "name": "Sell silk to the Silk trader in East Ardougne for 60 coins each",
     "requirements": {}
   },
   {
     "diary": "Ardougne",
     "difficulty": "Easy",
     "icon": "Banner (Kandarin)",
-    "task": "Steal a cake from the East Ardougne market stall",
+    "name": "Steal a cake from the East Ardougne market stall",
     "requirements": {
       "main": [
         {
@@ -105,28 +105,28 @@
     "diary": "Ardougne",
     "difficulty": "Easy",
     "icon": "Banner (Kandarin)",
-    "task": "Use the altar in East Ardougne's church",
+    "name": "Use the altar in East Ardougne's church",
     "requirements": {}
   },
   {
     "diary": "Ardougne",
     "difficulty": "Easy",
     "icon": "Banner (Kandarin)",
-    "task": "Use the Ardougne lever to teleport to the Wilderness",
+    "name": "Use the Ardougne lever to teleport to the Wilderness",
     "requirements": {}
   },
   {
     "diary": "Ardougne",
     "difficulty": "Easy",
     "icon": "Banner (Kandarin)",
-    "task": "View Aleck's Hunter Emporium in Yanille",
+    "name": "View Aleck's Hunter Emporium in Yanille",
     "requirements": {}
   },
   {
     "diary": "Ardougne",
     "difficulty": "Medium",
     "icon": "Banner (Kandarin)",
-    "task": "Cast the Ardougne Teleport spell",
+    "name": "Cast the Ardougne Teleport spell",
     "requirements": {
       "main": [
         {
@@ -148,7 +148,7 @@
     "diary": "Ardougne",
     "difficulty": "Medium",
     "icon": "Banner (Kandarin)",
-    "task": "Catch any fish on the Fishing Platform",
+    "name": "Catch any fish on the Fishing Platform",
     "requirements": {
       "main": [
         {
@@ -181,7 +181,7 @@
     "diary": "Ardougne",
     "difficulty": "Medium",
     "icon": "Banner (Kandarin)",
-    "task": "Claim buckets of sand from Bert in Yanille",
+    "name": "Claim buckets of sand from Bert in Yanille",
     "requirements": {
       "main": [
         {
@@ -198,7 +198,7 @@
     "diary": "Ardougne",
     "difficulty": "Medium",
     "icon": "Banner (Kandarin)",
-    "task": "Collect some cave nightshade from the Skavid caves",
+    "name": "Collect some cave nightshade from the Skavid caves",
     "requirements": {
       "main": [
         {
@@ -224,7 +224,7 @@
     "diary": "Ardougne",
     "difficulty": "Medium",
     "icon": "Banner (Kandarin)",
-    "task": "Enter the unicorn pen in Ardougne Zoo using Fairy rings",
+    "name": "Enter the unicorn pen in Ardougne Zoo using Fairy rings",
     "requirements": {
       "main": [
         {
@@ -249,7 +249,7 @@
     "diary": "Ardougne",
     "difficulty": "Medium",
     "icon": "Banner (Kandarin)",
-    "task": "Equip an Iban's upgraded staff or upgrade an Iban's staff",
+    "name": "Equip an Iban's upgraded staff or upgrade an Iban's staff",
     "requirements": {
       "main": [
         {
@@ -266,7 +266,7 @@
     "diary": "Ardougne",
     "difficulty": "Medium",
     "icon": "Banner (Kandarin)",
-    "task": "Grapple over Yanille's south wall and jump off",
+    "name": "Grapple over Yanille's south wall and jump off",
     "requirements": {
       "main": [
         {
@@ -314,7 +314,7 @@
     "diary": "Ardougne",
     "difficulty": "Medium",
     "icon": "Banner (Kandarin)",
-    "task": "Harvest some strawberries from the Ardougne farming patch",
+    "name": "Harvest some strawberries from the Ardougne farming patch",
     "requirements": {
       "main": [
         {
@@ -353,7 +353,7 @@
     "diary": "Ardougne",
     "difficulty": "Medium",
     "icon": "Banner (Kandarin)",
-    "task": "Kill a swordchick in the Tower of Life",
+    "name": "Kill a swordchick in the Tower of Life",
     "requirements": {
       "main": [
         {
@@ -405,7 +405,7 @@
     "diary": "Ardougne",
     "difficulty": "Medium",
     "icon": "Banner (Kandarin)",
-    "task": "Pickpocket the master farmer north of East Ardougne",
+    "name": "Pickpocket the master farmer north of East Ardougne",
     "requirements": {
       "main": [
         {
@@ -426,7 +426,7 @@
     "diary": "Ardougne",
     "difficulty": "Medium",
     "icon": "Banner (Kandarin)",
-    "task": "Travel to Castle Wars by Hot Air Balloon",
+    "name": "Travel to Castle Wars by Hot Air Balloon",
     "requirements": {
       "main": [
         {
@@ -473,7 +473,7 @@
     "diary": "Ardougne",
     "difficulty": "Medium",
     "icon": "Banner (Kandarin)",
-    "task": "Visit the island east of the Necromancer Tower",
+    "name": "Visit the island east of the Necromancer Tower",
     "requirements": {
       "main": [
         {
@@ -498,7 +498,7 @@
     "diary": "Ardougne",
     "difficulty": "Hard",
     "icon": "Banner (Kandarin)",
-    "task": "Attempt to steal from a chest in Ardougne Castle",
+    "name": "Attempt to steal from a chest in Ardougne Castle",
     "requirements": {
       "main": [
         {
@@ -519,7 +519,7 @@
     "diary": "Ardougne",
     "difficulty": "Hard",
     "icon": "Banner (Kandarin)",
-    "task": "Catch a Red Salamander",
+    "name": "Catch a Red Salamander",
     "requirements": {
       "main": [
         {
@@ -540,7 +540,7 @@
     "diary": "Ardougne",
     "difficulty": "Hard",
     "icon": "Banner (Kandarin)",
-    "task": "Check the health of a palm tree near Tree Gnome Village",
+    "name": "Check the health of a palm tree near Tree Gnome Village",
     "requirements": {
       "main": [
         {
@@ -579,7 +579,7 @@
     "diary": "Ardougne",
     "difficulty": "Hard",
     "icon": "Banner (Kandarin)",
-    "task": "Craft some Death runes from Essence",
+    "name": "Craft some Death runes from Essence",
     "requirements": {
       "main": [
         {
@@ -601,7 +601,7 @@
     "diary": "Ardougne",
     "difficulty": "Hard",
     "icon": "Banner (Kandarin)",
-    "task": "Enter the Magic Guild",
+    "name": "Enter the Magic Guild",
     "requirements": {
       "main": [
         {
@@ -622,7 +622,7 @@
     "diary": "Ardougne",
     "difficulty": "Hard",
     "icon": "Banner (Kandarin)",
-    "task": "Enter your POH from Yanille",
+    "name": "Enter your POH from Yanille",
     "requirements": {
       "main": [
         {
@@ -643,7 +643,7 @@
     "diary": "Ardougne",
     "difficulty": "Hard",
     "icon": "Banner (Kandarin)",
-    "task": "Have a zookeeper put you in Ardougne Zoo's monkey cage",
+    "name": "Have a zookeeper put you in Ardougne Zoo's monkey cage",
     "requirements": {
       "main": [
         {
@@ -661,7 +661,7 @@
     "diary": "Ardougne",
     "difficulty": "Hard",
     "icon": "Banner (Kandarin)",
-    "task": "Pick some poison ivy berries from the patch south of East Ardougne",
+    "name": "Pick some poison ivy berries from the patch south of East Ardougne",
     "requirements": {
       "main": [
         {
@@ -700,7 +700,7 @@
     "diary": "Ardougne",
     "difficulty": "Hard",
     "icon": "Banner (Kandarin)",
-    "task": "Recharge some jewellery at the Totem pole in the Legends' Guild",
+    "name": "Recharge some jewellery at the Totem pole in the Legends' Guild",
     "requirements": {
       "main": [
         {
@@ -732,7 +732,7 @@
     "diary": "Ardougne",
     "difficulty": "Hard",
     "icon": "Banner (Kandarin)",
-    "task": "Smith a Dragon sq shield in West Ardougne",
+    "name": "Smith a Dragon sq shield in West Ardougne",
     "requirements": {
       "main": [
         {
@@ -764,7 +764,7 @@
     "diary": "Ardougne",
     "difficulty": "Hard",
     "icon": "Banner (Kandarin)",
-    "task": "Smith a Mithril platebody near Ardougne",
+    "name": "Smith a Mithril platebody near Ardougne",
     "requirements": {
       "main": [
         {
@@ -785,7 +785,7 @@
     "diary": "Ardougne",
     "difficulty": "Hard",
     "icon": "Banner (Kandarin)",
-    "task": "Teleport to the Watchtower",
+    "name": "Teleport to the Watchtower",
     "requirements": {
       "main": [
         {
@@ -807,7 +807,7 @@
     "diary": "Ardougne",
     "difficulty": "Elite",
     "icon": "Banner (Kandarin)",
-    "task": "Cast Ice Barrage on another player within Castle Wars",
+    "name": "Cast Ice Barrage on another player within Castle Wars",
     "requirements": {
       "main": [
         {
@@ -830,7 +830,7 @@
     "diary": "Ardougne",
     "difficulty": "Elite",
     "icon": "Banner (Kandarin)",
-    "task": "Catch a manta ray in the Fishing Trawler and cook it in Port Khazard",
+    "name": "Catch a manta ray in the Fishing Trawler and cook it in Port Khazard",
     "requirements": {
       "main": [
         {
@@ -852,7 +852,7 @@
     "diary": "Ardougne",
     "difficulty": "Elite",
     "icon": "Banner (Kandarin)",
-    "task": "Complete a lap of Ardougne's rooftop agility course",
+    "name": "Complete a lap of Ardougne's rooftop agility course",
     "requirements": {
       "main": [
         {
@@ -873,7 +873,7 @@
     "diary": "Ardougne",
     "difficulty": "Elite",
     "icon": "Banner (Kandarin)",
-    "task": "Imbue a salve amulet at Nightmare Zone, or equip a salve amulet(i) that was imbued there",
+    "name": "Imbue a salve amulet at Nightmare Zone, or equip a salve amulet(i) that was imbued there",
     "requirements": {
       "main": [
         {
@@ -891,7 +891,7 @@
     "diary": "Ardougne",
     "difficulty": "Elite",
     "icon": "Banner (Kandarin)",
-    "task": "Make a rune crossbow yourself from scratch within Witchaven or Yanille",
+    "name": "Make a rune crossbow yourself from scratch within Witchaven or Yanille",
     "requirements": {
       "main": [
         {
@@ -960,7 +960,7 @@
     "diary": "Ardougne",
     "difficulty": "Elite",
     "icon": "Banner (Kandarin)",
-    "task": "Pick some torstol from the patch north of East Ardougne",
+    "name": "Pick some torstol from the patch north of East Ardougne",
     "requirements": {
       "main": [
         {
@@ -1001,7 +1001,7 @@
     "diary": "Ardougne",
     "difficulty": "Elite",
     "icon": "Banner (Kandarin)",
-    "task": "Pickpocket a hero",
+    "name": "Pickpocket a hero",
     "requirements": {
       "main": [
         {
@@ -1022,7 +1022,7 @@
     "diary": "Ardougne",
     "difficulty": "Elite",
     "icon": "Banner (Kandarin)",
-    "task": "Successfully picklock the door to the basement of Yanille Agility dungeon",
+    "name": "Successfully picklock the door to the basement of Yanille Agility dungeon",
     "requirements": {
       "main": [
         {
@@ -1043,7 +1043,7 @@
     "diary": "Desert",
     "difficulty": "Easy",
     "icon": "Desert Area Badge",
-    "task": "Catch a golden warbler",
+    "name": "Catch a golden warbler",
     "requirements": {
       "main": [
         {
@@ -1064,42 +1064,42 @@
     "diary": "Desert",
     "difficulty": "Easy",
     "icon": "Desert Area Badge",
-    "task": "Collect 5 potato cacti from the Kalphite Hive",
+    "name": "Collect 5 potato cacti from the Kalphite Hive",
     "requirements": {}
   },
   {
     "diary": "Desert",
     "difficulty": "Easy",
     "icon": "Desert Area Badge",
-    "task": "Cut a desert cactus open to fill a waterskin",
+    "name": "Cut a desert cactus open to fill a waterskin",
     "requirements": {}
   },
   {
     "diary": "Desert",
     "difficulty": "Easy",
     "icon": "Desert Area Badge",
-    "task": "Enter the Desert with a set of desert robes equipped",
+    "name": "Enter the Desert with a set of desert robes equipped",
     "requirements": {}
   },
   {
     "diary": "Desert",
     "difficulty": "Easy",
     "icon": "Desert Area Badge",
-    "task": "Enter the Kalphite Hive",
+    "name": "Enter the Kalphite Hive",
     "requirements": {}
   },
   {
     "diary": "Desert",
     "difficulty": "Easy",
     "icon": "Desert Area Badge",
-    "task": "Have the Nardah herbalist clean a herb for you",
+    "name": "Have the Nardah herbalist clean a herb for you",
     "requirements": {}
   },
   {
     "diary": "Desert",
     "difficulty": "Easy",
     "icon": "Desert Area Badge",
-    "task": "Kill a vulture",
+    "name": "Kill a vulture",
     "requirements": {
       "main": [
         {
@@ -1116,7 +1116,7 @@
     "diary": "Desert",
     "difficulty": "Easy",
     "icon": "Desert Area Badge",
-    "task": "Mine five clay in the north-eastern desert",
+    "name": "Mine five clay in the north-eastern desert",
     "requirements": {
       "main": [
         {
@@ -1137,7 +1137,7 @@
     "diary": "Desert",
     "difficulty": "Easy",
     "icon": "Desert Area Badge",
-    "task": "Open the sarcophagus in the first room of Pyramid Plunder",
+    "name": "Open the sarcophagus in the first room of Pyramid Plunder",
     "requirements": {
       "main": [
         {
@@ -1166,7 +1166,7 @@
     "diary": "Desert",
     "difficulty": "Easy",
     "icon": "Desert Area Badge",
-    "task": "Sell some artefacts to Simon Templeton",
+    "name": "Sell some artefacts to Simon Templeton",
     "requirements": {
       "ironman": [
         {
@@ -1189,14 +1189,14 @@
     "diary": "Desert",
     "difficulty": "Easy",
     "icon": "Desert Area Badge",
-    "task": "Travel from the Shantay Pass to Pollnivneach by magic carpet",
+    "name": "Travel from the Shantay Pass to Pollnivneach by magic carpet",
     "requirements": {}
   },
   {
     "diary": "Desert",
     "difficulty": "Medium",
     "icon": "Desert Area Badge",
-    "task": "Catch an orange salamander",
+    "name": "Catch an orange salamander",
     "requirements": {
       "main": [
         {
@@ -1217,7 +1217,7 @@
     "diary": "Desert",
     "difficulty": "Medium",
     "icon": "Desert Area Badge",
-    "task": "Chop some teak logs near Uzer",
+    "name": "Chop some teak logs near Uzer",
     "requirements": {
       "main": [
         {
@@ -1238,7 +1238,7 @@
     "diary": "Desert",
     "difficulty": "Medium",
     "icon": "Desert Area Badge",
-    "task": "Climb to the summit of the Agility Pyramid",
+    "name": "Climb to the summit of the Agility Pyramid",
     "requirements": {
       "main": [
         {
@@ -1259,7 +1259,7 @@
     "diary": "Desert",
     "difficulty": "Medium",
     "icon": "Desert Area Badge",
-    "task": "Create a combat potion in the desert",
+    "name": "Create a combat potion in the desert",
     "requirements": {
       "main": [
         {
@@ -1316,7 +1316,7 @@
     "diary": "Desert",
     "difficulty": "Medium",
     "icon": "Desert Area Badge",
-    "task": "Pray at the Elidinis Statuette in Nardah",
+    "name": "Pray at the Elidinis Statuette in Nardah",
     "requirements": {
       "main": [
         {
@@ -1333,7 +1333,7 @@
     "diary": "Desert",
     "difficulty": "Medium",
     "icon": "Desert Area Badge",
-    "task": "Slay a desert lizard",
+    "name": "Slay a desert lizard",
     "requirements": {
       "main": [
         {
@@ -1355,7 +1355,7 @@
     "diary": "Desert",
     "difficulty": "Medium",
     "icon": "Desert Area Badge",
-    "task": "Steal a Phoenix feather from the Desert phoenix",
+    "name": "Steal a Phoenix feather from the Desert phoenix",
     "requirements": {
       "main": [
         {
@@ -1376,7 +1376,7 @@
     "diary": "Desert",
     "difficulty": "Medium",
     "icon": "Desert Area Badge",
-    "task": "Teleport to Enakhra's Temple with the Camulet",
+    "name": "Teleport to Enakhra's Temple with the Camulet",
     "requirements": {
       "main": [
         {
@@ -1393,7 +1393,7 @@
     "diary": "Desert",
     "difficulty": "Medium",
     "icon": "Desert Area Badge",
-    "task": "Teleport to Pollnivneach with a redirected teleport to house tablet",
+    "name": "Teleport to Pollnivneach with a redirected teleport to house tablet",
     "requirements": {
       "main": [
         {
@@ -1416,7 +1416,7 @@
     "diary": "Desert",
     "difficulty": "Medium",
     "icon": "Desert Area Badge",
-    "task": "Travel to the desert via the Eagle transport system",
+    "name": "Travel to the desert via the Eagle transport system",
     "requirements": {
       "main": [
         {
@@ -1433,7 +1433,7 @@
     "diary": "Desert",
     "difficulty": "Medium",
     "icon": "Desert Area Badge",
-    "task": "Travel to Uzer via magic carpet",
+    "name": "Travel to Uzer via magic carpet",
     "requirements": {
       "main": [
         {
@@ -1450,7 +1450,7 @@
     "diary": "Desert",
     "difficulty": "Medium",
     "icon": "Desert Area Badge",
-    "task": "Visit the genie",
+    "name": "Visit the genie",
     "requirements": {
       "main": [
         {
@@ -1475,7 +1475,7 @@
     "diary": "Desert",
     "difficulty": "Hard",
     "icon": "Desert Area Badge",
-    "task": "Activate Ancient Magicks at the altar in the Ancient Pyramid",
+    "name": "Activate Ancient Magicks at the altar in the Ancient Pyramid",
     "requirements": {
       "main": [
         {
@@ -1492,7 +1492,7 @@
     "diary": "Desert",
     "difficulty": "Hard",
     "icon": "Desert Area Badge",
-    "task": "Burn some yew logs on the Nardah Mayor's balcony",
+    "name": "Burn some yew logs on the Nardah Mayor's balcony",
     "requirements": {
       "main": [
         {
@@ -1538,7 +1538,7 @@
     "diary": "Desert",
     "difficulty": "Hard",
     "icon": "Desert Area Badge",
-    "task": "Complete a lap of the Pollnivneach Rooftop Course",
+    "name": "Complete a lap of the Pollnivneach Rooftop Course",
     "requirements": {
       "main": [
         {
@@ -1559,7 +1559,7 @@
     "diary": "Desert",
     "difficulty": "Hard",
     "icon": "Desert Area Badge",
-    "task": "Create a Mithril platebody in Nardah",
+    "name": "Create a Mithril platebody in Nardah",
     "requirements": {
       "main": [
         {
@@ -1624,7 +1624,7 @@
     "diary": "Desert",
     "difficulty": "Hard",
     "icon": "Desert Area Badge",
-    "task": "Defeat a locust rider with Keris",
+    "name": "Defeat a locust rider with Keris",
     "requirements": {
       "main": [
         {
@@ -1655,7 +1655,7 @@
     "diary": "Desert",
     "difficulty": "Hard",
     "icon": "Desert Area Badge",
-    "task": "Kill the Kalphite Queen",
+    "name": "Kill the Kalphite Queen",
     "requirements": {
       "main": [
         {
@@ -1691,7 +1691,7 @@
     "diary": "Desert",
     "difficulty": "Hard",
     "icon": "Desert Area Badge",
-    "task": "Knock out and pickpocket a Menaphite Thug",
+    "name": "Knock out and pickpocket a Menaphite Thug",
     "requirements": {
       "main": [
         {
@@ -1724,7 +1724,7 @@
     "diary": "Desert",
     "difficulty": "Hard",
     "icon": "Desert Area Badge",
-    "task": "Mine some granite",
+    "name": "Mine some granite",
     "requirements": {
       "main": [
         {
@@ -1745,7 +1745,7 @@
     "diary": "Desert",
     "difficulty": "Hard",
     "icon": "Desert Area Badge",
-    "task": "Refill your waterskins in the Desert using Lunar spells",
+    "name": "Refill your waterskins in the Desert using Lunar spells",
     "requirements": {
       "main": [
         {
@@ -1767,7 +1767,7 @@
     "diary": "Desert",
     "difficulty": "Hard",
     "icon": "Desert Area Badge",
-    "task": "Slay a Dust devil in the desert cave with a Slayer helmet equipped",
+    "name": "Slay a Dust devil in the desert cave with a Slayer helmet equipped",
     "requirements": {
       "main": [
         {
@@ -1813,7 +1813,7 @@
     "diary": "Desert",
     "difficulty": "Elite",
     "icon": "Desert Area Badge",
-    "task": "Bake a wild pie at the Nardah clay oven",
+    "name": "Bake a wild pie at the Nardah clay oven",
     "requirements": {
       "main": [
         {
@@ -1851,7 +1851,7 @@
     "diary": "Desert",
     "difficulty": "Elite",
     "icon": "Desert Area Badge",
-    "task": "Cast Ice Barrage against a foe in the Desert",
+    "name": "Cast Ice Barrage against a foe in the Desert",
     "requirements": {
       "main": [
         {
@@ -1874,7 +1874,7 @@
     "diary": "Desert",
     "difficulty": "Elite",
     "icon": "Desert Area Badge",
-    "task": "Fletch some Dragon darts at the Bedabin Camp",
+    "name": "Fletch some Dragon darts at the Bedabin Camp",
     "requirements": {
       "main": [
         {
@@ -1913,7 +1913,7 @@
     "diary": "Desert",
     "difficulty": "Elite",
     "icon": "Desert Area Badge",
-    "task": "Restore at least 85 Prayer points when praying at the altar in Sophanem",
+    "name": "Restore at least 85 Prayer points when praying at the altar in Sophanem",
     "requirements": {
       "main": [
         {
@@ -1942,7 +1942,7 @@
     "diary": "Desert",
     "difficulty": "Elite",
     "icon": "Desert Area Badge",
-    "task": "Speak to the Kq head in your POH",
+    "name": "Speak to the Kq head in your POH",
     "requirements": {
       "main": [
         {
@@ -2013,7 +2013,7 @@
     "diary": "Desert",
     "difficulty": "Elite",
     "icon": "Desert Area Badge",
-    "task": "Steal from the Grand Gold Chest in the final room of Pyramid Plunder",
+    "name": "Steal from the Grand Gold Chest in the final room of Pyramid Plunder",
     "requirements": {
       "main": [
         {
@@ -2042,21 +2042,21 @@
     "diary": "Falador",
     "difficulty": "Easy",
     "icon": "Asgarnia Area Badge",
-    "task": "Browse Sarah's Farming Shop",
+    "name": "Browse Sarah's Farming Shop",
     "requirements": {}
   },
   {
     "diary": "Falador",
     "difficulty": "Easy",
     "icon": "Asgarnia Area Badge",
-    "task": "Claim a security book from the Security Guard upstairs at Port Sarim jail",
+    "name": "Claim a security book from the Security Guard upstairs at Port Sarim jail",
     "requirements": {}
   },
   {
     "diary": "Falador",
     "difficulty": "Easy",
     "icon": "Asgarnia Area Badge",
-    "task": "Climb over the western Falador wall",
+    "name": "Climb over the western Falador wall",
     "requirements": {
       "main": [
         {
@@ -2077,14 +2077,14 @@
     "diary": "Falador",
     "difficulty": "Easy",
     "icon": "Asgarnia Area Badge",
-    "task": "Fill a bucket from the pump north of Falador west bank",
+    "name": "Fill a bucket from the pump north of Falador west bank",
     "requirements": {}
   },
   {
     "diary": "Falador",
     "difficulty": "Easy",
     "icon": "Asgarnia Area Badge",
-    "task": "Find out what your family crest is from Sir Renitee",
+    "name": "Find out what your family crest is from Sir Renitee",
     "requirements": {
       "main": [
         {
@@ -2105,14 +2105,14 @@
     "diary": "Falador",
     "difficulty": "Easy",
     "icon": "Asgarnia Area Badge",
-    "task": "Get a haircut from the Falador hairdresser",
+    "name": "Get a haircut from the Falador hairdresser",
     "requirements": {}
   },
   {
     "diary": "Falador",
     "difficulty": "Easy",
     "icon": "Asgarnia Area Badge",
-    "task": "Kill a duck in Falador Park",
+    "name": "Kill a duck in Falador Park",
     "requirements": {
       "main": [
         {
@@ -2129,7 +2129,7 @@
     "diary": "Falador",
     "difficulty": "Easy",
     "icon": "Asgarnia Area Badge",
-    "task": "Make a mind tiara",
+    "name": "Make a mind tiara",
     "requirements": {
       "main": [
         {
@@ -2164,7 +2164,7 @@
     "diary": "Falador",
     "difficulty": "Easy",
     "icon": "Asgarnia Area Badge",
-    "task": "Repair a broken strut in the Motherlode Mine",
+    "name": "Repair a broken strut in the Motherlode Mine",
     "requirements": {
       "main": [
         {
@@ -2185,7 +2185,7 @@
     "diary": "Falador",
     "difficulty": "Easy",
     "icon": "Asgarnia Area Badge",
-    "task": "Smith some Blurite limbs on Doric's anvil",
+    "name": "Smith some Blurite limbs on Doric's anvil",
     "requirements": {
       "main": [
         {
@@ -2208,14 +2208,14 @@
     "diary": "Falador",
     "difficulty": "Easy",
     "icon": "Asgarnia Area Badge",
-    "task": "Take the boat to Entrana",
+    "name": "Take the boat to Entrana",
     "requirements": {}
   },
   {
     "diary": "Falador",
     "difficulty": "Medium",
     "icon": "Asgarnia Area Badge",
-    "task": "Chop and burn some willow logs in Taverley",
+    "name": "Chop and burn some willow logs in Taverley",
     "requirements": {
       "main": [
         {
@@ -2237,7 +2237,7 @@
     "diary": "Falador",
     "difficulty": "Medium",
     "icon": "Asgarnia Area Badge",
-    "task": "Craft a basket on the Falador farm loom",
+    "name": "Craft a basket on the Falador farm loom",
     "requirements": {
       "main": [
         {
@@ -2272,7 +2272,7 @@
     "diary": "Falador",
     "difficulty": "Medium",
     "icon": "Asgarnia Area Badge",
-    "task": "Grapple up and then jump off the north Falador wall",
+    "name": "Grapple up and then jump off the north Falador wall",
     "requirements": {
       "main": [
         {
@@ -2320,7 +2320,7 @@
     "diary": "Falador",
     "difficulty": "Medium",
     "icon": "Asgarnia Area Badge",
-    "task": "Kill a Mogre at Mudskipper Point",
+    "name": "Kill a Mogre at Mudskipper Point",
     "requirements": {
       "main": [
         {
@@ -2343,7 +2343,7 @@
     "diary": "Falador",
     "difficulty": "Medium",
     "icon": "Asgarnia Area Badge",
-    "task": "Light a bullseye lantern at the Chemist's in Rimmington",
+    "name": "Light a bullseye lantern at the Chemist's in Rimmington",
     "requirements": {
       "main": [
         {
@@ -2390,7 +2390,7 @@
     "diary": "Falador",
     "difficulty": "Medium",
     "icon": "Asgarnia Area Badge",
-    "task": "Mine some gold ore at the Crafting Guild",
+    "name": "Mine some gold ore at the Crafting Guild",
     "requirements": {
       "main": [
         {
@@ -2412,7 +2412,7 @@
     "diary": "Falador",
     "difficulty": "Medium",
     "icon": "Asgarnia Area Badge",
-    "task": "Pickpocket a Falador guard",
+    "name": "Pickpocket a Falador guard",
     "requirements": {
       "main": [
         {
@@ -2433,7 +2433,7 @@
     "diary": "Falador",
     "difficulty": "Medium",
     "icon": "Asgarnia Area Badge",
-    "task": "Place a Scarecrow in the Falador farm flower patch",
+    "name": "Place a Scarecrow in the Falador farm flower patch",
     "requirements": {
       "main": [
         {
@@ -2468,7 +2468,7 @@
     "diary": "Falador",
     "difficulty": "Medium",
     "icon": "Asgarnia Area Badge",
-    "task": "Pray at the Altar of Guthix in Taverley whilst wearing full Initiate armour",
+    "name": "Pray at the Altar of Guthix in Taverley whilst wearing full Initiate armour",
     "requirements": {
       "main": [
         {
@@ -2491,7 +2491,7 @@
     "diary": "Falador",
     "difficulty": "Medium",
     "icon": "Asgarnia Area Badge",
-    "task": "Squeeze through the crevice in the Dwarven Mines",
+    "name": "Squeeze through the crevice in the Dwarven Mines",
     "requirements": {
       "main": [
         {
@@ -2512,7 +2512,7 @@
     "diary": "Falador",
     "difficulty": "Medium",
     "icon": "Asgarnia Area Badge",
-    "task": "Telegrab some Wine of zamorak at the Chaos Temple just outside the Wilderness",
+    "name": "Telegrab some Wine of zamorak at the Chaos Temple just outside the Wilderness",
     "requirements": {
       "main": [
         {
@@ -2533,7 +2533,7 @@
     "diary": "Falador",
     "difficulty": "Medium",
     "icon": "Asgarnia Area Badge",
-    "task": "Teleport to Falador",
+    "name": "Teleport to Falador",
     "requirements": {
       "main": [
         {
@@ -2554,14 +2554,14 @@
     "diary": "Falador",
     "difficulty": "Medium",
     "icon": "Asgarnia Area Badge",
-    "task": "Unlock the crystal chest in Taverley",
+    "name": "Unlock the crystal chest in Taverley",
     "requirements": {}
   },
   {
     "diary": "Falador",
     "difficulty": "Medium",
     "icon": "Asgarnia Area Badge",
-    "task": "Visit the Port Sarim Rat Pits",
+    "name": "Visit the Port Sarim Rat Pits",
     "requirements": {
       "main": [
         {
@@ -2587,7 +2587,7 @@
     "diary": "Falador",
     "difficulty": "Hard",
     "icon": "Asgarnia Area Badge",
-    "task": "Change your family crest to the Saradomin symbol",
+    "name": "Change your family crest to the Saradomin symbol",
     "requirements": {
       "main": [
         {
@@ -2608,7 +2608,7 @@
     "diary": "Falador",
     "difficulty": "Hard",
     "icon": "Asgarnia Area Badge",
-    "task": "Complete a lap of the Falador Rooftop Agility Course",
+    "name": "Complete a lap of the Falador Rooftop Agility Course",
     "requirements": {
       "main": [
         {
@@ -2629,7 +2629,7 @@
     "diary": "Falador",
     "difficulty": "Hard",
     "icon": "Asgarnia Area Badge",
-    "task": "Crack a wall safe within Rogues' Den",
+    "name": "Crack a wall safe within Rogues' Den",
     "requirements": {
       "main": [
         {
@@ -2650,7 +2650,7 @@
     "diary": "Falador",
     "difficulty": "Hard",
     "icon": "Asgarnia Area Badge",
-    "task": "Craft 140 mind runes simultaneously from Essence",
+    "name": "Craft 140 mind runes simultaneously from Essence",
     "requirements": {
       "main": [
         {
@@ -2671,7 +2671,7 @@
     "diary": "Falador",
     "difficulty": "Hard",
     "icon": "Asgarnia Area Badge",
-    "task": "Enter the Mining Guild wearing full Prospector",
+    "name": "Enter the Mining Guild wearing full Prospector",
     "requirements": {
       "main": [
         {
@@ -2692,7 +2692,7 @@
     "diary": "Falador",
     "difficulty": "Hard",
     "icon": "Asgarnia Area Badge",
-    "task": "Enter the Warriors' Guild",
+    "name": "Enter the Warriors' Guild",
     "requirements": {
       "main": [
         {
@@ -2718,7 +2718,7 @@
     "diary": "Falador",
     "difficulty": "Hard",
     "icon": "Asgarnia Area Badge",
-    "task": "Equip a Dwarven helmet within the Dwarven Mines",
+    "name": "Equip a Dwarven helmet within the Dwarven Mines",
     "requirements": {
       "main": [
         {
@@ -2740,7 +2740,7 @@
     "diary": "Falador",
     "difficulty": "Hard",
     "icon": "Asgarnia Area Badge",
-    "task": "Kill a Skeletal Wyvern in the Asgarnia Ice Dungeon",
+    "name": "Kill a Skeletal Wyvern in the Asgarnia Ice Dungeon",
     "requirements": {
       "main": [
         {
@@ -2787,7 +2787,7 @@
     "diary": "Falador",
     "difficulty": "Hard",
     "icon": "Asgarnia Area Badge",
-    "task": "Kill the blue dragon under the Heroes' Guild",
+    "name": "Kill the blue dragon under the Heroes' Guild",
     "requirements": {
       "main": [
         {
@@ -2833,7 +2833,7 @@
     "diary": "Falador",
     "difficulty": "Hard",
     "icon": "Asgarnia Area Badge",
-    "task": "Kill the Giant Mole beneath Falador Park",
+    "name": "Kill the Giant Mole beneath Falador Park",
     "requirements": {
       "main": [
         {
@@ -2875,7 +2875,7 @@
     "diary": "Falador",
     "difficulty": "Hard",
     "icon": "Asgarnia Area Badge",
-    "task": "Recharge your Prayer in the Port Sarim church while wearing full Proselyte",
+    "name": "Recharge your Prayer in the Port Sarim church while wearing full Proselyte",
     "requirements": {
       "main": [
         {
@@ -2898,7 +2898,7 @@
     "diary": "Falador",
     "difficulty": "Elite",
     "icon": "Asgarnia Area Badge",
-    "task": "Craft 252 Air Runes simultaneously from Essence without the use of Extracts",
+    "name": "Craft 252 Air Runes simultaneously from Essence without the use of Extracts",
     "requirements": {
       "main": [
         {
@@ -2919,7 +2919,7 @@
     "diary": "Falador",
     "difficulty": "Elite",
     "icon": "Asgarnia Area Badge",
-    "task": "Find at least 3 magic roots at once when digging up your magic tree in Falador",
+    "name": "Find at least 3 magic roots at once when digging up your magic tree in Falador",
     "requirements": {
       "main": [
         {
@@ -2967,7 +2967,7 @@
     "diary": "Falador",
     "difficulty": "Elite",
     "icon": "Asgarnia Area Badge",
-    "task": "Jump over the strange floor in Taverley Dungeon",
+    "name": "Jump over the strange floor in Taverley Dungeon",
     "requirements": {
       "main": [
         {
@@ -2988,7 +2988,7 @@
     "diary": "Falador",
     "difficulty": "Elite",
     "icon": "Asgarnia Area Badge",
-    "task": "Mix a Saradomin brew in Falador east bank",
+    "name": "Mix a Saradomin brew in Falador east bank",
     "requirements": {
       "main": [
         {
@@ -3059,7 +3059,7 @@
     "diary": "Falador",
     "difficulty": "Elite",
     "icon": "Asgarnia Area Badge",
-    "task": "Perform a Skillcape or Quest cape emote at the top of Falador Castle",
+    "name": "Perform a Skillcape or Quest cape emote at the top of Falador Castle",
     "requirements": {
       "main": [
         {
@@ -3105,7 +3105,7 @@
     "diary": "Falador",
     "difficulty": "Elite",
     "icon": "Asgarnia Area Badge",
-    "task": "Purchase a white 2h sword from Sir Vyvin",
+    "name": "Purchase a white 2h sword from Sir Vyvin",
     "requirements": {
       "main": [
         {
@@ -3122,7 +3122,7 @@
     "diary": "Fremennik",
     "difficulty": "Easy",
     "icon": "Fremennik Area Badge",
-    "task": "Browse the Stonemason's shop",
+    "name": "Browse the Stonemason's shop",
     "requirements": {
       "main": [
         {
@@ -3147,7 +3147,7 @@
     "diary": "Fremennik",
     "difficulty": "Easy",
     "icon": "Fremennik Area Badge",
-    "task": "Catch a cerulean twitch",
+    "name": "Catch a cerulean twitch",
     "requirements": {
       "main": [
         {
@@ -3168,7 +3168,7 @@
     "diary": "Fremennik",
     "difficulty": "Easy",
     "icon": "Fremennik Area Badge",
-    "task": "Change your boots at Yrsa's Shoe Store",
+    "name": "Change your boots at Yrsa's Shoe Store",
     "requirements": {
       "main": [
         {
@@ -3185,7 +3185,7 @@
     "diary": "Fremennik",
     "difficulty": "Easy",
     "icon": "Fremennik Area Badge",
-    "task": "Chop and burn some oak logs in the Fremennik Province",
+    "name": "Chop and burn some oak logs in the Fremennik Province",
     "requirements": {
       "main": [
         {
@@ -3207,14 +3207,14 @@
     "diary": "Fremennik",
     "difficulty": "Easy",
     "icon": "Fremennik Area Badge",
-    "task": "Collect 5 snape grass on Waterbirth Island",
+    "name": "Collect 5 snape grass on Waterbirth Island",
     "requirements": {}
   },
   {
     "diary": "Fremennik",
     "difficulty": "Easy",
     "icon": "Fremennik Area Badge",
-    "task": "Craft a tiara from scratch in Rellekka",
+    "name": "Craft a tiara from scratch in Rellekka",
     "requirements": {
       "main": [
         {
@@ -3238,7 +3238,7 @@
     "diary": "Fremennik",
     "difficulty": "Easy",
     "icon": "Fremennik Area Badge",
-    "task": "Enter the Troll Stronghold",
+    "name": "Enter the Troll Stronghold",
     "requirements": {
       "main": [
         {
@@ -3255,14 +3255,14 @@
     "diary": "Fremennik",
     "difficulty": "Easy",
     "icon": "Fremennik Area Badge",
-    "task": "Fill a bucket with water at the Rellekka well",
+    "name": "Fill a bucket with water at the Rellekka well",
     "requirements": {}
   },
   {
     "diary": "Fremennik",
     "difficulty": "Easy",
     "icon": "Fremennik Area Badge",
-    "task": "Kill 5 Rock Crabs",
+    "name": "Kill 5 Rock Crabs",
     "requirements": {
       "main": [
         {
@@ -3279,7 +3279,7 @@
     "diary": "Fremennik",
     "difficulty": "Easy",
     "icon": "Fremennik Area Badge",
-    "task": "Steal from the Keldagrim crafting or baker's stall",
+    "name": "Steal from the Keldagrim crafting or baker's stall",
     "requirements": {
       "main": [
         {
@@ -3315,7 +3315,7 @@
     "diary": "Fremennik",
     "difficulty": "Medium",
     "icon": "Fremennik Area Badge",
-    "task": "Catch a Snowy knight",
+    "name": "Catch a Snowy knight",
     "requirements": {
       "main": [
         {
@@ -3336,7 +3336,7 @@
     "diary": "Fremennik",
     "difficulty": "Medium",
     "icon": "Fremennik Area Badge",
-    "task": "Mine some coal in Rellekka",
+    "name": "Mine some coal in Rellekka",
     "requirements": {
       "main": [
         {
@@ -3358,7 +3358,7 @@
     "diary": "Fremennik",
     "difficulty": "Medium",
     "icon": "Fremennik Area Badge",
-    "task": "Mine some gold at the Arzinian Mine",
+    "name": "Mine some gold at the Arzinian Mine",
     "requirements": {
       "main": [
         {
@@ -3394,7 +3394,7 @@
     "diary": "Fremennik",
     "difficulty": "Medium",
     "icon": "Fremennik Area Badge",
-    "task": "Pick up your pet rock from your POH menagerie",
+    "name": "Pick up your pet rock from your POH menagerie",
     "requirements": {
       "main": [
         {
@@ -3432,7 +3432,7 @@
     "diary": "Fremennik",
     "difficulty": "Medium",
     "icon": "Fremennik Area Badge",
-    "task": "Slay a brine rat",
+    "name": "Slay a brine rat",
     "requirements": {
       "main": [
         {
@@ -3484,7 +3484,7 @@
     "diary": "Fremennik",
     "difficulty": "Medium",
     "icon": "Fremennik Area Badge",
-    "task": "Steal from the Rellekka fish stalls",
+    "name": "Steal from the Rellekka fish stalls",
     "requirements": {
       "main": [
         {
@@ -3506,7 +3506,7 @@
     "diary": "Fremennik",
     "difficulty": "Medium",
     "icon": "Fremennik Area Badge",
-    "task": "Travel to Miscellania by fairy ring",
+    "name": "Travel to Miscellania by fairy ring",
     "requirements": {
       "main": [
         {
@@ -3538,7 +3538,7 @@
     "diary": "Fremennik",
     "difficulty": "Medium",
     "icon": "Fremennik Area Badge",
-    "task": "Travel to the Snowy Hunter Area via Eagle",
+    "name": "Travel to the Snowy Hunter Area via Eagle",
     "requirements": {
       "main": [
         {
@@ -3555,7 +3555,7 @@
     "diary": "Fremennik",
     "difficulty": "Medium",
     "icon": "Fremennik Area Badge",
-    "task": "Visit the Lighthouse from Waterbirth Island",
+    "name": "Visit the Lighthouse from Waterbirth Island",
     "requirements": {
       "main": [
         {
@@ -3572,7 +3572,7 @@
     "diary": "Fremennik",
     "difficulty": "Hard",
     "icon": "Fremennik Area Badge",
-    "task": "Catch a Sabre-toothed kyatt",
+    "name": "Catch a Sabre-toothed kyatt",
     "requirements": {
       "main": [
         {
@@ -3593,7 +3593,7 @@
     "diary": "Fremennik",
     "difficulty": "Hard",
     "icon": "Fremennik Area Badge",
-    "task": "Craft a Fremennik shield on Neitiznot",
+    "name": "Craft a Fremennik shield on Neitiznot",
     "requirements": {
       "main": [
         {
@@ -3627,7 +3627,7 @@
     "diary": "Fremennik",
     "difficulty": "Hard",
     "icon": "Fremennik Area Badge",
-    "task": "Mine 5 adamantite ores on Jatizso",
+    "name": "Mine 5 adamantite ores on Jatizso",
     "requirements": {
       "main": [
         {
@@ -3661,7 +3661,7 @@
     "diary": "Fremennik",
     "difficulty": "Hard",
     "icon": "Fremennik Area Badge",
-    "task": "Mix a Super defence potion in the Fremennik Province",
+    "name": "Mix a Super defence potion in the Fremennik Province",
     "requirements": {
       "main": [
         {
@@ -3708,7 +3708,7 @@
     "diary": "Fremennik",
     "difficulty": "Hard",
     "icon": "Fremennik Area Badge",
-    "task": "Obtain 100% support from your kingdom subjects",
+    "name": "Obtain 100% support from your kingdom subjects",
     "requirements": {
       "main": [
         {
@@ -3740,7 +3740,7 @@
     "diary": "Fremennik",
     "difficulty": "Hard",
     "icon": "Fremennik Area Badge",
-    "task": "Obtain the Blast Furnace Foreman's permission to use the Blast Furnace for free",
+    "name": "Obtain the Blast Furnace Foreman's permission to use the Blast Furnace for free",
     "requirements": {
       "main": [
         {
@@ -3776,7 +3776,7 @@
     "diary": "Fremennik",
     "difficulty": "Hard",
     "icon": "Fremennik Area Badge",
-    "task": "Steal from the Keldagrim Gem Stall",
+    "name": "Steal from the Keldagrim Gem Stall",
     "requirements": {
       "main": [
         {
@@ -3812,7 +3812,7 @@
     "diary": "Fremennik",
     "difficulty": "Hard",
     "icon": "Fremennik Area Badge",
-    "task": "Teleport to Trollheim",
+    "name": "Teleport to Trollheim",
     "requirements": {
       "main": [
         {
@@ -3834,7 +3834,7 @@
     "diary": "Fremennik",
     "difficulty": "Hard",
     "icon": "Fremennik Area Badge",
-    "task": "Teleport to Waterbirth Island",
+    "name": "Teleport to Waterbirth Island",
     "requirements": {
       "main": [
         {
@@ -3856,7 +3856,7 @@
     "diary": "Fremennik",
     "difficulty": "Elite",
     "icon": "Fremennik Area Badge",
-    "task": "Complete a lap of the Rellekka Rooftop Course",
+    "name": "Complete a lap of the Rellekka Rooftop Course",
     "requirements": {
       "main": [
         {
@@ -3877,7 +3877,7 @@
     "diary": "Fremennik",
     "difficulty": "Elite",
     "icon": "Fremennik Area Badge",
-    "task": "Craft 56 astral runes simultaneously from Essence without the use of Extracts",
+    "name": "Craft 56 astral runes simultaneously from Essence without the use of Extracts",
     "requirements": {
       "main": [
         {
@@ -3899,7 +3899,7 @@
     "diary": "Fremennik",
     "difficulty": "Elite",
     "icon": "Fremennik Area Badge",
-    "task": "Create a dragonstone amulet in the Neitiznot furnace",
+    "name": "Create a dragonstone amulet in the Neitiznot furnace",
     "requirements": {
       "main": [
         {
@@ -3952,7 +3952,7 @@
     "diary": "Fremennik",
     "difficulty": "Elite",
     "icon": "Fremennik Area Badge",
-    "task": "Kill each of the Dagannoth Kings",
+    "name": "Kill each of the Dagannoth Kings",
     "requirements": {
       "main": [
         {
@@ -4017,7 +4017,7 @@
     "diary": "Fremennik",
     "difficulty": "Elite",
     "icon": "Fremennik Area Badge",
-    "task": "Kill the generals of Armadyl, Bandos, Saradomin, and Zamorak in the God Wars Dungeon",
+    "name": "Kill the generals of Armadyl, Bandos, Saradomin, and Zamorak in the God Wars Dungeon",
     "requirements": {
       "main": [
         {
@@ -4106,7 +4106,7 @@
     "diary": "Fremennik",
     "difficulty": "Elite",
     "icon": "Fremennik Area Badge",
-    "task": "Slay a Spiritual mage within the God Wars Dungeon",
+    "name": "Slay a Spiritual mage within the God Wars Dungeon",
     "requirements": {
       "main": [
         {
@@ -4129,21 +4129,21 @@
     "diary": "Kandarin",
     "difficulty": "Easy",
     "icon": "Kandarin Area Badge",
-    "task": "Buy a candle from the candle maker in Catherby",
+    "name": "Buy a candle from the candle maker in Catherby",
     "requirements": {}
   },
   {
     "diary": "Kandarin",
     "difficulty": "Easy",
     "icon": "Kandarin Area Badge",
-    "task": "Buy a stew from the Seers' Village pub",
+    "name": "Buy a stew from the Seers' Village pub",
     "requirements": {}
   },
   {
     "diary": "Kandarin",
     "difficulty": "Easy",
     "icon": "Kandarin Area Badge",
-    "task": "Catch a mackerel at Catherby",
+    "name": "Catch a mackerel at Catherby",
     "requirements": {
       "main": [
         {
@@ -4164,14 +4164,14 @@
     "diary": "Kandarin",
     "difficulty": "Easy",
     "icon": "Kandarin Area Badge",
-    "task": "Collect 5 flax from the Seers' Village flax field",
+    "name": "Collect 5 flax from the Seers' Village flax field",
     "requirements": {}
   },
   {
     "diary": "Kandarin",
     "difficulty": "Easy",
     "icon": "Kandarin Area Badge",
-    "task": "Cross the Coal truck log shortcut",
+    "name": "Cross the Coal truck log shortcut",
     "requirements": {
       "main": [
         {
@@ -4192,7 +4192,7 @@
     "diary": "Kandarin",
     "difficulty": "Easy",
     "icon": "Kandarin Area Badge",
-    "task": "Defeat one of each elemental in the Elemental Workshop",
+    "name": "Defeat one of each elemental in the Elemental Workshop",
     "requirements": {
       "main": [
         {
@@ -4223,7 +4223,7 @@
     "diary": "Kandarin",
     "difficulty": "Easy",
     "icon": "Kandarin Area Badge",
-    "task": "Get a pet fish from Harry in Catherby",
+    "name": "Get a pet fish from Harry in Catherby",
     "requirements": {
       "ironman": [
         {
@@ -4248,14 +4248,14 @@
     "diary": "Kandarin",
     "difficulty": "Easy",
     "icon": "Kandarin Area Badge",
-    "task": "Have Galahad make you a cup of tea",
+    "name": "Have Galahad make you a cup of tea",
     "requirements": {}
   },
   {
     "diary": "Kandarin",
     "difficulty": "Easy",
     "icon": "Kandarin Area Badge",
-    "task": "Plant jute seeds in the farming patch north of McGrubor's Wood",
+    "name": "Plant jute seeds in the farming patch north of McGrubor's Wood",
     "requirements": {
       "main": [
         {
@@ -4276,21 +4276,21 @@
     "diary": "Kandarin",
     "difficulty": "Easy",
     "icon": "Kandarin Area Badge",
-    "task": "Play the Church organ in the Seers' Village church",
+    "name": "Play the Church organ in the Seers' Village church",
     "requirements": {}
   },
   {
     "diary": "Kandarin",
     "difficulty": "Easy",
     "icon": "Kandarin Area Badge",
-    "task": "Speak to Sherlock between the Sorcerer's Tower and Keep Le Faye",
+    "name": "Speak to Sherlock between the Sorcerer's Tower and Keep Le Faye",
     "requirements": {}
   },
   {
     "diary": "Kandarin",
     "difficulty": "Medium",
     "icon": "Kandarin Area Badge",
-    "task": "Catch and cook a bass in Catherby",
+    "name": "Catch and cook a bass in Catherby",
     "requirements": {
       "main": [
         {
@@ -4312,7 +4312,7 @@
     "diary": "Kandarin",
     "difficulty": "Medium",
     "icon": "Kandarin Area Badge",
-    "task": "Complete a lap of the Barbarian Agility course",
+    "name": "Complete a lap of the Barbarian Agility course",
     "requirements": {
       "main": [
         {
@@ -4334,7 +4334,7 @@
     "diary": "Kandarin",
     "difficulty": "Medium",
     "icon": "Kandarin Area Badge",
-    "task": "Complete a wave of Barbarian Assault",
+    "name": "Complete a wave of Barbarian Assault",
     "requirements": {
       "main": [
         {
@@ -4351,7 +4351,7 @@
     "diary": "Kandarin",
     "difficulty": "Medium",
     "icon": "Kandarin Area Badge",
-    "task": "Create a mind helmet",
+    "name": "Create a mind helmet",
     "requirements": {
       "main": [
         {
@@ -4368,7 +4368,7 @@
     "diary": "Kandarin",
     "difficulty": "Medium",
     "icon": "Kandarin Area Badge",
-    "task": "Create a Superantipoison potion from scratch in the Seers' Village/Catherby area",
+    "name": "Create a Superantipoison potion from scratch in the Seers' Village/Catherby area",
     "requirements": {
       "main": [
         {
@@ -4389,7 +4389,7 @@
     "diary": "Kandarin",
     "difficulty": "Medium",
     "icon": "Kandarin Area Badge",
-    "task": "Enter the Ranging Guild",
+    "name": "Enter the Ranging Guild",
     "requirements": {
       "main": [
         {
@@ -4410,7 +4410,7 @@
     "diary": "Kandarin",
     "difficulty": "Medium",
     "icon": "Kandarin Area Badge",
-    "task": "Kill a fire giant in the Waterfall Dungeon",
+    "name": "Kill a fire giant in the Waterfall Dungeon",
     "requirements": {
       "main": [
         {
@@ -4427,7 +4427,7 @@
     "diary": "Kandarin",
     "difficulty": "Medium",
     "icon": "Kandarin Area Badge",
-    "task": "Mine some coal near the coal trucks",
+    "name": "Mine some coal near the coal trucks",
     "requirements": {
       "main": [
         {
@@ -4448,7 +4448,7 @@
     "diary": "Kandarin",
     "difficulty": "Medium",
     "icon": "Kandarin Area Badge",
-    "task": "Pick some limpwurt root from the farming patch in Catherby",
+    "name": "Pick some limpwurt root from the farming patch in Catherby",
     "requirements": {
       "main": [
         {
@@ -4487,7 +4487,7 @@
     "diary": "Kandarin",
     "difficulty": "Medium",
     "icon": "Kandarin Area Badge",
-    "task": "Steal from the chest in Hemenster",
+    "name": "Steal from the chest in Hemenster",
     "requirements": {
       "main": [
         {
@@ -4508,7 +4508,7 @@
     "diary": "Kandarin",
     "difficulty": "Medium",
     "icon": "Kandarin Area Badge",
-    "task": "String a maple shortbow in Seers' Village bank",
+    "name": "String a maple shortbow in Seers' Village bank",
     "requirements": {
       "main": [
         {
@@ -4547,7 +4547,7 @@
     "diary": "Kandarin",
     "difficulty": "Medium",
     "icon": "Kandarin Area Badge",
-    "task": "Teleport to Camelot",
+    "name": "Teleport to Camelot",
     "requirements": {
       "main": [
         {
@@ -4568,7 +4568,7 @@
     "diary": "Kandarin",
     "difficulty": "Medium",
     "icon": "Kandarin Area Badge",
-    "task": "Travel to McGrubor's Wood by Fairy ring",
+    "name": "Travel to McGrubor's Wood by Fairy ring",
     "requirements": {
       "main": [
         {
@@ -4593,7 +4593,7 @@
     "diary": "Kandarin",
     "difficulty": "Medium",
     "icon": "Kandarin Area Badge",
-    "task": "Use the grapple shortcut to get from the water obelisk to Catherby shore",
+    "name": "Use the grapple shortcut to get from the water obelisk to Catherby shore",
     "requirements": {
       "main": [
         {
@@ -4641,7 +4641,7 @@
     "diary": "Kandarin",
     "difficulty": "Hard",
     "icon": "Kandarin Area Badge",
-    "task": "Burn some maple logs with a bow in Seers' Village",
+    "name": "Burn some maple logs with a bow in Seers' Village",
     "requirements": {
       "main": [
         {
@@ -4687,7 +4687,7 @@
     "diary": "Kandarin",
     "difficulty": "Hard",
     "icon": "Kandarin Area Badge",
-    "task": "Catch a leaping sturgeon",
+    "name": "Catch a leaping sturgeon",
     "requirements": {
       "main": [
         {
@@ -4710,7 +4710,7 @@
     "diary": "Kandarin",
     "difficulty": "Hard",
     "icon": "Kandarin Area Badge",
-    "task": "Charge a water orb",
+    "name": "Charge a water orb",
     "requirements": {
       "main": [
         {
@@ -4756,7 +4756,7 @@
     "diary": "Kandarin",
     "difficulty": "Hard",
     "icon": "Kandarin Area Badge",
-    "task": "Complete a lap of the Seers' Village Rooftop Course",
+    "name": "Complete a lap of the Seers' Village Rooftop Course",
     "requirements": {
       "main": [
         {
@@ -4777,7 +4777,7 @@
     "diary": "Kandarin",
     "difficulty": "Hard",
     "icon": "Kandarin Area Badge",
-    "task": "Create a yew longbow from scratch around Seers' Village",
+    "name": "Create a yew longbow from scratch around Seers' Village",
     "requirements": {
       "main": [
         {
@@ -4817,7 +4817,7 @@
     "diary": "Kandarin",
     "difficulty": "Hard",
     "icon": "Kandarin Area Badge",
-    "task": "Enter the Seers' Village courthouse with Piety turned on",
+    "name": "Enter the Seers' Village courthouse with Piety turned on",
     "requirements": {
       "main": [
         {
@@ -4840,7 +4840,7 @@
     "diary": "Kandarin",
     "difficulty": "Hard",
     "icon": "Kandarin Area Badge",
-    "task": "Have the Seers' Village estate agent decorate your house with Fancy Stone",
+    "name": "Have the Seers' Village estate agent decorate your house with Fancy Stone",
     "requirements": {
       "main": [
         {
@@ -4861,7 +4861,7 @@
     "diary": "Kandarin",
     "difficulty": "Hard",
     "icon": "Kandarin Area Badge",
-    "task": "Kill a Mithril dragon",
+    "name": "Kill a Mithril dragon",
     "requirements": {
       "main": [
         {
@@ -4921,7 +4921,7 @@
     "diary": "Kandarin",
     "difficulty": "Hard",
     "icon": "Kandarin Area Badge",
-    "task": "Kill a shadow hound in the Shadow Dungeon",
+    "name": "Kill a shadow hound in the Shadow Dungeon",
     "requirements": {
       "main": [
         {
@@ -4967,7 +4967,7 @@
     "diary": "Kandarin",
     "difficulty": "Hard",
     "icon": "Kandarin Area Badge",
-    "task": "Purchase and equip a granite body from Barbarian Assault",
+    "name": "Purchase and equip a granite body from Barbarian Assault",
     "requirements": {
       "main": [
         {
@@ -4989,7 +4989,7 @@
     "diary": "Kandarin",
     "difficulty": "Hard",
     "icon": "Kandarin Area Badge",
-    "task": "Smith an adamant spear at Otto's Grotto",
+    "name": "Smith an adamant spear at Otto's Grotto",
     "requirements": {
       "main": [
         {
@@ -5097,7 +5097,7 @@
     "diary": "Kandarin",
     "difficulty": "Elite",
     "icon": "Kandarin Area Badge",
-    "task": "Construct a pyre ship from magic logs",
+    "name": "Construct a pyre ship from magic logs",
     "requirements": {
       "main": [
         {
@@ -5166,7 +5166,7 @@
     "diary": "Kandarin",
     "difficulty": "Elite",
     "icon": "Kandarin Area Badge",
-    "task": "Fish and cook 5 sharks in Catherby using the Cooking gauntlets",
+    "name": "Fish and cook 5 sharks in Catherby using the Cooking gauntlets",
     "requirements": {
       "main": [
         {
@@ -5189,7 +5189,7 @@
     "diary": "Kandarin",
     "difficulty": "Elite",
     "icon": "Kandarin Area Badge",
-    "task": "Mix a Stamina mix on top of the Seers' Village bank",
+    "name": "Mix a Stamina mix on top of the Seers' Village bank",
     "requirements": {
       "main": [
         {
@@ -5231,7 +5231,7 @@
     "diary": "Kandarin",
     "difficulty": "Elite",
     "icon": "Kandarin Area Badge",
-    "task": "Pick some dwarf weed from the herb patch at Catherby",
+    "name": "Pick some dwarf weed from the herb patch at Catherby",
     "requirements": {
       "main": [
         {
@@ -5279,7 +5279,7 @@
     "diary": "Kandarin",
     "difficulty": "Elite",
     "icon": "Kandarin Area Badge",
-    "task": "Read the blackboard at Barbarian Assault after reaching level 5 in every role",
+    "name": "Read the blackboard at Barbarian Assault after reaching level 5 in every role",
     "requirements": {
       "main": [
         {
@@ -5296,7 +5296,7 @@
     "diary": "Kandarin",
     "difficulty": "Elite",
     "icon": "Kandarin Area Badge",
-    "task": "Smith a rune hasta at Otto's Grotto",
+    "name": "Smith a rune hasta at Otto's Grotto",
     "requirements": {
       "main": [
         {
@@ -5403,7 +5403,7 @@
     "diary": "Kandarin",
     "difficulty": "Elite",
     "icon": "Kandarin Area Badge",
-    "task": "Teleport to Catherby",
+    "name": "Teleport to Catherby",
     "requirements": {
       "main": [
         {
@@ -5425,21 +5425,21 @@
     "diary": "Karamja",
     "difficulty": "Easy",
     "icon": "Karamja Area Badge",
-    "task": "Attempt the TzHaar Fight Pits or Fight Cave",
+    "name": "Attempt the TzHaar Fight Pits or Fight Cave",
     "requirements": {}
   },
   {
     "diary": "Karamja",
     "difficulty": "Easy",
     "icon": "Karamja Area Badge",
-    "task": "Collect 5 seaweed from anywhere on Karamja",
+    "name": "Collect 5 seaweed from anywhere on Karamja",
     "requirements": {}
   },
   {
     "diary": "Karamja",
     "difficulty": "Easy",
     "icon": "Karamja Area Badge",
-    "task": "Discover hidden wall in the dungeon below the volcano",
+    "name": "Discover hidden wall in the dungeon below the volcano",
     "requirements": {
       "main": [
         {
@@ -5457,7 +5457,7 @@
     "diary": "Karamja",
     "difficulty": "Easy",
     "icon": "Karamja Area Badge",
-    "task": "Explore Cairn Isle to the west of Karamja",
+    "name": "Explore Cairn Isle to the west of Karamja",
     "requirements": {
       "main": [
         {
@@ -5478,7 +5478,7 @@
     "diary": "Karamja",
     "difficulty": "Easy",
     "icon": "Karamja Area Badge",
-    "task": "Kill a jogre in the Pothole Dungeon",
+    "name": "Kill a jogre in the Pothole Dungeon",
     "requirements": {
       "main": [
         {
@@ -5495,7 +5495,7 @@
     "diary": "Karamja",
     "difficulty": "Easy",
     "icon": "Karamja Area Badge",
-    "task": "Mine some gold from the rocks on the north-west peninsula of Karamja",
+    "name": "Mine some gold from the rocks on the north-west peninsula of Karamja",
     "requirements": {
       "main": [
         {
@@ -5516,28 +5516,28 @@
     "diary": "Karamja",
     "difficulty": "Easy",
     "icon": "Karamja Area Badge",
-    "task": "Pick 5 bananas from the plantation located east of the volcano",
+    "name": "Pick 5 bananas from the plantation located east of the volcano",
     "requirements": {}
   },
   {
     "diary": "Karamja",
     "difficulty": "Easy",
     "icon": "Karamja Area Badge",
-    "task": "Travel to Ardougne via the port near Brimhaven",
+    "name": "Travel to Ardougne via the port near Brimhaven",
     "requirements": {}
   },
   {
     "diary": "Karamja",
     "difficulty": "Easy",
     "icon": "Karamja Area Badge",
-    "task": "Travel to Port Sarim via the dock, east of Musa Point",
+    "name": "Travel to Port Sarim via the dock, east of Musa Point",
     "requirements": {}
   },
   {
     "diary": "Karamja",
     "difficulty": "Easy",
     "icon": "Karamja Area Badge",
-    "task": "Use the fishing spots north of the banana plantation",
+    "name": "Use the fishing spots north of the banana plantation",
     "requirements": {
       "main": [
         {
@@ -5558,7 +5558,7 @@
     "diary": "Karamja",
     "difficulty": "Easy",
     "icon": "Karamja Area Badge",
-    "task": "Use the rope swing to travel to the Moss Giant Island north-west of Karamja",
+    "name": "Use the rope swing to travel to the Moss Giant Island north-west of Karamja",
     "requirements": {
       "main": [
         {
@@ -5579,7 +5579,7 @@
     "diary": "Karamja",
     "difficulty": "Medium",
     "icon": "Karamja Area Badge",
-    "task": "Catch a karambwan",
+    "name": "Catch a karambwan",
     "requirements": {
       "main": [
         {
@@ -5615,7 +5615,7 @@
     "diary": "Karamja",
     "difficulty": "Medium",
     "icon": "Karamja Area Badge",
-    "task": "Charter a ship from the shipyard in the far east of Karamja",
+    "name": "Charter a ship from the shipyard in the far east of Karamja",
     "requirements": {
       "main": [
         {
@@ -5632,7 +5632,7 @@
     "diary": "Karamja",
     "difficulty": "Medium",
     "icon": "Karamja Area Badge",
-    "task": "Charter the Lady of the Waves from south of Cairn Isle to Port Khazard",
+    "name": "Charter the Lady of the Waves from south of Cairn Isle to Port Khazard",
     "requirements": {
       "main": [
         {
@@ -5649,7 +5649,7 @@
     "diary": "Karamja",
     "difficulty": "Medium",
     "icon": "Karamja Area Badge",
-    "task": "Chop the vines to gain deeper access to Brimhaven Dungeon",
+    "name": "Chop the vines to gain deeper access to Brimhaven Dungeon",
     "requirements": {
       "main": [
         {
@@ -5670,7 +5670,7 @@
     "diary": "Karamja",
     "difficulty": "Medium",
     "icon": "Karamja Area Badge",
-    "task": "Claim a ticket from the Agility arena in Brimhaven",
+    "name": "Claim a ticket from the Agility arena in Brimhaven",
     "requirements": {
       "main": [
         {
@@ -5691,7 +5691,7 @@
     "diary": "Karamja",
     "difficulty": "Medium",
     "icon": "Karamja Area Badge",
-    "task": "Climb the stairs within Brimhaven Dungeon",
+    "name": "Climb the stairs within Brimhaven Dungeon",
     "requirements": {
       "main": [
         {
@@ -5712,7 +5712,7 @@
     "diary": "Karamja",
     "difficulty": "Medium",
     "icon": "Karamja Area Badge",
-    "task": "Cook a Spider on stick",
+    "name": "Cook a Spider on stick",
     "requirements": {
       "main": [
         {
@@ -5743,7 +5743,7 @@
     "diary": "Karamja",
     "difficulty": "Medium",
     "icon": "Karamja Area Badge",
-    "task": "Cross the lava using the stepping stones within Brimhaven Dungeon",
+    "name": "Cross the lava using the stepping stones within Brimhaven Dungeon",
     "requirements": {
       "main": [
         {
@@ -5765,7 +5765,7 @@
     "diary": "Karamja",
     "difficulty": "Medium",
     "icon": "Karamja Area Badge",
-    "task": "Cut a log from a mahogany tree",
+    "name": "Cut a log from a mahogany tree",
     "requirements": {
       "main": [
         {
@@ -5787,7 +5787,7 @@
     "diary": "Karamja",
     "difficulty": "Medium",
     "icon": "Karamja Area Badge",
-    "task": "Cut a log from a teak tree",
+    "name": "Cut a log from a teak tree",
     "requirements": {
       "main": [
         {
@@ -5809,7 +5809,7 @@
     "diary": "Karamja",
     "difficulty": "Medium",
     "icon": "Karamja Area Badge",
-    "task": "Earn 100% favour in the Tai Bwo Wannai Cleanup minigame",
+    "name": "Earn 100% favour in the Tai Bwo Wannai Cleanup minigame",
     "requirements": {
       "main": [
         {
@@ -5831,7 +5831,7 @@
     "diary": "Karamja",
     "difficulty": "Medium",
     "icon": "Karamja Area Badge",
-    "task": "Exchange gems for a machete",
+    "name": "Exchange gems for a machete",
     "requirements": {
       "main": [
         {
@@ -5848,7 +5848,7 @@
     "diary": "Karamja",
     "difficulty": "Medium",
     "icon": "Karamja Area Badge",
-    "task": "Grow a healthy fruit tree in the patch near Brimhaven",
+    "name": "Grow a healthy fruit tree in the patch near Brimhaven",
     "requirements": {
       "main": [
         {
@@ -5869,7 +5869,7 @@
     "diary": "Karamja",
     "difficulty": "Medium",
     "icon": "Karamja Area Badge",
-    "task": "Mine a red topaz from a gem rock",
+    "name": "Mine a red topaz from a gem rock",
     "requirements": {
       "main": [
         {
@@ -5891,7 +5891,7 @@
     "diary": "Karamja",
     "difficulty": "Medium",
     "icon": "Karamja Area Badge",
-    "task": "Trap a Horned Graahk",
+    "name": "Trap a Horned Graahk",
     "requirements": {
       "main": [
         {
@@ -5912,7 +5912,7 @@
     "diary": "Karamja",
     "difficulty": "Medium",
     "icon": "Karamja Area Badge",
-    "task": "Use the gnome glider to travel to Karamja",
+    "name": "Use the gnome glider to travel to Karamja",
     "requirements": {
       "main": [
         {
@@ -5929,7 +5929,7 @@
     "diary": "Karamja",
     "difficulty": "Medium",
     "icon": "Karamja Area Badge",
-    "task": "Use Vigroy and Hajedy's cart service",
+    "name": "Use Vigroy and Hajedy's cart service",
     "requirements": {
       "main": [
         {
@@ -5946,7 +5946,7 @@
     "diary": "Karamja",
     "difficulty": "Medium",
     "icon": "Karamja Area Badge",
-    "task": "Visit the Isle of Crandor via the dungeon below the volcano",
+    "name": "Visit the Isle of Crandor via the dungeon below the volcano",
     "requirements": {
       "main": [
         {
@@ -5964,7 +5964,7 @@
     "diary": "Karamja",
     "difficulty": "Hard",
     "icon": "Karamja Area Badge",
-    "task": "Be assigned a Slayer task by Duradel in Shilo Village",
+    "name": "Be assigned a Slayer task by Duradel in Shilo Village",
     "requirements": {
       "main": [
         {
@@ -5987,7 +5987,7 @@
     "diary": "Karamja",
     "difficulty": "Hard",
     "icon": "Karamja Area Badge",
-    "task": "Become the champion of the Fight Pit",
+    "name": "Become the champion of the Fight Pit",
     "requirements": {
       "main": [
         {
@@ -6004,7 +6004,7 @@
     "diary": "Karamja",
     "difficulty": "Hard",
     "icon": "Karamja Area Badge",
-    "task": "Collect 5 palm leaves",
+    "name": "Collect 5 palm leaves",
     "requirements": {
       "main": [
         {
@@ -6037,7 +6037,7 @@
     "diary": "Karamja",
     "difficulty": "Hard",
     "icon": "Karamja Area Badge",
-    "task": "Cook a raw karambwan thoroughly",
+    "name": "Cook a raw karambwan thoroughly",
     "requirements": {
       "main": [
         {
@@ -6059,7 +6059,7 @@
     "diary": "Karamja",
     "difficulty": "Hard",
     "icon": "Karamja Area Badge",
-    "task": "Craft some nature runes from Essence",
+    "name": "Craft some nature runes from Essence",
     "requirements": {
       "main": [
         {
@@ -6080,7 +6080,7 @@
     "diary": "Karamja",
     "difficulty": "Hard",
     "icon": "Karamja Area Badge",
-    "task": "Eat an oomlie wrap",
+    "name": "Eat an oomlie wrap",
     "requirements": {
       "ironman": [
         {
@@ -6125,7 +6125,7 @@
     "diary": "Karamja",
     "difficulty": "Hard",
     "icon": "Karamja Area Badge",
-    "task": "Kill a deathwing in the dungeon under the Kharazi Jungle",
+    "name": "Kill a deathwing in the dungeon under the Kharazi Jungle",
     "requirements": {
       "main": [
         {
@@ -6165,7 +6165,7 @@
     "diary": "Karamja",
     "difficulty": "Hard",
     "icon": "Karamja Area Badge",
-    "task": "Kill a Ket-Zek in the Fight Caves",
+    "name": "Kill a Ket-Zek in the Fight Caves",
     "requirements": {
       "main": [
         {
@@ -6182,7 +6182,7 @@
     "diary": "Karamja",
     "difficulty": "Hard",
     "icon": "Karamja Area Badge",
-    "task": "Kill a metal dragon in Brimhaven Dungeon",
+    "name": "Kill a metal dragon in Brimhaven Dungeon",
     "requirements": {
       "main": [
         {
@@ -6199,7 +6199,7 @@
     "diary": "Karamja",
     "difficulty": "Hard",
     "icon": "Karamja Area Badge",
-    "task": "Use the crossbow shortcut south of the volcano",
+    "name": "Use the crossbow shortcut south of the volcano",
     "requirements": {
       "main": [
         {
@@ -6247,7 +6247,7 @@
     "diary": "Karamja",
     "difficulty": "Elite",
     "icon": "Karamja Area Badge",
-    "task": "Check the health of a palm tree in Brimhaven",
+    "name": "Check the health of a palm tree in Brimhaven",
     "requirements": {
       "main": [
         {
@@ -6286,7 +6286,7 @@
     "diary": "Karamja",
     "difficulty": "Elite",
     "icon": "Karamja Area Badge",
-    "task": "Check the health of your Calquat tree patch",
+    "name": "Check the health of your Calquat tree patch",
     "requirements": {
       "main": [
         {
@@ -6335,7 +6335,7 @@
     "diary": "Karamja",
     "difficulty": "Elite",
     "icon": "Karamja Area Badge",
-    "task": "Craft 56 nature runes simultaneously from Essence without the use of Extracts",
+    "name": "Craft 56 nature runes simultaneously from Essence without the use of Extracts",
     "requirements": {
       "main": [
         {
@@ -6356,7 +6356,7 @@
     "diary": "Karamja",
     "difficulty": "Elite",
     "icon": "Karamja Area Badge",
-    "task": "Create an antivenom potion whilst standing in the horse shoe mine",
+    "name": "Create an antivenom potion whilst standing in the horse shoe mine",
     "requirements": {
       "main": [
         {
@@ -6412,7 +6412,7 @@
     "diary": "Karamja",
     "difficulty": "Elite",
     "icon": "Karamja Area Badge",
-    "task": "Equip a fire cape or infernal cape in the TzHaar City",
+    "name": "Equip a fire cape or infernal cape in the TzHaar City",
     "requirements": {
       "main": [
         {
@@ -6429,14 +6429,14 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Easy",
     "icon": "Kourend Area Badge",
-    "task": "Browse the Warrens General Store",
+    "name": "Browse the Warrens General Store",
     "requirements": {}
   },
   {
     "diary": "Kourend & Kebos",
     "difficulty": "Easy",
     "icon": "Kourend Area Badge",
-    "task": "Create a strength potion in the Lovakengj pub",
+    "name": "Create a strength potion in the Lovakengj pub",
     "requirements": {
       "main": [
         {
@@ -6503,14 +6503,14 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Easy",
     "icon": "Kourend Area Badge",
-    "task": "Dig up some saltpetre",
+    "name": "Dig up some saltpetre",
     "requirements": {}
   },
   {
     "diary": "Kourend & Kebos",
     "difficulty": "Easy",
     "icon": "Kourend Area Badge",
-    "task": "Do a lap of either tier of the Shayzien Agility Course",
+    "name": "Do a lap of either tier of the Shayzien Agility Course",
     "requirements": {
       "main": [
         {
@@ -6531,7 +6531,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Easy",
     "icon": "Kourend Area Badge",
-    "task": "Enter your player-owned house from Hosidius",
+    "name": "Enter your player-owned house from Hosidius",
     "requirements": {
       "main": [
         {
@@ -6552,7 +6552,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Easy",
     "icon": "Kourend Area Badge",
-    "task": "Fish a Trout from the River Molch",
+    "name": "Fish a Trout from the River Molch",
     "requirements": {
       "main": [
         {
@@ -6573,7 +6573,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Easy",
     "icon": "Kourend Area Badge",
-    "task": "Hand in a book at the Arceuus Library",
+    "name": "Hand in a book at the Arceuus Library",
     "requirements": {
       "main": [
         {
@@ -6595,7 +6595,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Easy",
     "icon": "Kourend Area Badge",
-    "task": "Kill a Sand Crab",
+    "name": "Kill a Sand Crab",
     "requirements": {
       "main": [
         {
@@ -6612,7 +6612,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Easy",
     "icon": "Kourend Area Badge",
-    "task": "Mine some iron ore at the Mount Karuulm mine",
+    "name": "Mine some iron ore at the Mount Karuulm mine",
     "requirements": {
       "main": [
         {
@@ -6633,14 +6633,14 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Easy",
     "icon": "Kourend Area Badge",
-    "task": "Pray at the altar on the top floor of the Kourend Castle",
+    "name": "Pray at the altar on the top floor of the Kourend Castle",
     "requirements": {}
   },
   {
     "diary": "Kourend & Kebos",
     "difficulty": "Easy",
     "icon": "Kourend Area Badge",
-    "task": "Steal from a Hosidius Fruit Stall",
+    "name": "Steal from a Hosidius Fruit Stall",
     "requirements": {
       "main": [
         {
@@ -6661,14 +6661,14 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Easy",
     "icon": "Kourend Area Badge",
-    "task": "Take a boat to Land's End",
+    "name": "Take a boat to Land's End",
     "requirements": {}
   },
   {
     "diary": "Kourend & Kebos",
     "difficulty": "Medium",
     "icon": "Kourend Area Badge",
-    "task": "Catch a Bluegill on Lake Molch",
+    "name": "Catch a Bluegill on Lake Molch",
     "requirements": {
       "main": [
         {
@@ -6690,7 +6690,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Medium",
     "icon": "Kourend Area Badge",
-    "task": "Catch a chinchompa in the Kourend Woodland",
+    "name": "Catch a chinchompa in the Kourend Woodland",
     "requirements": {
       "main": [
         {
@@ -6712,7 +6712,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Medium",
     "icon": "Kourend Area Badge",
-    "task": "Chop some mahogany logs north of the Farming Guild",
+    "name": "Chop some mahogany logs north of the Farming Guild",
     "requirements": {
       "main": [
         {
@@ -6733,7 +6733,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Medium",
     "icon": "Kourend Area Badge",
-    "task": "Deliver some intelligence to Captain Ginea",
+    "name": "Deliver some intelligence to Captain Ginea",
     "requirements": {
       "main": [
         {
@@ -6750,7 +6750,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Medium",
     "icon": "Kourend Area Badge",
-    "task": "Enter the Farming Guild",
+    "name": "Enter the Farming Guild",
     "requirements": {
       "main": [
         {
@@ -6771,7 +6771,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Medium",
     "icon": "Kourend Area Badge",
-    "task": "Kill a lizardman",
+    "name": "Kill a lizardman",
     "requirements": {
       "main": [
         {
@@ -6788,7 +6788,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Medium",
     "icon": "Kourend Area Badge",
-    "task": "Mine some volcanic sulphur",
+    "name": "Mine some volcanic sulphur",
     "requirements": {
       "main": [
         {
@@ -6809,7 +6809,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Medium",
     "icon": "Kourend Area Badge",
-    "task": "Repair a crane within Port Piscarilius",
+    "name": "Repair a crane within Port Piscarilius",
     "requirements": {
       "main": [
         {
@@ -6831,7 +6831,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Medium",
     "icon": "Kourend Area Badge",
-    "task": "Subdue the Wintertodt",
+    "name": "Subdue the Wintertodt",
     "requirements": {
       "main": [
         {
@@ -6853,14 +6853,14 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Medium",
     "icon": "Kourend Area Badge",
-    "task": "Switch to the Necromancy Spellbook at Tyss",
+    "name": "Switch to the Necromancy Spellbook at Tyss",
     "requirements": {}
   },
   {
     "diary": "Kourend & Kebos",
     "difficulty": "Medium",
     "icon": "Kourend Area Badge",
-    "task": "Travel to the fairy ring south of Mount Karuulm",
+    "name": "Travel to the fairy ring south of Mount Karuulm",
     "requirements": {
       "main": [
         {
@@ -6885,7 +6885,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Medium",
     "icon": "Kourend Area Badge",
-    "task": "Use Kharedst's memoirs to teleport to all five cities in Great Kourend",
+    "name": "Use Kharedst's memoirs to teleport to all five cities in Great Kourend",
     "requirements": {
       "main": [
         {
@@ -6908,7 +6908,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Medium",
     "icon": "Kourend Area Badge",
-    "task": "Use the boulder leap shortcut in the dense essence mine",
+    "name": "Use the boulder leap shortcut in the dense essence mine",
     "requirements": {
       "main": [
         {
@@ -6929,7 +6929,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Hard",
     "icon": "Kourend Area Badge",
-    "task": "Cast Monster Examine on a mountain troll south of Mount Quidamortem",
+    "name": "Cast Monster Examine on a mountain troll south of Mount Quidamortem",
     "requirements": {
       "main": [
         {
@@ -6951,7 +6951,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Hard",
     "icon": "Kourend Area Badge",
-    "task": "Deliver an artefact to Captain Khaled",
+    "name": "Deliver an artefact to Captain Khaled",
     "requirements": {
       "main": [
         {
@@ -6972,7 +6972,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Hard",
     "icon": "Kourend Area Badge",
-    "task": "Enter the Woodcutting Guild",
+    "name": "Enter the Woodcutting Guild",
     "requirements": {
       "main": [
         {
@@ -6993,7 +6993,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Hard",
     "icon": "Kourend Area Badge",
-    "task": "Kill a lizardman shaman in the Lizardman Temple",
+    "name": "Kill a lizardman shaman in the Lizardman Temple",
     "requirements": {
       "main": [
         {
@@ -7025,7 +7025,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Hard",
     "icon": "Kourend Area Badge",
-    "task": "Kill a wyrm in the Karuulm Slayer Dungeon",
+    "name": "Kill a wyrm in the Karuulm Slayer Dungeon",
     "requirements": {
       "main": [
         {
@@ -7047,7 +7047,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Hard",
     "icon": "Kourend Area Badge",
-    "task": "Kill a zombie in the Shayzien Crypts",
+    "name": "Kill a zombie in the Shayzien Crypts",
     "requirements": {
       "main": [
         {
@@ -7064,7 +7064,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Hard",
     "icon": "Kourend Area Badge",
-    "task": "Mine some Lovakite ore",
+    "name": "Mine some Lovakite ore",
     "requirements": {
       "main": [
         {
@@ -7085,7 +7085,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Hard",
     "icon": "Kourend Area Badge",
-    "task": "Plant some Logavano seeds at the Tithe Farm",
+    "name": "Plant some Logavano seeds at the Tithe Farm",
     "requirements": {
       "main": [
         {
@@ -7106,7 +7106,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Hard",
     "icon": "Kourend Area Badge",
-    "task": "Smelt an adamantite bar in The Forsaken Tower",
+    "name": "Smelt an adamantite bar in The Forsaken Tower",
     "requirements": {
       "main": [
         {
@@ -7159,7 +7159,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Hard",
     "icon": "Kourend Area Badge",
-    "task": "Teleport to Xeric's Heart using Xeric's talisman",
+    "name": "Teleport to Xeric's Heart using Xeric's talisman",
     "requirements": {
       "ironman": [
         {
@@ -7184,7 +7184,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Elite",
     "icon": "Kourend Area Badge",
-    "task": "Catch an anglerfish and cook it whilst in Great Kourend",
+    "name": "Catch an anglerfish and cook it whilst in Great Kourend",
     "requirements": {
       "main": [
         {
@@ -7206,7 +7206,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Elite",
     "icon": "Kourend Area Badge",
-    "task": "Chop some redwood logs",
+    "name": "Chop some redwood logs",
     "requirements": {
       "main": [
         {
@@ -7227,7 +7227,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Elite",
     "icon": "Kourend Area Badge",
-    "task": "Complete a raid in the Chambers of Xeric",
+    "name": "Complete a raid in the Chambers of Xeric",
     "requirements": {
       "main": [
         {
@@ -7263,7 +7263,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Elite",
     "icon": "Kourend Area Badge",
-    "task": "Craft one or more Blood runes from Dark essence fragments",
+    "name": "Craft one or more Blood runes from Dark essence fragments",
     "requirements": {
       "main": [
         {
@@ -7286,7 +7286,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Elite",
     "icon": "Kourend Area Badge",
-    "task": "Create an Ape Atoll teleport tablet",
+    "name": "Create an Ape Atoll teleport tablet",
     "requirements": {
       "main": [
         {
@@ -7307,7 +7307,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Elite",
     "icon": "Kourend Area Badge",
-    "task": "Create your own battlestaff from scratch within the Farming Guild",
+    "name": "Create your own battlestaff from scratch within the Farming Guild",
     "requirements": {
       "main": [
         {
@@ -7347,7 +7347,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Elite",
     "icon": "Kourend Area Badge",
-    "task": "Defeat Skotizo in the Catacombs of Kourend",
+    "name": "Defeat Skotizo in the Catacombs of Kourend",
     "requirements": {
       "main": [
         {
@@ -7381,7 +7381,7 @@
     "diary": "Kourend & Kebos",
     "difficulty": "Elite",
     "icon": "Kourend Area Badge",
-    "task": "Kill a hydra in the Karuulm Slayer Dungeon",
+    "name": "Kill a hydra in the Karuulm Slayer Dungeon",
     "requirements": {
       "main": [
         {
@@ -7420,7 +7420,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Easy",
     "icon": "Misthalin Area Badge",
-    "task": "Bake some bread on the Lumbridge castle kitchen range",
+    "name": "Bake some bread on the Lumbridge castle kitchen range",
     "requirements": {
       "main": [
         {
@@ -7442,7 +7442,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Easy",
     "icon": "Misthalin Area Badge",
-    "task": "Catch some anchovies in Al-Kharid",
+    "name": "Catch some anchovies in Al-Kharid",
     "requirements": {
       "main": [
         {
@@ -7463,7 +7463,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Easy",
     "icon": "Misthalin Area Badge",
-    "task": "Chop and burn some oak logs in Lumbridge",
+    "name": "Chop and burn some oak logs in Lumbridge",
     "requirements": {
       "main": [
         {
@@ -7485,7 +7485,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Easy",
     "icon": "Misthalin Area Badge",
-    "task": "Complete a lap of the Draynor Village Rooftop Course",
+    "name": "Complete a lap of the Draynor Village Rooftop Course",
     "requirements": {
       "main": [
         {
@@ -7506,7 +7506,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Easy",
     "icon": "Misthalin Area Badge",
-    "task": "Craft some water runes from Essence",
+    "name": "Craft some water runes from Essence",
     "requirements": {
       "main": [
         {
@@ -7527,7 +7527,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Easy",
     "icon": "Misthalin Area Badge",
-    "task": "Enter the H.A.M. Hideout",
+    "name": "Enter the H.A.M. Hideout",
     "requirements": {
       "main": [
         {
@@ -7548,7 +7548,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Easy",
     "icon": "Misthalin Area Badge",
-    "task": "Have Archmage Sedridor teleport you to the Rune essence mine",
+    "name": "Have Archmage Sedridor teleport you to the Rune essence mine",
     "requirements": {
       "main": [
         {
@@ -7565,7 +7565,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Easy",
     "icon": "Misthalin Area Badge",
-    "task": "Kill a zombie in the Draynor Sewers",
+    "name": "Kill a zombie in the Draynor Sewers",
     "requirements": {
       "main": [
         {
@@ -7582,14 +7582,14 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Easy",
     "icon": "Misthalin Area Badge",
-    "task": "Learn your age from Hans in Lumbridge",
+    "name": "Learn your age from Hans in Lumbridge",
     "requirements": {}
   },
   {
     "diary": "Lumbridge & Draynor",
     "difficulty": "Easy",
     "icon": "Misthalin Area Badge",
-    "task": "Mine some iron ore at the Al-Kharid mine",
+    "name": "Mine some iron ore at the Al-Kharid mine",
     "requirements": {
       "main": [
         {
@@ -7610,7 +7610,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Easy",
     "icon": "Misthalin Area Badge",
-    "task": "Pickpocket a man or woman in Lumbridge",
+    "name": "Pickpocket a man or woman in Lumbridge",
     "requirements": {
       "main": [
         {
@@ -7631,7 +7631,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Easy",
     "icon": "Misthalin Area Badge",
-    "task": "Slay a cave bug in the Lumbridge Swamp Caves",
+    "name": "Slay a cave bug in the Lumbridge Swamp Caves",
     "requirements": {
       "main": [
         {
@@ -7653,7 +7653,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Medium",
     "icon": "Misthalin Area Badge",
-    "task": "Cast the Lumbridge Teleport spell",
+    "name": "Cast the Lumbridge Teleport spell",
     "requirements": {
       "main": [
         {
@@ -7674,7 +7674,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Medium",
     "icon": "Misthalin Area Badge",
-    "task": "Catch an essence or eclectic impling in Puro-Puro",
+    "name": "Catch an essence or eclectic impling in Puro-Puro",
     "requirements": {
       "main": [
         {
@@ -7696,7 +7696,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Medium",
     "icon": "Misthalin Area Badge",
-    "task": "Catch some salmon in Lumbridge",
+    "name": "Catch some salmon in Lumbridge",
     "requirements": {
       "main": [
         {
@@ -7717,7 +7717,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Medium",
     "icon": "Misthalin Area Badge",
-    "task": "Chop some willow logs in Draynor Village",
+    "name": "Chop some willow logs in Draynor Village",
     "requirements": {
       "main": [
         {
@@ -7738,7 +7738,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Medium",
     "icon": "Misthalin Area Badge",
-    "task": "Complete a lap of the Al Kharid Rooftop Course",
+    "name": "Complete a lap of the Al Kharid Rooftop Course",
     "requirements": {
       "main": [
         {
@@ -7759,7 +7759,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Medium",
     "icon": "Misthalin Area Badge",
-    "task": "Craft a coif in the Lumbridge cow pen",
+    "name": "Craft a coif in the Lumbridge cow pen",
     "requirements": {
       "main": [
         {
@@ -7780,7 +7780,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Medium",
     "icon": "Misthalin Area Badge",
-    "task": "Craft some Lava runes at the fire altar in Al Kharid",
+    "name": "Craft some Lava runes at the fire altar in Al Kharid",
     "requirements": {
       "main": [
         {
@@ -7836,7 +7836,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Medium",
     "icon": "Misthalin Area Badge",
-    "task": "Get a Slayer task from Chaeldar",
+    "name": "Get a Slayer task from Chaeldar",
     "requirements": {
       "main": [
         {
@@ -7854,7 +7854,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Medium",
     "icon": "Misthalin Area Badge",
-    "task": "Grapple across the River Lum",
+    "name": "Grapple across the River Lum",
     "requirements": {
       "main": [
         {
@@ -7903,7 +7903,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Medium",
     "icon": "Misthalin Area Badge",
-    "task": "Pickpocket Martin the Master Gardener",
+    "name": "Pickpocket Martin the Master Gardener",
     "requirements": {
       "main": [
         {
@@ -7924,7 +7924,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Medium",
     "icon": "Misthalin Area Badge",
-    "task": "Purchase an upgraded device from Ava",
+    "name": "Purchase an upgraded device from Ava",
     "requirements": {
       "main": [
         {
@@ -7946,7 +7946,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Medium",
     "icon": "Misthalin Area Badge",
-    "task": "Travel to the Wizards' Tower by Fairy ring",
+    "name": "Travel to the Wizards' Tower by Fairy ring",
     "requirements": {
       "main": [
         {
@@ -7971,7 +7971,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Hard",
     "icon": "Misthalin Area Badge",
-    "task": "Cast Bones to Peaches in Al Kharid Palace",
+    "name": "Cast Bones to Peaches in Al Kharid Palace",
     "requirements": {
       "main": [
         {
@@ -7992,7 +7992,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Hard",
     "icon": "Misthalin Area Badge",
-    "task": "Collect at least 100 Tears of Guthix in one visit",
+    "name": "Collect at least 100 Tears of Guthix in one visit",
     "requirements": {
       "main": [
         {
@@ -8009,7 +8009,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Hard",
     "icon": "Misthalin Area Badge",
-    "task": "Craft 56 Cosmic runes simultaneously from Essence without the use of Extracts",
+    "name": "Craft 56 Cosmic runes simultaneously from Essence without the use of Extracts",
     "requirements": {
       "main": [
         {
@@ -8031,7 +8031,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Hard",
     "icon": "Misthalin Area Badge",
-    "task": "Craft, string and enchant an amulet of power in Lumbridge",
+    "name": "Craft, string and enchant an amulet of power in Lumbridge",
     "requirements": {
       "main": [
         {
@@ -8128,7 +8128,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Hard",
     "icon": "Misthalin Area Badge",
-    "task": "Light your mining helmet in the Lumbridge Castle basement",
+    "name": "Light your mining helmet in the Lumbridge Castle basement",
     "requirements": {
       "main": [
         {
@@ -8159,7 +8159,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Hard",
     "icon": "Misthalin Area Badge",
-    "task": "Pick some belladonna from the farming patch at Draynor Manor",
+    "name": "Pick some belladonna from the farming patch at Draynor Manor",
     "requirements": {
       "main": [
         {
@@ -8199,7 +8199,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Hard",
     "icon": "Misthalin Area Badge",
-    "task": "Purchase some Barrows gloves from the Culinaromancer's Chest",
+    "name": "Purchase some Barrows gloves from the Culinaromancer's Chest",
     "requirements": {
       "main": [
         {
@@ -8216,7 +8216,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Hard",
     "icon": "Misthalin Area Badge",
-    "task": "Recharge your prayer at Emir's Arena with Smite activated",
+    "name": "Recharge your prayer at Emir's Arena with Smite activated",
     "requirements": {
       "main": [
         {
@@ -8237,7 +8237,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Hard",
     "icon": "Misthalin Area Badge",
-    "task": "Squeeze past the jutting wall on your way to the Cosmic Altar",
+    "name": "Squeeze past the jutting wall on your way to the Cosmic Altar",
     "requirements": {
       "main": [
         {
@@ -8259,7 +8259,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Hard",
     "icon": "Misthalin Area Badge",
-    "task": "Take the train from Dorgesh-Kaan to Keldagrim",
+    "name": "Take the train from Dorgesh-Kaan to Keldagrim",
     "requirements": {
       "main": [
         {
@@ -8276,7 +8276,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Hard",
     "icon": "Misthalin Area Badge",
-    "task": "Travel from Lumbridge to Edgeville on a waka canoe",
+    "name": "Travel from Lumbridge to Edgeville on a waka canoe",
     "requirements": {
       "main": [
         {
@@ -8297,7 +8297,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Elite",
     "icon": "Misthalin Area Badge",
-    "task": "Chop some magic logs at the Mage Training Arena",
+    "name": "Chop some magic logs at the Mage Training Arena",
     "requirements": {
       "main": [
         {
@@ -8318,7 +8318,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Elite",
     "icon": "Misthalin Area Badge",
-    "task": "Craft 140 or more Water runes simultaneously from Essence without the use of Extracts",
+    "name": "Craft 140 or more Water runes simultaneously from Essence without the use of Extracts",
     "requirements": {
       "main": [
         {
@@ -8339,7 +8339,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Elite",
     "icon": "Misthalin Area Badge",
-    "task": "Perform the Quest point cape emote in the Wise Old Man's house",
+    "name": "Perform the Quest point cape emote in the Wise Old Man's house",
     "requirements": {
       "main": [
         {
@@ -8356,7 +8356,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Elite",
     "icon": "Misthalin Area Badge",
-    "task": "Pickpocket Movario on the Dorgesh-Kaan Agility Course",
+    "name": "Pickpocket Movario on the Dorgesh-Kaan Agility Course",
     "requirements": {
       "main": [
         {
@@ -8406,7 +8406,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Elite",
     "icon": "Misthalin Area Badge",
-    "task": "Smith an adamant platebody down in Draynor Sewer",
+    "name": "Smith an adamant platebody down in Draynor Sewer",
     "requirements": {
       "main": [
         {
@@ -8467,7 +8467,7 @@
     "diary": "Lumbridge & Draynor",
     "difficulty": "Elite",
     "icon": "Misthalin Area Badge",
-    "task": "Steal from a Dorgesh-Kaan rich chest",
+    "name": "Steal from a Dorgesh-Kaan rich chest",
     "requirements": {
       "main": [
         {
@@ -8489,7 +8489,7 @@
     "diary": "Morytania",
     "difficulty": "Easy",
     "icon": "Morytania Area Badge",
-    "task": "Cook a thin snail on the Port Phasmatys range",
+    "name": "Cook a thin snail on the Port Phasmatys range",
     "requirements": {
       "main": [
         {
@@ -8521,7 +8521,7 @@
     "diary": "Morytania",
     "difficulty": "Easy",
     "icon": "Morytania Area Badge",
-    "task": "Craft any snelm from scratch in Morytania",
+    "name": "Craft any snelm from scratch in Morytania",
     "requirements": {
       "main": [
         {
@@ -8553,7 +8553,7 @@
     "diary": "Morytania",
     "difficulty": "Easy",
     "icon": "Morytania Area Badge",
-    "task": "Enter Mort Myre Swamp",
+    "name": "Enter Mort Myre Swamp",
     "requirements": {
       "main": [
         {
@@ -8578,7 +8578,7 @@
     "diary": "Morytania",
     "difficulty": "Easy",
     "icon": "Morytania Area Badge",
-    "task": "Get a Slayer task from Mazchna",
+    "name": "Get a Slayer task from Mazchna",
     "requirements": {
       "main": [
         {
@@ -8596,7 +8596,7 @@
     "diary": "Morytania",
     "difficulty": "Easy",
     "icon": "Morytania Area Badge",
-    "task": "Have Sbott tan something for you",
+    "name": "Have Sbott tan something for you",
     "requirements": {
       "main": [
         {
@@ -8623,7 +8623,7 @@
     "diary": "Morytania",
     "difficulty": "Easy",
     "icon": "Morytania Area Badge",
-    "task": "Kill a banshee in the Slayer Tower",
+    "name": "Kill a banshee in the Slayer Tower",
     "requirements": {
       "main": [
         {
@@ -8646,7 +8646,7 @@
     "diary": "Morytania",
     "difficulty": "Easy",
     "icon": "Morytania Area Badge",
-    "task": "Kill a ghoul",
+    "name": "Kill a ghoul",
     "requirements": {
       "main": [
         {
@@ -8664,7 +8664,7 @@
     "diary": "Morytania",
     "difficulty": "Easy",
     "icon": "Morytania Area Badge",
-    "task": "Kill a Werewolf in its human form using the Wolfbane dagger",
+    "name": "Kill a Werewolf in its human form using the Wolfbane dagger",
     "requirements": {
       "main": [
         {
@@ -8682,7 +8682,7 @@
     "diary": "Morytania",
     "difficulty": "Easy",
     "icon": "Morytania Area Badge",
-    "task": "Offer some Bonemeal at the Ectofuntus",
+    "name": "Offer some Bonemeal at the Ectofuntus",
     "requirements": {
       "main": [
         {
@@ -8699,7 +8699,7 @@
     "diary": "Morytania",
     "difficulty": "Easy",
     "icon": "Morytania Area Badge",
-    "task": "Place a Scarecrow in the Morytania flower patch",
+    "name": "Place a Scarecrow in the Morytania flower patch",
     "requirements": {
       "main": [
         {
@@ -8735,7 +8735,7 @@
     "diary": "Morytania",
     "difficulty": "Easy",
     "icon": "Morytania Area Badge",
-    "task": "Restore your prayer points at the altar of nature",
+    "name": "Restore your prayer points at the altar of nature",
     "requirements": {
       "main": [
         {
@@ -8752,7 +8752,7 @@
     "diary": "Morytania",
     "difficulty": "Medium",
     "icon": "Morytania Area Badge",
-    "task": "Board the Swampy boat at the Hollows",
+    "name": "Board the Swampy boat at the Hollows",
     "requirements": {
       "main": [
         {
@@ -8769,7 +8769,7 @@
     "diary": "Morytania",
     "difficulty": "Medium",
     "icon": "Morytania Area Badge",
-    "task": "Catch a swamp lizard",
+    "name": "Catch a swamp lizard",
     "requirements": {
       "main": [
         {
@@ -8791,7 +8791,7 @@
     "diary": "Morytania",
     "difficulty": "Medium",
     "icon": "Morytania Area Badge",
-    "task": "Complete a game of trouble brewing",
+    "name": "Complete a game of trouble brewing",
     "requirements": {
       "main": [
         {
@@ -8813,7 +8813,7 @@
     "diary": "Morytania",
     "difficulty": "Medium",
     "icon": "Morytania Area Badge",
-    "task": "Complete a lap of the Canifis agility course",
+    "name": "Complete a lap of the Canifis agility course",
     "requirements": {
       "main": [
         {
@@ -8835,7 +8835,7 @@
     "diary": "Morytania",
     "difficulty": "Medium",
     "icon": "Morytania Area Badge",
-    "task": "Kill a Fever Spider on Braindeath Island",
+    "name": "Kill a Fever Spider on Braindeath Island",
     "requirements": {
       "main": [
         {
@@ -8874,7 +8874,7 @@
     "diary": "Morytania",
     "difficulty": "Medium",
     "icon": "Morytania Area Badge",
-    "task": "Kill a Terror Dog",
+    "name": "Kill a Terror Dog",
     "requirements": {
       "main": [
         {
@@ -8896,7 +8896,7 @@
     "diary": "Morytania",
     "difficulty": "Medium",
     "icon": "Morytania Area Badge",
-    "task": "Make a batch of cannonballs at the Port Phasmatys furnace",
+    "name": "Make a batch of cannonballs at the Port Phasmatys furnace",
     "requirements": {
       "main": [
         {
@@ -8918,7 +8918,7 @@
     "diary": "Morytania",
     "difficulty": "Medium",
     "icon": "Morytania Area Badge",
-    "task": "Mix a Guthix Balance potion while in Morytania",
+    "name": "Mix a Guthix Balance potion while in Morytania",
     "requirements": {
       "main": [
         {
@@ -8956,7 +8956,7 @@
     "diary": "Morytania",
     "difficulty": "Medium",
     "icon": "Morytania Area Badge",
-    "task": "Obtain some Bark from a Hollow tree",
+    "name": "Obtain some Bark from a Hollow tree",
     "requirements": {
       "main": [
         {
@@ -8978,7 +8978,7 @@
     "diary": "Morytania",
     "difficulty": "Medium",
     "icon": "Morytania Area Badge",
-    "task": "Travel to Dragontooth Isle",
+    "name": "Travel to Dragontooth Isle",
     "requirements": {
       "main": [
         {
@@ -8995,7 +8995,7 @@
     "diary": "Morytania",
     "difficulty": "Medium",
     "icon": "Morytania Area Badge",
-    "task": "Use an ectophial to return to Port Phasmatys",
+    "name": "Use an ectophial to return to Port Phasmatys",
     "requirements": {
       "main": [
         {
@@ -9012,7 +9012,7 @@
     "diary": "Morytania",
     "difficulty": "Hard",
     "icon": "Morytania Area Badge",
-    "task": "Chop and burn some mahogany logs on Mos Le'Harmless",
+    "name": "Chop and burn some mahogany logs on Mos Le'Harmless",
     "requirements": {
       "main": [
         {
@@ -9035,7 +9035,7 @@
     "diary": "Morytania",
     "difficulty": "Hard",
     "icon": "Morytania Area Badge",
-    "task": "Climb the advanced spike chain within Slayer Tower",
+    "name": "Climb the advanced spike chain within Slayer Tower",
     "requirements": {
       "main": [
         {
@@ -9057,7 +9057,7 @@
     "diary": "Morytania",
     "difficulty": "Hard",
     "icon": "Morytania Area Badge",
-    "task": "Complete a temple trek with a hard companion",
+    "name": "Complete a temple trek with a hard companion",
     "requirements": {
       "main": [
         {
@@ -9074,7 +9074,7 @@
     "diary": "Morytania",
     "difficulty": "Hard",
     "icon": "Morytania Area Badge",
-    "task": "Enter the Kharyrll portal in your POH",
+    "name": "Enter the Kharyrll portal in your POH",
     "requirements": {
       "main": [
         {
@@ -9123,7 +9123,7 @@
     "diary": "Morytania",
     "difficulty": "Hard",
     "icon": "Morytania Area Badge",
-    "task": "Harvest some Bittercap Mushrooms from the patch in Canifis",
+    "name": "Harvest some Bittercap Mushrooms from the patch in Canifis",
     "requirements": {
       "main": [
         {
@@ -9164,7 +9164,7 @@
     "diary": "Morytania",
     "difficulty": "Hard",
     "icon": "Morytania Area Badge",
-    "task": "Harvest some Watermelon from the allotment patch on Harmony Island",
+    "name": "Harvest some Watermelon from the allotment patch on Harmony Island",
     "requirements": {
       "main": [
         {
@@ -9227,7 +9227,7 @@
     "diary": "Morytania",
     "difficulty": "Hard",
     "icon": "Morytania Area Badge",
-    "task": "Kill a Cave Horror",
+    "name": "Kill a Cave Horror",
     "requirements": {
       "main": [
         {
@@ -9274,7 +9274,7 @@
     "diary": "Morytania",
     "difficulty": "Hard",
     "icon": "Morytania Area Badge",
-    "task": "Mine some mithril ore in the Abandoned Mine",
+    "name": "Mine some mithril ore in the Abandoned Mine",
     "requirements": {
       "main": [
         {
@@ -9296,7 +9296,7 @@
     "diary": "Morytania",
     "difficulty": "Hard",
     "icon": "Morytania Area Badge",
-    "task": "Pray at the Altar of Nature with Piety activated",
+    "name": "Pray at the Altar of Nature with Piety activated",
     "requirements": {
       "main": [
         {
@@ -9319,7 +9319,7 @@
     "diary": "Morytania",
     "difficulty": "Hard",
     "icon": "Morytania Area Badge",
-    "task": "Use the shortcut to get to the bridge over the Salve",
+    "name": "Use the shortcut to get to the bridge over the Salve",
     "requirements": {
       "main": [
         {
@@ -9341,7 +9341,7 @@
     "diary": "Morytania",
     "difficulty": "Elite",
     "icon": "Morytania Area Badge",
-    "task": "Catch a shark in Burgh de Rott with your bare hands",
+    "name": "Catch a shark in Burgh de Rott with your bare hands",
     "requirements": {
       "main": [
         {
@@ -9378,7 +9378,7 @@
     "diary": "Morytania",
     "difficulty": "Elite",
     "icon": "Morytania Area Badge",
-    "task": "Craft a Black dragonhide body in the Canifis bank",
+    "name": "Craft a Black dragonhide body in the Canifis bank",
     "requirements": {
       "main": [
         {
@@ -9417,7 +9417,7 @@
     "diary": "Morytania",
     "difficulty": "Elite",
     "icon": "Morytania Area Badge",
-    "task": "Cremate any Shade remains on a Magic or Redwood pyre",
+    "name": "Cremate any Shade remains on a Magic or Redwood pyre",
     "requirements": {
       "main": [
         {
@@ -9465,7 +9465,7 @@
     "diary": "Morytania",
     "difficulty": "Elite",
     "icon": "Morytania Area Badge",
-    "task": "Fertilize the Morytania herb patch using Lunar Magic",
+    "name": "Fertilize the Morytania herb patch using Lunar Magic",
     "requirements": {
       "main": [
         {
@@ -9487,7 +9487,7 @@
     "diary": "Morytania",
     "difficulty": "Elite",
     "icon": "Morytania Area Badge",
-    "task": "Kill an Abyssal demon in the Slayer Tower",
+    "name": "Kill an Abyssal demon in the Slayer Tower",
     "requirements": {
       "main": [
         {
@@ -9510,7 +9510,7 @@
     "diary": "Morytania",
     "difficulty": "Elite",
     "icon": "Morytania Area Badge",
-    "task": "Loot the Barrows chest while wearing any complete barrows set",
+    "name": "Loot the Barrows chest while wearing any complete barrows set",
     "requirements": {
       "main": [
         {
@@ -9561,21 +9561,21 @@
     "diary": "Varrock",
     "difficulty": "Easy",
     "icon": "Banner (Varrock)",
-    "task": "Browse Thessalia's store",
+    "name": "Browse Thessalia's store",
     "requirements": {}
   },
   {
     "diary": "Varrock",
     "difficulty": "Easy",
     "icon": "Banner (Varrock)",
-    "task": "Buy a newspaper",
+    "name": "Buy a newspaper",
     "requirements": {}
   },
   {
     "diary": "Varrock",
     "difficulty": "Easy",
     "icon": "Banner (Varrock)",
-    "task": "Catch some trout in the River Lum at Barbarian Village",
+    "name": "Catch some trout in the River Lum at Barbarian Village",
     "requirements": {
       "main": [
         {
@@ -9596,7 +9596,7 @@
     "diary": "Varrock",
     "difficulty": "Easy",
     "icon": "Banner (Varrock)",
-    "task": "Chop down a dying tree in the Lumber Yard",
+    "name": "Chop down a dying tree in the Lumber Yard",
     "requirements": {
       "main": [
         {
@@ -9617,7 +9617,7 @@
     "diary": "Varrock",
     "difficulty": "Easy",
     "icon": "Banner (Varrock)",
-    "task": "Craft some Earth runes from Essence",
+    "name": "Craft some Earth runes from Essence",
     "requirements": {
       "main": [
         {
@@ -9638,21 +9638,21 @@
     "diary": "Varrock",
     "difficulty": "Easy",
     "icon": "Banner (Varrock)",
-    "task": "Enter the second level of the Stronghold of Security",
+    "name": "Enter the second level of the Stronghold of Security",
     "requirements": {}
   },
   {
     "diary": "Varrock",
     "difficulty": "Easy",
     "icon": "Banner (Varrock)",
-    "task": "Give a dog a bone!",
+    "name": "Give a dog a bone!",
     "requirements": {}
   },
   {
     "diary": "Varrock",
     "difficulty": "Easy",
     "icon": "Banner (Varrock)",
-    "task": "Have Aubury teleport you to the Essence mine",
+    "name": "Have Aubury teleport you to the Essence mine",
     "requirements": {
       "main": [
         {
@@ -9669,7 +9669,7 @@
     "diary": "Varrock",
     "difficulty": "Easy",
     "icon": "Banner (Varrock)",
-    "task": "Jump over the fence south of Varrock",
+    "name": "Jump over the fence south of Varrock",
     "requirements": {
       "main": [
         {
@@ -9690,14 +9690,14 @@
     "diary": "Varrock",
     "difficulty": "Easy",
     "icon": "Banner (Varrock)",
-    "task": "Make a normal plank at the Sawmill",
+    "name": "Make a normal plank at the Sawmill",
     "requirements": {}
   },
   {
     "diary": "Varrock",
     "difficulty": "Easy",
     "icon": "Banner (Varrock)",
-    "task": "Mine some iron in the south-east Varrock mine",
+    "name": "Mine some iron in the south-east Varrock mine",
     "requirements": {
       "main": [
         {
@@ -9718,7 +9718,7 @@
     "diary": "Varrock",
     "difficulty": "Easy",
     "icon": "Banner (Varrock)",
-    "task": "Speak to Haig Halen after obtaining at least 50 Kudos",
+    "name": "Speak to Haig Halen after obtaining at least 50 Kudos",
     "requirements": {
       "main": [
         {
@@ -9745,7 +9745,7 @@
     "diary": "Varrock",
     "difficulty": "Easy",
     "icon": "Banner (Varrock)",
-    "task": "Spin a bowl on the pottery wheel and fire it in the oven in Barbarian Village",
+    "name": "Spin a bowl on the pottery wheel and fire it in the oven in Barbarian Village",
     "requirements": {
       "main": [
         {
@@ -9784,7 +9784,7 @@
     "diary": "Varrock",
     "difficulty": "Easy",
     "icon": "Banner (Varrock)",
-    "task": "Steal from the tea stall in Varrock",
+    "name": "Steal from the tea stall in Varrock",
     "requirements": {
       "main": [
         {
@@ -9805,7 +9805,7 @@
     "diary": "Varrock",
     "difficulty": "Medium",
     "icon": "Banner (Varrock)",
-    "task": "Cast the teleport to Varrock spell",
+    "name": "Cast the teleport to Varrock spell",
     "requirements": {
       "main": [
         {
@@ -9826,7 +9826,7 @@
     "diary": "Varrock",
     "difficulty": "Medium",
     "icon": "Banner (Varrock)",
-    "task": "Complete a lap of the Varrock Rooftop Course",
+    "name": "Complete a lap of the Varrock Rooftop Course",
     "requirements": {
       "main": [
         {
@@ -9847,7 +9847,7 @@
     "diary": "Varrock",
     "difficulty": "Medium",
     "icon": "Banner (Varrock)",
-    "task": "Enter the Champions' Guild",
+    "name": "Enter the Champions' Guild",
     "requirements": {
       "main": [
         {
@@ -9864,7 +9864,7 @@
     "diary": "Varrock",
     "difficulty": "Medium",
     "icon": "Banner (Varrock)",
-    "task": "Enter the Tolna dungeon",
+    "name": "Enter the Tolna dungeon",
     "requirements": {
       "main": [
         {
@@ -9881,7 +9881,7 @@
     "diary": "Varrock",
     "difficulty": "Medium",
     "icon": "Banner (Varrock)",
-    "task": "Get a Slayer task from Vannaka",
+    "name": "Get a Slayer task from Vannaka",
     "requirements": {
       "main": [
         {
@@ -9898,7 +9898,7 @@
     "diary": "Varrock",
     "difficulty": "Medium",
     "icon": "Banner (Varrock)",
-    "task": "Have the Apothecary in Varrock make you a Strength potion",
+    "name": "Have the Apothecary in Varrock make you a Strength potion",
     "requirements": {
       "ironman": [
         {
@@ -9927,7 +9927,7 @@
     "diary": "Varrock",
     "difficulty": "Medium",
     "icon": "Banner (Varrock)",
-    "task": "Make 20 mahogany planks in one go",
+    "name": "Make 20 mahogany planks in one go",
     "requirements": {
       "ironman": [
         {
@@ -9960,14 +9960,14 @@
     "diary": "Varrock",
     "difficulty": "Medium",
     "icon": "Banner (Varrock)",
-    "task": "Perform the 4 emotes from the Stronghold of Security",
+    "name": "Perform the 4 emotes from the Stronghold of Security",
     "requirements": {}
   },
   {
     "diary": "Varrock",
     "difficulty": "Medium",
     "icon": "Banner (Varrock)",
-    "task": "Pick a white tree fruit",
+    "name": "Pick a white tree fruit",
     "requirements": {
       "main": [
         {
@@ -9989,7 +9989,7 @@
     "diary": "Varrock",
     "difficulty": "Medium",
     "icon": "Banner (Varrock)",
-    "task": "Select a colour for your kitten",
+    "name": "Select a colour for your kitten",
     "requirements": {
       "main": [
         {
@@ -10019,7 +10019,7 @@
     "diary": "Varrock",
     "difficulty": "Medium",
     "icon": "Banner (Varrock)",
-    "task": "Teleport to the digsite using a Digsite pendant",
+    "name": "Teleport to the digsite using a Digsite pendant",
     "requirements": {
       "main": [
         {
@@ -10110,7 +10110,7 @@
     "diary": "Varrock",
     "difficulty": "Medium",
     "icon": "Banner (Varrock)",
-    "task": "Use the balloon to travel from Varrock",
+    "name": "Use the balloon to travel from Varrock",
     "requirements": {
       "main": [
         {
@@ -10133,7 +10133,7 @@
     "diary": "Varrock",
     "difficulty": "Medium",
     "icon": "Banner (Varrock)",
-    "task": "Use the Spirit tree in the north-eastern corner of Grand Exchange",
+    "name": "Use the Spirit tree in the north-eastern corner of Grand Exchange",
     "requirements": {
       "main": [
         {
@@ -10150,7 +10150,7 @@
     "diary": "Varrock",
     "difficulty": "Hard",
     "icon": "Banner (Varrock)",
-    "task": "Chop some yew logs in Varrock and burn them at the top of the Varrock church",
+    "name": "Chop some yew logs in Varrock and burn them at the top of the Varrock church",
     "requirements": {
       "main": [
         {
@@ -10172,7 +10172,7 @@
     "diary": "Varrock",
     "difficulty": "Hard",
     "icon": "Banner (Varrock)",
-    "task": "Collect at least 2 yew roots from the tree patch in Varrock Palace",
+    "name": "Collect at least 2 yew roots from the tree patch in Varrock Palace",
     "requirements": {
       "main": [
         {
@@ -10221,7 +10221,7 @@
     "diary": "Varrock",
     "difficulty": "Hard",
     "icon": "Banner (Varrock)",
-    "task": "Create a Super combat potion in Varrock West Bank",
+    "name": "Create a Super combat potion in Varrock West Bank",
     "requirements": {
       "main": [
         {
@@ -10280,7 +10280,7 @@
     "diary": "Varrock",
     "difficulty": "Hard",
     "icon": "Banner (Varrock)",
-    "task": "Have the Varrock estate agent decorate your house with Fancy Stone",
+    "name": "Have the Varrock estate agent decorate your house with Fancy Stone",
     "requirements": {
       "main": [
         {
@@ -10301,7 +10301,7 @@
     "diary": "Varrock",
     "difficulty": "Hard",
     "icon": "Banner (Varrock)",
-    "task": "Make a Waka canoe near Edgeville",
+    "name": "Make a Waka canoe near Edgeville",
     "requirements": {
       "main": [
         {
@@ -10322,7 +10322,7 @@
     "diary": "Varrock",
     "difficulty": "Hard",
     "icon": "Banner (Varrock)",
-    "task": "Pray at the altar in Varrock Palace with Smite active",
+    "name": "Pray at the altar in Varrock Palace with Smite active",
     "requirements": {
       "main": [
         {
@@ -10343,7 +10343,7 @@
     "diary": "Varrock",
     "difficulty": "Hard",
     "icon": "Banner (Varrock)",
-    "task": "Speak to Orlando Smith when you have achieved 153 Kudos",
+    "name": "Speak to Orlando Smith when you have achieved 153 Kudos",
     "requirements": {
       "main": [
         {
@@ -10361,7 +10361,7 @@
     "diary": "Varrock",
     "difficulty": "Hard",
     "icon": "Banner (Varrock)",
-    "task": "Squeeze through the obstacle pipe in Edgeville Dungeon",
+    "name": "Squeeze through the obstacle pipe in Edgeville Dungeon",
     "requirements": {
       "main": [
         {
@@ -10382,7 +10382,7 @@
     "diary": "Varrock",
     "difficulty": "Hard",
     "icon": "Banner (Varrock)",
-    "task": "Teleport to Barbarian Village with a Skull sceptre",
+    "name": "Teleport to Barbarian Village with a Skull sceptre",
     "requirements": {
       "main": [
         {
@@ -10400,7 +10400,7 @@
     "diary": "Varrock",
     "difficulty": "Hard",
     "icon": "Banner (Varrock)",
-    "task": "Teleport to Paddewwa",
+    "name": "Teleport to Paddewwa",
     "requirements": {
       "main": [
         {
@@ -10422,7 +10422,7 @@
     "diary": "Varrock",
     "difficulty": "Hard",
     "icon": "Banner (Varrock)",
-    "task": "Trade furs with the Fancy Dress Seller for a Spottier cape and equip it",
+    "name": "Trade furs with the Fancy Dress Seller for a Spottier cape and equip it",
     "requirements": {
       "main": [
         {
@@ -10457,7 +10457,7 @@
     "diary": "Varrock",
     "difficulty": "Elite",
     "icon": "Banner (Varrock)",
-    "task": "Bake a summer pie in the Cooking Guild",
+    "name": "Bake a summer pie in the Cooking Guild",
     "requirements": {
       "main": [
         {
@@ -10513,7 +10513,7 @@
     "diary": "Varrock",
     "difficulty": "Elite",
     "icon": "Banner (Varrock)",
-    "task": "Craft 100 or more earth runes simultaneously from Essence without the use of Extracts",
+    "name": "Craft 100 or more earth runes simultaneously from Essence without the use of Extracts",
     "requirements": {
       "main": [
         {
@@ -10534,7 +10534,7 @@
     "diary": "Varrock",
     "difficulty": "Elite",
     "icon": "Banner (Varrock)",
-    "task": "Smith and fletch ten rune darts within Varrock",
+    "name": "Smith and fletch ten rune darts within Varrock",
     "requirements": {
       "main": [
         {
@@ -10595,7 +10595,7 @@
     "diary": "Varrock",
     "difficulty": "Elite",
     "icon": "Banner (Varrock)",
-    "task": "Use Lunar magic to make 20 mahogany planks in the Varrock Lumber Yard",
+    "name": "Use Lunar magic to make 20 mahogany planks in the Varrock Lumber Yard",
     "requirements": {
       "main": [
         {
@@ -10642,7 +10642,7 @@
     "diary": "Western Provinces",
     "difficulty": "Easy",
     "icon": "Gnome child icon",
-    "task": "Catch a copper longtail",
+    "name": "Catch a copper longtail",
     "requirements": {
       "main": [
         {
@@ -10663,7 +10663,7 @@
     "diary": "Western Provinces",
     "difficulty": "Easy",
     "icon": "Gnome child icon",
-    "task": "Claim any Chompy bird hat from Rantz",
+    "name": "Claim any Chompy bird hat from Rantz",
     "requirements": {
       "main": [
         {
@@ -10681,14 +10681,14 @@
     "diary": "Western Provinces",
     "difficulty": "Easy",
     "icon": "Gnome child icon",
-    "task": "Collect a swamp toad at the Gnome Stronghold",
+    "name": "Collect a swamp toad at the Gnome Stronghold",
     "requirements": {}
   },
   {
     "diary": "Western Provinces",
     "difficulty": "Easy",
     "icon": "Gnome child icon",
-    "task": "Complete a lap of the Gnome Agility Course",
+    "name": "Complete a lap of the Gnome Agility Course",
     "requirements": {
       "main": [
         {
@@ -10709,7 +10709,7 @@
     "diary": "Western Provinces",
     "difficulty": "Easy",
     "icon": "Gnome child icon",
-    "task": "Complete a novice game of Pest Control",
+    "name": "Complete a novice game of Pest Control",
     "requirements": {
       "main": [
         {
@@ -10726,7 +10726,7 @@
     "diary": "Western Provinces",
     "difficulty": "Easy",
     "icon": "Gnome child icon",
-    "task": "Fletch an oak shortbow in the Gnome Stronghold",
+    "name": "Fletch an oak shortbow in the Gnome Stronghold",
     "requirements": {
       "main": [
         {
@@ -10772,7 +10772,7 @@
     "diary": "Western Provinces",
     "difficulty": "Easy",
     "icon": "Gnome child icon",
-    "task": "Have Brimstail teleport you to the Essence mine",
+    "name": "Have Brimstail teleport you to the Essence mine",
     "requirements": {
       "main": [
         {
@@ -10789,7 +10789,7 @@
     "diary": "Western Provinces",
     "difficulty": "Easy",
     "icon": "Gnome child icon",
-    "task": "Kill a terrorbird in the terrorbird enclosure",
+    "name": "Kill a terrorbird in the terrorbird enclosure",
     "requirements": {
       "main": [
         {
@@ -10806,7 +10806,7 @@
     "diary": "Western Provinces",
     "difficulty": "Easy",
     "icon": "Gnome child icon",
-    "task": "Mine some iron ore near Piscatoris",
+    "name": "Mine some iron ore near Piscatoris",
     "requirements": {
       "main": [
         {
@@ -10827,7 +10827,7 @@
     "diary": "Western Provinces",
     "difficulty": "Easy",
     "icon": "Gnome child icon",
-    "task": "Score a goal in a Gnome Ball match",
+    "name": "Score a goal in a Gnome Ball match",
     "requirements": {
       "main": [
         {
@@ -10849,7 +10849,7 @@
     "diary": "Western Provinces",
     "difficulty": "Easy",
     "icon": "Gnome child icon",
-    "task": "Teleport to Pest Control using the Minigame teleports",
+    "name": "Teleport to Pest Control using the Minigame teleports",
     "requirements": {
       "main": [
         {
@@ -10866,7 +10866,7 @@
     "diary": "Western Provinces",
     "difficulty": "Medium",
     "icon": "Gnome child icon",
-    "task": "Chop and burn some teak logs on Ape Atoll",
+    "name": "Chop and burn some teak logs on Ape Atoll",
     "requirements": {
       "main": [
         {
@@ -10896,7 +10896,7 @@
     "diary": "Western Provinces",
     "difficulty": "Medium",
     "icon": "Gnome child icon",
-    "task": "Claim a Chompy bird hat from Rantz after registering at least 125 kills",
+    "name": "Claim a Chompy bird hat from Rantz after registering at least 125 kills",
     "requirements": {
       "main": [
         {
@@ -10914,7 +10914,7 @@
     "diary": "Western Provinces",
     "difficulty": "Medium",
     "icon": "Gnome child icon",
-    "task": "Complete a delivery for the Gnome Restaurant",
+    "name": "Complete a delivery for the Gnome Restaurant",
     "requirements": {
       "main": [
         {
@@ -10935,7 +10935,7 @@
     "diary": "Western Provinces",
     "difficulty": "Medium",
     "icon": "Gnome child icon",
-    "task": "Complete an intermediate game of Pest Control",
+    "name": "Complete an intermediate game of Pest Control",
     "requirements": {
       "main": [
         {
@@ -10952,7 +10952,7 @@
     "diary": "Western Provinces",
     "difficulty": "Medium",
     "icon": "Gnome child icon",
-    "task": "Fish some Raw bass on Ape Atoll",
+    "name": "Fish some Raw bass on Ape Atoll",
     "requirements": {
       "main": [
         {
@@ -10981,7 +10981,7 @@
     "diary": "Western Provinces",
     "difficulty": "Medium",
     "icon": "Gnome child icon",
-    "task": "Make a Chocolate bomb at the Grand Tree",
+    "name": "Make a Chocolate bomb at the Grand Tree",
     "requirements": {
       "main": [
         {
@@ -11002,7 +11002,7 @@
     "diary": "Western Provinces",
     "difficulty": "Medium",
     "icon": "Gnome child icon",
-    "task": "Mine some gold ore underneath the Grand Tree",
+    "name": "Mine some gold ore underneath the Grand Tree",
     "requirements": {
       "main": [
         {
@@ -11024,7 +11024,7 @@
     "diary": "Western Provinces",
     "difficulty": "Medium",
     "icon": "Gnome child icon",
-    "task": "Take the agility shortcut from the Grand Tree to Otto's Grotto",
+    "name": "Take the agility shortcut from the Grand Tree to Otto's Grotto",
     "requirements": {
       "main": [
         {
@@ -11046,7 +11046,7 @@
     "diary": "Western Provinces",
     "difficulty": "Medium",
     "icon": "Gnome child icon",
-    "task": "Trap a Spined larupia",
+    "name": "Trap a Spined larupia",
     "requirements": {
       "main": [
         {
@@ -11067,7 +11067,7 @@
     "diary": "Western Provinces",
     "difficulty": "Medium",
     "icon": "Gnome child icon",
-    "task": "Travel from Eagles' Peak to the Feldip Hills by Eagle",
+    "name": "Travel from Eagles' Peak to the Feldip Hills by Eagle",
     "requirements": {
       "main": [
         {
@@ -11084,7 +11084,7 @@
     "diary": "Western Provinces",
     "difficulty": "Medium",
     "icon": "Gnome child icon",
-    "task": "Travel to the Feldip Hills by Gnome glider",
+    "name": "Travel to the Feldip Hills by Gnome glider",
     "requirements": {
       "main": [
         {
@@ -11117,7 +11117,7 @@
     "diary": "Western Provinces",
     "difficulty": "Medium",
     "icon": "Gnome child icon",
-    "task": "Travel to the Gnome Stronghold by Spirit tree",
+    "name": "Travel to the Gnome Stronghold by Spirit tree",
     "requirements": {
       "main": [
         {
@@ -11134,7 +11134,7 @@
     "diary": "Western Provinces",
     "difficulty": "Medium",
     "icon": "Gnome child icon",
-    "task": "Turn your crystal saw seed into a crystal saw",
+    "name": "Turn your crystal saw seed into a crystal saw",
     "requirements": {
       "main": [
         {
@@ -11151,7 +11151,7 @@
     "diary": "Western Provinces",
     "difficulty": "Hard",
     "icon": "Gnome child icon",
-    "task": "Build an Isafdar painting in your POH Quest Hall",
+    "name": "Build an Isafdar painting in your POH Quest Hall",
     "requirements": {
       "main": [
         {
@@ -11199,7 +11199,7 @@
     "diary": "Western Provinces",
     "difficulty": "Hard",
     "icon": "Gnome child icon",
-    "task": "Catch a dashing kebbit",
+    "name": "Catch a dashing kebbit",
     "requirements": {
       "main": [
         {
@@ -11220,7 +11220,7 @@
     "diary": "Western Provinces",
     "difficulty": "Hard",
     "icon": "Gnome child icon",
-    "task": "Catch and cook a monkfish in the Piscatoris Fishing Colony",
+    "name": "Catch and cook a monkfish in the Piscatoris Fishing Colony",
     "requirements": {
       "main": [
         {
@@ -11243,7 +11243,7 @@
     "diary": "Western Provinces",
     "difficulty": "Hard",
     "icon": "Gnome child icon",
-    "task": "Check the health of your palm tree in Lletya",
+    "name": "Check the health of your palm tree in Lletya",
     "requirements": {
       "main": [
         {
@@ -11296,7 +11296,7 @@
     "diary": "Western Provinces",
     "difficulty": "Hard",
     "icon": "Gnome child icon",
-    "task": "Chop and burn some mahogany logs on Ape Atoll",
+    "name": "Chop and burn some mahogany logs on Ape Atoll",
     "requirements": {
       "main": [
         {
@@ -11326,7 +11326,7 @@
     "diary": "Western Provinces",
     "difficulty": "Hard",
     "icon": "Gnome child icon",
-    "task": "Claim a Chompy bird hat from Rantz after registering at least 300 kills",
+    "name": "Claim a Chompy bird hat from Rantz after registering at least 300 kills",
     "requirements": {
       "main": [
         {
@@ -11344,7 +11344,7 @@
     "diary": "Western Provinces",
     "difficulty": "Hard",
     "icon": "Gnome child icon",
-    "task": "Complete a lap of the Ape Atoll Agility Course",
+    "name": "Complete a lap of the Ape Atoll Agility Course",
     "requirements": {
       "main": [
         {
@@ -11373,7 +11373,7 @@
     "diary": "Western Provinces",
     "difficulty": "Hard",
     "icon": "Gnome child icon",
-    "task": "Complete a veteran game of Pest Control",
+    "name": "Complete a veteran game of Pest Control",
     "requirements": {
       "main": [
         {
@@ -11390,7 +11390,7 @@
     "diary": "Western Provinces",
     "difficulty": "Hard",
     "icon": "Gnome child icon",
-    "task": "Kill an elf with a crystal bow",
+    "name": "Kill an elf with a crystal bow",
     "requirements": {
       "main": [
         {
@@ -11413,7 +11413,7 @@
     "diary": "Western Provinces",
     "difficulty": "Hard",
     "icon": "Gnome child icon",
-    "task": "Kill Zulrah",
+    "name": "Kill Zulrah",
     "requirements": {
       "main": [
         {
@@ -11470,7 +11470,7 @@
     "diary": "Western Provinces",
     "difficulty": "Hard",
     "icon": "Gnome child icon",
-    "task": "Mine some adamantite ore in Tirannwn",
+    "name": "Mine some adamantite ore in Tirannwn",
     "requirements": {
       "main": [
         {
@@ -11505,7 +11505,7 @@
     "diary": "Western Provinces",
     "difficulty": "Hard",
     "icon": "Gnome child icon",
-    "task": "Pickpocket a gnome",
+    "name": "Pickpocket a gnome",
     "requirements": {
       "main": [
         {
@@ -11526,7 +11526,7 @@
     "diary": "Western Provinces",
     "difficulty": "Hard",
     "icon": "Gnome child icon",
-    "task": "Teleport to Ape Atoll",
+    "name": "Teleport to Ape Atoll",
     "requirements": {
       "main": [
         {
@@ -11548,7 +11548,7 @@
     "diary": "Western Provinces",
     "difficulty": "Elite",
     "icon": "Gnome child icon",
-    "task": "Claim a Chompy bird hat from Rantz after registering at least 1,000 kills",
+    "name": "Claim a Chompy bird hat from Rantz after registering at least 1,000 kills",
     "requirements": {
       "main": [
         {
@@ -11566,7 +11566,7 @@
     "diary": "Western Provinces",
     "difficulty": "Elite",
     "icon": "Gnome child icon",
-    "task": "Equip any complete void set",
+    "name": "Equip any complete void set",
     "requirements": {
       "main": [
         {
@@ -11594,7 +11594,7 @@
     "diary": "Western Provinces",
     "difficulty": "Elite",
     "icon": "Gnome child icon",
-    "task": "Fletch a magic longbow in Tirannwn",
+    "name": "Fletch a magic longbow in Tirannwn",
     "requirements": {
       "main": [
         {
@@ -11664,7 +11664,7 @@
     "diary": "Western Provinces",
     "difficulty": "Elite",
     "icon": "Gnome child icon",
-    "task": "Have Prissy Scilla protect your magic tree",
+    "name": "Have Prissy Scilla protect your magic tree",
     "requirements": {
       "main": [
         {
@@ -11711,7 +11711,7 @@
     "diary": "Western Provinces",
     "difficulty": "Elite",
     "icon": "Gnome child icon",
-    "task": "Kill the Thermonuclear smoke devil",
+    "name": "Kill the Thermonuclear smoke devil",
     "requirements": {
       "main": [
         {
@@ -11749,7 +11749,7 @@
     "diary": "Western Provinces",
     "difficulty": "Elite",
     "icon": "Gnome child icon",
-    "task": "Pickpocket an elf",
+    "name": "Pickpocket an elf",
     "requirements": {
       "main": [
         {
@@ -11784,7 +11784,7 @@
     "diary": "Western Provinces",
     "difficulty": "Elite",
     "icon": "Gnome child icon",
-    "task": "Use the advanced elven overpass cliffside shortcut",
+    "name": "Use the advanced elven overpass cliffside shortcut",
     "requirements": {
       "main": [
         {
@@ -11806,7 +11806,7 @@
     "diary": "Wilderness",
     "difficulty": "Easy",
     "icon": "Wilderness Area Badge",
-    "task": "Cast Low Alchemy at the Fountain of Rune",
+    "name": "Cast Low Alchemy at the Fountain of Rune",
     "requirements": {
       "main": [
         {
@@ -11827,14 +11827,14 @@
     "diary": "Wilderness",
     "difficulty": "Easy",
     "icon": "Wilderness Area Badge",
-    "task": "Collect 5 red spider's eggs from the Wilderness",
+    "name": "Collect 5 red spider's eggs from the Wilderness",
     "requirements": {}
   },
   {
     "diary": "Wilderness",
     "difficulty": "Easy",
     "icon": "Wilderness Area Badge",
-    "task": "Enter the Chaos Runecrafting temple",
+    "name": "Enter the Chaos Runecrafting temple",
     "requirements": {
       "ironman": [
         {
@@ -11865,28 +11865,28 @@
     "diary": "Wilderness",
     "difficulty": "Easy",
     "icon": "Wilderness Area Badge",
-    "task": "Enter the King Black Dragon Lair",
+    "name": "Enter the King Black Dragon Lair",
     "requirements": {}
   },
   {
     "diary": "Wilderness",
     "difficulty": "Easy",
     "icon": "Wilderness Area Badge",
-    "task": "Enter the Wilderness from the Ardougne or Edgeville lever",
+    "name": "Enter the Wilderness from the Ardougne or Edgeville lever",
     "requirements": {}
   },
   {
     "diary": "Wilderness",
     "difficulty": "Easy",
     "icon": "Wilderness Area Badge",
-    "task": "Equip any team cape in the Wilderness",
+    "name": "Equip any team cape in the Wilderness",
     "requirements": {}
   },
   {
     "diary": "Wilderness",
     "difficulty": "Easy",
     "icon": "Wilderness Area Badge",
-    "task": "Have the Mage of Zamorak teleport you to the Abyss",
+    "name": "Have the Mage of Zamorak teleport you to the Abyss",
     "requirements": {
       "main": [
         {
@@ -11903,7 +11903,7 @@
     "diary": "Wilderness",
     "difficulty": "Easy",
     "icon": "Wilderness Area Badge",
-    "task": "Kill a mammoth",
+    "name": "Kill a mammoth",
     "requirements": {
       "main": [
         {
@@ -11920,7 +11920,7 @@
     "diary": "Wilderness",
     "difficulty": "Easy",
     "icon": "Wilderness Area Badge",
-    "task": "Kill an earth warrior in the Wilderness beneath Edgeville",
+    "name": "Kill an earth warrior in the Wilderness beneath Edgeville",
     "requirements": {
       "main": [
         {
@@ -11942,7 +11942,7 @@
     "diary": "Wilderness",
     "difficulty": "Easy",
     "icon": "Wilderness Area Badge",
-    "task": "Mine some iron ore in the Wilderness",
+    "name": "Mine some iron ore in the Wilderness",
     "requirements": {
       "main": [
         {
@@ -11963,21 +11963,21 @@
     "diary": "Wilderness",
     "difficulty": "Easy",
     "icon": "Wilderness Area Badge",
-    "task": "Pray at the Chaos Altar in level 38, western Wilderness",
+    "name": "Pray at the Chaos Altar in level 38, western Wilderness",
     "requirements": {}
   },
   {
     "diary": "Wilderness",
     "difficulty": "Easy",
     "icon": "Wilderness Area Badge",
-    "task": "Restore some Prayer points at the Demonic Ruins",
+    "name": "Restore some Prayer points at the Demonic Ruins",
     "requirements": {}
   },
   {
     "diary": "Wilderness",
     "difficulty": "Medium",
     "icon": "Wilderness Area Badge",
-    "task": "Charge an earth orb",
+    "name": "Charge an earth orb",
     "requirements": {
       "main": [
         {
@@ -12023,7 +12023,7 @@
     "diary": "Wilderness",
     "difficulty": "Medium",
     "icon": "Wilderness Area Badge",
-    "task": "Chop some yew logs from an ent",
+    "name": "Chop some yew logs from an ent",
     "requirements": {
       "main": [
         {
@@ -12045,7 +12045,7 @@
     "diary": "Wilderness",
     "difficulty": "Medium",
     "icon": "Wilderness Area Badge",
-    "task": "Complete a lap of the Wilderness Agility Course",
+    "name": "Complete a lap of the Wilderness Agility Course",
     "requirements": {
       "main": [
         {
@@ -12066,7 +12066,7 @@
     "diary": "Wilderness",
     "difficulty": "Medium",
     "icon": "Wilderness Area Badge",
-    "task": "Enter the Wilderness God Wars Dungeon",
+    "name": "Enter the Wilderness God Wars Dungeon",
     "requirements": {
       "main": [
         {
@@ -12088,7 +12088,7 @@
     "diary": "Wilderness",
     "difficulty": "Medium",
     "icon": "Wilderness Area Badge",
-    "task": "Kill a bloodveld in the Wilderness God Wars Dungeon",
+    "name": "Kill a bloodveld in the Wilderness God Wars Dungeon",
     "requirements": {
       "main": [
         {
@@ -12114,7 +12114,7 @@
     "diary": "Wilderness",
     "difficulty": "Medium",
     "icon": "Wilderness Area Badge",
-    "task": "Kill a green dragon in the Wilderness",
+    "name": "Kill a green dragon in the Wilderness",
     "requirements": {
       "main": [
         {
@@ -12149,7 +12149,7 @@
     "diary": "Wilderness",
     "difficulty": "Medium",
     "icon": "Wilderness Area Badge",
-    "task": "Kill an ankou in the Wilderness",
+    "name": "Kill an ankou in the Wilderness",
     "requirements": {
       "main": [
         {
@@ -12166,7 +12166,7 @@
     "diary": "Wilderness",
     "difficulty": "Medium",
     "icon": "Wilderness Area Badge",
-    "task": "Mine some mithril ore in the Wilderness",
+    "name": "Mine some mithril ore in the Wilderness",
     "requirements": {
       "main": [
         {
@@ -12187,7 +12187,7 @@
     "diary": "Wilderness",
     "difficulty": "Medium",
     "icon": "Wilderness Area Badge",
-    "task": "Open the muddy chest in the Lava Maze",
+    "name": "Open the muddy chest in the Lava Maze",
     "requirements": {
       "ironman": [
         {
@@ -12205,7 +12205,7 @@
     "diary": "Wilderness",
     "difficulty": "Medium",
     "icon": "Wilderness Area Badge",
-    "task": "Smith a Gold helmet in the Resource Area",
+    "name": "Smith a Gold helmet in the Resource Area",
     "requirements": {
       "main": [
         {
@@ -12241,14 +12241,14 @@
     "diary": "Wilderness",
     "difficulty": "Medium",
     "icon": "Wilderness Area Badge",
-    "task": "Talk to the Emblem Trader in Edgeville about emblems",
+    "name": "Talk to the Emblem Trader in Edgeville about emblems",
     "requirements": {}
   },
   {
     "diary": "Wilderness",
     "difficulty": "Hard",
     "icon": "Wilderness Area Badge",
-    "task": "Cast any of the three God spells against another player in the Wilderness",
+    "name": "Cast any of the three God spells against another player in the Wilderness",
     "requirements": {
       "main": [
         {
@@ -12266,7 +12266,7 @@
     "diary": "Wilderness",
     "difficulty": "Hard",
     "icon": "Wilderness Area Badge",
-    "task": "Catch a black salamander",
+    "name": "Catch a black salamander",
     "requirements": {
       "main": [
         {
@@ -12287,7 +12287,7 @@
     "diary": "Wilderness",
     "difficulty": "Hard",
     "icon": "Wilderness Area Badge",
-    "task": "Charge an air orb",
+    "name": "Charge an air orb",
     "requirements": {
       "main": [
         {
@@ -12333,7 +12333,7 @@
     "diary": "Wilderness",
     "difficulty": "Hard",
     "icon": "Wilderness Area Badge",
-    "task": "Fish some raw lava eel in the Wilderness",
+    "name": "Fish some raw lava eel in the Wilderness",
     "requirements": {
       "main": [
         {
@@ -12369,7 +12369,7 @@
     "diary": "Wilderness",
     "difficulty": "Hard",
     "icon": "Wilderness Area Badge",
-    "task": "Kill a lava dragon on Lava Dragon Isle",
+    "name": "Kill a lava dragon on Lava Dragon Isle",
     "requirements": {
       "main": [
         {
@@ -12386,7 +12386,7 @@
     "diary": "Wilderness",
     "difficulty": "Hard",
     "icon": "Wilderness Area Badge",
-    "task": "Kill a spiritual warrior in the Wilderness God Wars Dungeon",
+    "name": "Kill a spiritual warrior in the Wilderness God Wars Dungeon",
     "requirements": {
       "main": [
         {
@@ -12412,7 +12412,7 @@
     "diary": "Wilderness",
     "difficulty": "Hard",
     "icon": "Wilderness Area Badge",
-    "task": "Kill the Chaos Elemental",
+    "name": "Kill the Chaos Elemental",
     "requirements": {
       "main": [
         {
@@ -12455,7 +12455,7 @@
     "diary": "Wilderness",
     "difficulty": "Hard",
     "icon": "Wilderness Area Badge",
-    "task": "Kill the Crazy archaeologist, Chaos Fanatic & Scorpia",
+    "name": "Kill the Crazy archaeologist, Chaos Fanatic & Scorpia",
     "requirements": {
       "main": [
         {
@@ -12515,7 +12515,7 @@
     "diary": "Wilderness",
     "difficulty": "Hard",
     "icon": "Wilderness Area Badge",
-    "task": "Smith an adamant scimitar in the Resource Area",
+    "name": "Smith an adamant scimitar in the Resource Area",
     "requirements": {
       "main": [
         {
@@ -12576,7 +12576,7 @@
     "diary": "Wilderness",
     "difficulty": "Hard",
     "icon": "Wilderness Area Badge",
-    "task": "Take the Agility Shortcut from Trollheim into the Wilderness",
+    "name": "Take the Agility Shortcut from Trollheim into the Wilderness",
     "requirements": {
       "main": [
         {
@@ -12598,7 +12598,7 @@
     "diary": "Wilderness",
     "difficulty": "Elite",
     "icon": "Wilderness Area Badge",
-    "task": "Cut and burn some magic logs in the Resource Area",
+    "name": "Cut and burn some magic logs in the Resource Area",
     "requirements": {
       "main": [
         {
@@ -12620,7 +12620,7 @@
     "diary": "Wilderness",
     "difficulty": "Elite",
     "icon": "Wilderness Area Badge",
-    "task": "Fish and cook a dark crab in the Resource Area",
+    "name": "Fish and cook a dark crab in the Resource Area",
     "requirements": {
       "main": [
         {
@@ -12652,7 +12652,7 @@
     "diary": "Wilderness",
     "difficulty": "Elite",
     "icon": "Wilderness Area Badge",
-    "task": "Kill a spiritual mage inside the Wilderness God Wars Dungeon",
+    "name": "Kill a spiritual mage inside the Wilderness God Wars Dungeon",
     "requirements": {
       "main": [
         {
@@ -12678,7 +12678,7 @@
     "diary": "Wilderness",
     "difficulty": "Elite",
     "icon": "Wilderness Area Badge",
-    "task": "Kill Callisto, Venenatis, and Vet'ion",
+    "name": "Kill Callisto, Venenatis, and Vet'ion",
     "requirements": {
       "main": [
         {
@@ -12763,7 +12763,7 @@
     "diary": "Wilderness",
     "difficulty": "Elite",
     "icon": "Wilderness Area Badge",
-    "task": "Smith a rune scimitar from scratch in the Resource Area",
+    "name": "Smith a rune scimitar from scratch in the Resource Area",
     "requirements": {
       "main": [
         {
@@ -12786,7 +12786,7 @@
     "diary": "Wilderness",
     "difficulty": "Elite",
     "icon": "Wilderness Area Badge",
-    "task": "Steal from the Chest at Rogues' Castle",
+    "name": "Steal from the Chest at Rogues' Castle",
     "requirements": {
       "main": [
         {
@@ -12807,7 +12807,7 @@
     "diary": "Wilderness",
     "difficulty": "Elite",
     "icon": "Wilderness Area Badge",
-    "task": "Teleport to Ghorrock",
+    "name": "Teleport to Ghorrock",
     "requirements": {
       "main": [
         {

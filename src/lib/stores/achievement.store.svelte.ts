@@ -15,8 +15,7 @@ import { ACHIEVEMENT, parseJSONArray } from '$lib/util/schema';
 const createAchievementStore = () => {
   const store = createStore<Achievement>(
     'data/achievements',
-    'task',
-    parseJSONArray(ACHIEVEMENT, achievementsJson).map((achievement) => ({ ...achievement, id: achievement.task, isComplete: false }))
+    parseJSONArray(ACHIEVEMENT, achievementsJson).map((achievement) => ({ ...achievement, isComplete: false }))
   );
 
   const { unlockedSkills } = $derived(skillStore);
