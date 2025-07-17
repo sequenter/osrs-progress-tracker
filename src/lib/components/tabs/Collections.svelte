@@ -44,11 +44,13 @@
             <span class="text-lg overflow-hidden text-ellipsis whitespace-nowrap text-black dark:text-yellow-300">{itemName}</span>
           </div>
 
-          <IconButton
-            label={`Mark as ${isComplete ? 'incomplete' : 'complete'}`}
-            path={isComplete ? mdiCloseCircle : mdiCheckCircle}
-            onclick={() => setCollectionItemComplete(name, itemName, !isComplete)}
-          />
+          {#if state !== 'locked'}
+            <IconButton
+              label={`Mark as ${isComplete ? 'incomplete' : 'complete'}`}
+              path={isComplete ? mdiCloseCircle : mdiCheckCircle}
+              onclick={() => setCollectionItemComplete(name, itemName, !isComplete)}
+            />
+          {/if}
         </div>
       {/each}
     </div>
