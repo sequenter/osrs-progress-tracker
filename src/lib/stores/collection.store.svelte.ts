@@ -6,20 +6,28 @@ import { skillStore } from '$lib/stores/skill.store.svelte';
 import { userStore } from '$lib/stores/user.store.svelte';
 import type { Collection } from '$lib/types';
 import { bifilter, isFulfilled } from '$lib/util/array';
-import { COLLECTION, parseJSONArray } from '$lib/util/schema';
+import { COLLECTION } from '$lib/util/schema';
 
 /**
  * Collection store, wraps data.store, implements its own complete state functions.
  * @returns Collection store accessors
  */
 const createCollectionStore = () => {
-  const store = createStore<Collection>(
-    'data/collections',
-    parseJSONArray(COLLECTION, collectionsJson).map(({ items, ...rest }) => ({
-      ...rest,
-      items: items.map((item) => ({ ...item, isComplete: false })),
-      isComplete: false
-    }))
+  const store = createStore<Collection>('data/collections', COLLECTION, collectionsJson, (localCollections, parsedCollections) =>
+    parsedCollections.map(({ items, ...rest }) => {
+      const localCollection = localCollections.find(({ name }) => name === rest.name);
+
+      if (localCollection) {
+        const mappedItems = items.map((item) => ({
+          ...item,
+          isComplete: !!localCollection.items.find(({ name }) => name === item.name)?.isComplete
+        }));
+
+        return { ...rest, items: mappedItems, isComplete: mappedItems.every(({ isComplete }) => isComplete) };
+      }
+
+      return { ...rest, items: items.map((item) => ({ ...item, isComplete: false })), isComplete: false };
+    })
   );
 
   const { unlockedSkills } = $derived(skillStore);

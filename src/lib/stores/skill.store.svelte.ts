@@ -4,21 +4,23 @@ import { userStore } from './user.store.svelte';
 import { default as skillsJson } from '$assets/json/skills.json';
 
 import type { Skill, SkillLiteral, SkillsLevel } from '$lib/types';
-import { SKILL, parseJSONArray } from '$lib/util/schema';
+import { SKILL } from '$lib/util/schema';
 
 /**
  * Skill store, wraps data.store
  * @returns Skill store accessors
  */
 const createSkillStore = () => {
-  const store = createStore<Skill>(
-    'data/skills',
-    parseJSONArray(SKILL, skillsJson).map((skill) => ({
-      ...skill,
-      currentLevel: skill.minLevel,
-      isComplete: false,
-      isUnlocked: false
-    }))
+  const store = createStore<Skill>('data/skills', SKILL, skillsJson, (localSkills, parsedSkills) =>
+    parsedSkills.map(
+      (parsedSkill) =>
+        localSkills.find(({ name }) => name === parsedSkill.name) ?? {
+          ...parsedSkill,
+          currentLevel: parsedSkill.minLevel,
+          isComplete: false,
+          isUnlocked: false
+        }
+    )
   );
 
   const { setCombatLevel } = $derived(userStore);

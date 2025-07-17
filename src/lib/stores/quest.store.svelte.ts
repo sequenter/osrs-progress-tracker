@@ -5,17 +5,14 @@ import { skillStore } from '$lib/stores/skill.store.svelte';
 import { userStore } from '$lib/stores/user.store.svelte';
 import type { Quest } from '$lib/types';
 import { bifilter, isFulfilled, isRewardsFulfilled } from '$lib/util/array';
-import { QUEST, parseJSONArray } from '$lib/util/schema';
+import { QUEST } from '$lib/util/schema';
 
 /**
  * Quest store, wraps data.store
  * @returns Quest store accessors
  */
 const createQuestStore = () => {
-  const store = createStore<Quest>(
-    'data/quests',
-    parseJSONArray(QUEST, questsJson).map((quest) => ({ ...quest, isComplete: false }))
-  );
+  const store = createStore<Quest>('data/quests', QUEST, questsJson);
 
   const { unlockedSkills, unlockedSkillsByName } = $derived(skillStore);
   const { combat, combatLevel, ironman } = $derived(userStore);

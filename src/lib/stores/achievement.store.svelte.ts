@@ -6,17 +6,14 @@ import { skillStore } from '$lib/stores/skill.store.svelte';
 import { userStore } from '$lib/stores/user.store.svelte';
 import type { Achievement } from '$lib/types';
 import { bifilter, isFulfilled } from '$lib/util/array';
-import { ACHIEVEMENT, parseJSONArray } from '$lib/util/schema';
+import { ACHIEVEMENT } from '$lib/util/schema';
 
 /**
  * Achievement store, wraps data.store
  * @returns Achievement store accessors
  */
 const createAchievementStore = () => {
-  const store = createStore<Achievement>(
-    'data/achievements',
-    parseJSONArray(ACHIEVEMENT, achievementsJson).map((achievement) => ({ ...achievement, isComplete: false }))
-  );
+  const store = createStore<Achievement>('data/achievements', ACHIEVEMENT, achievementsJson);
 
   const { unlockedSkills } = $derived(skillStore);
   const { completeQuestsByName, currentQuestPoints } = $derived(questStore);

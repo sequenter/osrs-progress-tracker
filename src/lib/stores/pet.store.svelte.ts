@@ -6,17 +6,14 @@ import { skillStore } from '$lib/stores/skill.store.svelte';
 import { userStore } from '$lib/stores/user.store.svelte';
 import type { Pet } from '$lib/types';
 import { bifilter, isFulfilled } from '$lib/util/array';
-import { PET, parseJSONArray } from '$lib/util/schema';
+import { PET } from '$lib/util/schema';
 
 /**
  * Pet store, wraps data.store
  * @returns Pet store accessors
  */
 const createPetStore = () => {
-  const store = createStore<Pet>(
-    'data/pets',
-    parseJSONArray(PET, petsJson).map((pet) => ({ ...pet, isComplete: false }))
-  );
+  const store = createStore<Pet>('data/pets', PET, petsJson);
 
   const { unlockedSkills } = $derived(skillStore);
   const { completeQuestsByName, currentQuestPoints } = $derived(questStore);
