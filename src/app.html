@@ -28,6 +28,17 @@
     />
 
     %sveltekit.head%
+
+    <script>
+      // FEATURE FLAG: Update localStorage achievements task -> name
+      const LOCALSTORAGE_KEY = 'data/achievements';
+
+      const achievements = JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY) ?? '[]');
+      localStorage.setItem(
+        LOCALSTORAGE_KEY,
+        JSON.stringify(achievements.map((item) => ({ ...item, name: item.task ?? item.id ?? item.name })))
+      );
+    </script>
   </head>
   <body
     data-sveltekit-preload-data="hover"
