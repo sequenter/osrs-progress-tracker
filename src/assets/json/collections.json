@@ -1475,6 +1475,47 @@
     ]
   },
   {
+    "icon": "Huntsman's kit",
+    "name": "Hunter Guild",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "skills": {
+                "all": {
+                  "Hunter": 46
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "items": [
+      {
+        "name": "Huntsman's kit",
+        "icon": "Huntsman's kit"
+      },
+      {
+        "name": "Guild hunter headwear",
+        "icon": "Guild hunter headwear"
+      },
+      {
+        "name": "Guild hunter top",
+        "icon": "Guild hunter top"
+      },
+      {
+        "name": "Guild hunter legs",
+        "icon": "Guild hunter legs"
+      },
+      {
+        "name": "Guild hunter boots",
+        "icon": "Guild hunter boots"
+      }
+    ]
+  },
+  {
     "icon": "Graceful hood (Lovakengj)",
     "name": "Lovakengj Graceful",
     "requirements": {
@@ -1994,6 +2035,9 @@
         "icon": "Graceful top (Piscarilius)"
       }
     ]
+  },
+  {
+    "icon": "Stale baguette"
   },
   {
     "icon": "Rogue mask",
