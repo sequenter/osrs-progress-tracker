@@ -2037,7 +2037,103 @@
     ]
   },
   {
-    "icon": "Stale baguette"
+    "icon": "Stale baguette",
+    "name": "Random Events",
+    "requirements": {},
+    "items": [
+      {
+        "name": "Beekeeper's hat",
+        "icon": "Beekeeper's hat"
+      },
+      {
+        "name": "Beekeeper's top",
+        "icon": "Beekeeper's top"
+      },
+      {
+        "name": "Beekeeper's legs",
+        "icon": "Beekeeper's legs"
+      },
+      {
+        "name": "Beekeeper's boots",
+        "icon": "Beekeeper's boots"
+      },
+      {
+        "name": "Beekeeper's gloves",
+        "icon": "Beekeeper's gloves"
+      },
+      {
+        "name": "Camo helmet",
+        "icon": "Camo helmet"
+      },
+      {
+        "name": "Camo top",
+        "icon": "Camo top"
+      },
+      {
+        "name": "Camo bottoms",
+        "icon": "Camo bottoms"
+      },
+      {
+        "name": "Lederhosen hat",
+        "icon": "Lederhosen hat"
+      },
+      {
+        "icon": "Lederhosen top",
+        "name": "Lederhosen top"
+      },
+      {
+        "icon": "Lederhosen shorts",
+        "name": "Lederhosen shorts"
+      },
+      {
+        "icon": "Mime mask",
+        "name": "Mime mask"
+      },
+      {
+        "icon": "Mime top",
+        "name": "Mime top"
+      },
+      {
+        "icon": "Mime legs",
+        "name": "Mime legs"
+      },
+      {
+        "icon": "Mime boots",
+        "name": "Mime boots"
+      },
+      {
+        "icon": "Mime gloves",
+        "name": "Mime gloves"
+      },
+      {
+        "icon": "Zombie mask",
+        "name": "Zombie mask"
+      },
+      {
+        "icon": "Zombie shirt",
+        "name": "Zombie shirt"
+      },
+      {
+        "icon": "Zombie trousers",
+        "name": "Zombie trousers"
+      },
+      {
+        "icon": "Zombie boots",
+        "name": "Zombie boots"
+      },
+      {
+        "icon": "Zombie gloves",
+        "name": "Zombie gloves"
+      },
+      {
+        "icon": "Frog token",
+        "name": "Frog token"
+      },
+      {
+        "icon": "Stale baguette",
+        "name": "Stale baguette"
+      }
+    ]
   },
   {
     "icon": "Rogue mask",
