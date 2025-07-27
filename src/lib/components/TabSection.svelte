@@ -47,7 +47,7 @@ control to hide/show the section.
     </div>
   </div>
 
-  <div class={clsx('grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4', isHidden && 'hidden')}>
+  <div class={clsx('grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4', (isHidden || count === 0) && 'hidden')}>
     {@render children()}
   </div>
 </div>
