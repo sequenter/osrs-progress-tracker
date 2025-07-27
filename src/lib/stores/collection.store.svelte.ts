@@ -13,20 +13,19 @@ import { COLLECTION } from '$lib/util/schema';
  * @returns Collection store accessors
  */
 const createCollectionStore = () => {
-  const store = createStore<Collection>('data/collections', COLLECTION, collectionsJson, (localCollections, parsedCollections) =>
-    parsedCollections.map(({ items, ...rest }) => {
-      const localCollection = localCollections?.find(({ name }) => name === rest.name);
-
-      if (localCollection) {
-        const mappedItems = items.map((item) => ({
-          ...item,
-          isComplete: !!localCollection.items.find(({ name }) => name === item.name)?.isComplete
-        }));
-
-        return { ...rest, items: mappedItems, isComplete: mappedItems.every(({ isComplete }) => isComplete) };
-      }
-
-      return { ...rest, items: items.map((item) => ({ ...item, isComplete: false })), isComplete: false };
+  const store = createStore<Collection>(
+    'data/collections',
+    COLLECTION,
+    collectionsJson,
+    ({ items, isComplete }, parsedCollection) => ({
+      ...parsedCollection,
+      isComplete: !!isComplete,
+      items: parsedCollection.items.map((item) => ({ ...item, isComplete: !!items.find(({ name }) => name === item.name)?.isComplete }))
+    }),
+    (parsedCollection) => ({
+      ...parsedCollection,
+      isComplete: false,
+      items: parsedCollection.items.map((item) => ({ ...item, isComplete: false }))
     })
   );
 

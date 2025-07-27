@@ -11,7 +11,6 @@ An app bar header component that displays the app name and toggle button control
 
 <script lang="ts">
   import Icon from './Icon.svelte';
-  import IconButton from './IconButton.svelte';
 
   import ToggleButton from '$lib/components/ToggleButton.svelte';
   import { userStore } from '$lib/stores/user.store.svelte';

@@ -17,15 +17,24 @@ export const createStore = <T extends { name: string; isComplete: boolean }>(
   key: string,
   schema: ZodObject,
   json: Array<object>,
-  mapItems?: (localItems: Array<T>, parsedItems: Array<T>) => Array<T>
+  getLocalMappedItem?: (localItem: T, parsedItem: T) => T,
+  getMappedItem?: (parsedItem: T) => T
 ) => {
-  const localItems = getJSONObject(key) as Array<T>;
+  const localItems = getJSONObject<Array<T>>(key);
   const parsedItems = parseJSONArray(schema, json) as Array<T>;
 
   const value = $state(
-    mapItems
-      ? mapItems(localItems, parsedItems)
-      : (parsedItems.map((item) => ({ ...item, isComplete: !!localItems?.find(({ name }) => name === item.name)?.isComplete })) as Array<T>)
+    parsedItems.map((item) => {
+      if (localItems) {
+        const localItem = localItems.find(({ name }) => name === item.name);
+
+        if (localItem) {
+          return getLocalMappedItem ? getLocalMappedItem(localItem, item) : { ...item, isComplete: localItem.isComplete };
+        }
+      }
+
+      return getMappedItem ? getMappedItem(item) : { ...item, isComplete: false };
+    })
   );
 
   // Split the store into complete and incomplete arrays

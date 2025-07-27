@@ -10,16 +10,17 @@ import { SKILL } from '$lib/util/schema';
  * @returns Skill store accessors
  */
 const createSkillStore = () => {
-  const store = createStore<Skill>('data/skills', SKILL, skillsJson, (localSkills, parsedSkills) =>
-    parsedSkills.map(
-      (parsedSkill) =>
-        localSkills?.find(({ name }) => name === parsedSkill.name) ?? {
-          ...parsedSkill,
-          currentLevel: parsedSkill.minLevel,
-          isComplete: false,
-          isUnlocked: false
-        }
-    )
+  const store = createStore<Skill>(
+    'data/skills',
+    SKILL,
+    skillsJson,
+    ({ currentLevel, isComplete, isUnlocked }, parsedSkill) => ({
+      ...parsedSkill,
+      currentLevel,
+      isComplete: !!isComplete,
+      isUnlocked: !!isUnlocked
+    }),
+    (parsedSkill) => ({ ...parsedSkill, currentLevel: parsedSkill.minLevel, isComplete: false, isUnlocked: false })
   );
 
   // Unlocked skills as an object
