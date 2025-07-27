@@ -10,11 +10,14 @@ An app bar header component that displays the app name and toggle button control
 -->
 
 <script lang="ts">
+  import Icon from './Icon.svelte';
+  import IconButton from './IconButton.svelte';
+
   import ToggleButton from '$lib/components/ToggleButton.svelte';
   import { userStore } from '$lib/stores/user.store.svelte';
   import { mdiCombat, mdiCombatOff, mdiIronman, mdiIronmanOff } from '$lib/util/icon';
 
-  import { mdiGhost, mdiGhostOff } from '@mdi/js';
+  import { mdiGhost, mdiGhostOff, mdiGithub } from '@mdi/js';
 
   const { combat, darkMode, ironman, setCombat, setDarkMode, setIronman } = $derived(userStore);
 
@@ -26,7 +29,19 @@ An app bar header component that displays the app name and toggle button control
 
 <header class="shadow-elevation sticky top-0 z-40 bg-primary-800 dark:bg-primary-200 text-white dark:text-gray-800">
   <div class="flex h-16 items-center justify-between px-4">
-    <span class="text-xl">OSRS Progress Tracker</span>
+    <div class="flex items-center gap-4">
+      <span class="text-xl">OSRS Progress Tracker</span>
+
+      <a
+        href="https://github.com/sequenter/osrs-progress-tracker"
+        target="_blank"
+      >
+        <Icon
+          title="GitHub"
+          path={mdiGithub}
+        /></a
+      >
+    </div>
 
     <div class="flex items-center gap-4">
       <ToggleButton
