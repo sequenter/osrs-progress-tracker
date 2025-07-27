@@ -36,5 +36,6 @@
   complete={completeQuests}
   locked={lockedQuests}
   unlocked={unlockedQuests}
+  userKey="quests"
   {snippet}
 />

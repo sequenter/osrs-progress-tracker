@@ -19,7 +19,7 @@ const createCollectionStore = () => {
 
   const store = $derived(
     createStore<Collection>(
-      `${currentUser}data/collections`,
+      `${currentUser ? `${currentUser}:` : ''}data/collections`,
       COLLECTION,
       collectionsJson,
       ({ items, isComplete, isOnHold }, parsedCollection) => ({
@@ -45,10 +45,10 @@ const createCollectionStore = () => {
   );
 
   // Total amount of unique collections
-  const totalCollections = [...new Set(store.value.map(({ collection, name }) => collection ?? name))].length;
+  const totalCollections = (() => $state.snapshot([...new Set(store.value.map(({ collection, name }) => collection ?? name))].length))();
 
   // Total amount of unique items within collections
-  const totalItems = [...new Set(store.value.map(({ items }) => items.map(({ name }) => name)).flat())].length;
+  const totalItems = (() => $state.snapshot([...new Set(store.value.map(({ items }) => items.map(({ name }) => name)).flat())].length))();
 
   // Total amount of complete unique items within collections
   const totalCompleteItems = $derived(

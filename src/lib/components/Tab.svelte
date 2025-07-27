@@ -7,6 +7,7 @@ A generic component that renders the three unlocked, locked, and complete sectio
 @param {Array<T>} complete An array of complete items
 @param {Array<T>} locked An array of locked items
 @param {Array<T>} unlocked An array of unlocked items
+@param {string} userKey The key to use when interacting with the user store
 @param {Snippet<[T, ItemState]>} snippet The snippet of the item to display
 -->
 
@@ -24,6 +25,7 @@ A generic component that renders the three unlocked, locked, and complete sectio
     complete: Array<T>;
     locked: Array<T>;
     unlocked: Array<T>;
+    userKey: string;
     snippet: Snippet<[T, ItemState]>;
   }
 
@@ -32,7 +34,7 @@ A generic component that renders the three unlocked, locked, and complete sectio
     items: Array<T>;
   }
 
-  let { complete, locked, unlocked, snippet }: Props = $props();
+  let { complete, locked, unlocked, userKey, snippet }: Props = $props();
 
   const [unlockedItems, onHoldItems] = $derived(bifilter(unlocked, ({ isOnHold }) => isOnHold));
 
@@ -60,6 +62,7 @@ A generic component that renders the three unlocked, locked, and complete sectio
   <TabSection
     count={items.length}
     {itemState}
+    {userKey}
   >
     {#each items as item (item.name)}
       {@render snippet(item, itemState)}

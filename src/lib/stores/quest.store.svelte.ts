@@ -15,7 +15,7 @@ const createQuestStore = () => {
   const { combatLevel, totalLevel, unlockedSkills, unlockedSkillsByName } = $derived(skillStore);
   const { combat, currentUser, ironman } = $derived(userStore);
 
-  const store = $derived(createStore<Quest>(`${currentUser}data/quests`, QUEST, questsJson));
+  const store = $derived(createStore<Quest>(`${currentUser ? `${currentUser}:` : ''}data/quests`, QUEST, questsJson));
 
   // Completed quests by quest name
   const completeQuestsByName = $derived(store.complete.map(({ name }) => name));
@@ -24,7 +24,7 @@ const createQuestStore = () => {
   const currentQuestPoints = $derived(store.complete.reduce((acc, { rewards }) => (rewards?.QP ? acc + rewards.QP : acc), 0));
 
   // Total amount of quest points available from all quests
-  const totalQuestPoints = store.value.reduce((acc, { rewards }) => (rewards?.QP ? acc + rewards.QP : acc), 0);
+  const totalQuestPoints = (() => $state.snapshot(store.value.reduce((acc, { rewards }) => (rewards?.QP ? acc + rewards.QP : acc), 0)))();
 
   // Locked and unlocked quests
   const [lockedQuests, unlockedQuests] = $derived(

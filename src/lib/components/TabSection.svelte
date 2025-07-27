@@ -7,6 +7,7 @@ control to hide/show the section.
 
 @param {number} count Total count of the items
 @param {string} title The title of the sectiom
+@param {string} userKey The key to use when interacting with the user store
 @param {Snippet} children Items to display within the section
 -->
 
@@ -15,6 +16,7 @@ control to hide/show the section.
   import type { Snippet } from 'svelte';
 
   import IconButton from '$lib/components/IconButton.svelte';
+  import { userStore } from '$lib/stores/user.store.svelte';
   import type { ItemState } from '$lib/types';
 
   import { mdiChevronDownCircle, mdiChevronUpCircle } from '@mdi/js';
@@ -22,12 +24,15 @@ control to hide/show the section.
   interface Props {
     count: number;
     itemState: ItemState;
+    userKey: string;
     children: Snippet;
   }
 
-  const { count, itemState, children }: Props = $props();
+  const { count, itemState, userKey, children }: Props = $props();
 
-  let isHidden = $state(false);
+  const { isSectionHidden, setIsSectionHidden } = $derived(userStore);
+
+  let isHidden = $derived(isSectionHidden(`${userKey}:${itemState}`));
 </script>
 
 <div class="flex flex-col gap-4">
@@ -40,9 +45,7 @@ control to hide/show the section.
       <IconButton
         path={isHidden ? mdiChevronDownCircle : mdiChevronUpCircle}
         label={`${isHidden ? 'Show' : 'Hide'}`}
-        onclick={() => {
-          isHidden = !isHidden;
-        }}
+        onclick={() => setIsSectionHidden(`${userKey}:${itemState}`, !isHidden)}
       />
     </div>
   </div>

@@ -6,6 +6,7 @@ interface UserStore {
   darkMode: boolean;
   ironman: boolean;
   users: Array<string>;
+  sections: Record<string, boolean>;
 }
 
 /**
@@ -21,6 +22,7 @@ const createUserStore = () => {
     darkMode: !!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),
     ironman: false,
     users: [],
+    sections: {},
     ...localStore
   });
 
@@ -42,6 +44,15 @@ const createUserStore = () => {
   };
 
   /**
+   * Whether or not a section is hidden
+   * @param {string} key
+   * @returns
+   */
+  const isSectionHidden = (key: string) => {
+    return !!store.sections[key];
+  };
+
+  /**
    * Remove a user from the users list.
    * @param {string} value
    */
@@ -51,7 +62,7 @@ const createUserStore = () => {
 
       // Remove stores from localStorage
       ['data/achievements', 'data/collections', 'data/pets', 'data/quests', 'data/skills'].forEach((key) =>
-        removeJSONObject(`${value}${key}`)
+        removeJSONObject(`${value}:${key}`)
       );
 
       storeValue();
@@ -98,6 +109,17 @@ const createUserStore = () => {
     storeValue();
   };
 
+  /**
+   * Set whether or not a section is hidden.
+   * @param {string} key
+   * @param {boolean} isHidden
+   */
+  const setIsSectionHidden = (key: string, isHidden: boolean) => {
+    store.sections[key] = isHidden;
+
+    storeValue();
+  };
+
   return {
     get combat() {
       return store.combat;
@@ -110,6 +132,9 @@ const createUserStore = () => {
     },
     get ironman() {
       return store.ironman;
+    },
+    get isSectionHidden() {
+      return isSectionHidden;
     },
     get users() {
       return ['default', ...store.users];
@@ -131,6 +156,9 @@ const createUserStore = () => {
     },
     get setIronman() {
       return setIronman;
+    },
+    get setIsSectionHidden() {
+      return setIsSectionHidden;
     }
   };
 };

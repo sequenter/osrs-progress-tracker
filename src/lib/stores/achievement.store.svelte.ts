@@ -17,7 +17,9 @@ const createAchievementStore = () => {
   const { completeQuestsByName, currentQuestPoints } = $derived(questStore);
   const { combat, currentUser, ironman } = $derived(userStore);
 
-  const store = $derived(createStore<Achievement>(`${currentUser}data/achievements`, ACHIEVEMENT, achievementsJson));
+  const store = $derived(
+    createStore<Achievement>(`${currentUser ? `${currentUser}:` : ''}data/achievements`, ACHIEVEMENT, achievementsJson)
+  );
 
   // Locked and unlocked achievements
   const [lockedAchievements, unlockedAchievements] = $derived(

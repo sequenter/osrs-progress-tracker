@@ -17,7 +17,7 @@ const createPetStore = () => {
   const { completeQuestsByName, currentQuestPoints } = $derived(questStore);
   const { combat, currentUser, ironman } = $derived(userStore);
 
-  const store = $derived(createStore<Pet>(`${currentUser}data/pets`, PET, petsJson));
+  const store = $derived(createStore<Pet>(`${currentUser ? `${currentUser}:` : ''}data/pets`, PET, petsJson));
 
   // Locked and unlocked pets
   const [lockedPets, unlockedPets] = $derived(

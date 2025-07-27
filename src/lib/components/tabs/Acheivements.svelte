@@ -36,5 +36,6 @@
   complete={completeAchievements}
   locked={lockedAchievements}
   unlocked={unlockedAchievements}
+  userKey="achievements"
   {snippet}
 />

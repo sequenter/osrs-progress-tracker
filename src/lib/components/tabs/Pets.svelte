@@ -33,5 +33,6 @@
   complete={completePets}
   locked={lockedPets}
   unlocked={unlockedPets}
+  userKey="pets"
   {snippet}
 />

@@ -15,7 +15,7 @@ const createSkillStore = () => {
 
   const store = $derived(
     createStore<Skill>(
-      `${currentUser}data/skills`,
+      `${currentUser ? `${currentUser}:` : ''}data/skills`,
       SKILL,
       skillsJson,
       ({ currentLevel, isComplete, isUnlocked }, parsedSkill) => ({

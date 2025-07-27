@@ -70,5 +70,6 @@
   complete={completeCollections}
   locked={lockedCollections}
   unlocked={unlockedCollections}
+  userKey="collections"
   {snippet}
 />
