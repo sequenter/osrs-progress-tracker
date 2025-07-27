@@ -1,6 +1,5 @@
 [
   {
-    "icon": "Abyssal orphan",
     "name": "Abyssal orphan",
     "requirements": {
       "main": [
@@ -40,7 +39,6 @@
     }
   },
   {
-    "icon": "Abyssal protector",
     "name": "Abyssal protector",
     "requirements": {
       "main": [
@@ -82,7 +80,6 @@
     }
   },
   {
-    "icon": "Baby mole",
     "name": "Baby mole",
     "requirements": {
       "main": [
@@ -122,7 +119,6 @@
     }
   },
   {
-    "icon": "Baron",
     "name": "Baron",
     "requirements": {
       "main": [
@@ -155,7 +151,6 @@
     }
   },
   {
-    "icon": "Beaver",
     "name": "Beaver",
     "requirements": {
       "main": [
@@ -174,7 +169,20 @@
     }
   },
   {
-    "icon": "Butch",
+    "name": "Bran",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "name": "Butch",
     "requirements": {
       "main": [
@@ -207,7 +215,6 @@
     }
   },
   {
-    "icon": "Callisto cub",
     "name": "Callisto cub",
     "requirements": {
       "main": [
@@ -243,7 +250,21 @@
     }
   },
   {
-    "icon": "Giant squirrel",
+    "name": "Dom",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "quests": ["The Final Dawn"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "name": "Giant squirrel",
     "requirements": {
       "main": [
@@ -262,7 +283,6 @@
     }
   },
   {
-    "icon": "Hellpuppy",
     "name": "Hellpuppy",
     "requirements": {
       "main": [
@@ -308,7 +328,6 @@
     }
   },
   {
-    "icon": "Herbi",
     "name": "Herbi",
     "requirements": {
       "main": [
@@ -329,7 +348,6 @@
     }
   },
   {
-    "icon": "Heron",
     "name": "Heron",
     "requirements": {
       "main": [
@@ -341,6 +359,21 @@
                   "Fishing": 1
                 }
               }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Huberte",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "quests": ["Children of the Sun"]
             }
           ]
         }
@@ -384,7 +417,6 @@
     }
   },
   {
-    "icon": "Jal-nib-rek",
     "name": "Jal-nib-rek",
     "requirements": {
       "main": [
@@ -417,7 +449,6 @@
     }
   },
   {
-    "icon": "Kalphite princess",
     "name": "Kalphite princess",
     "requirements": {
       "main": [
@@ -451,7 +482,6 @@
     }
   },
   {
-    "icon": "Lil' creator",
     "name": "Lil' creator",
     "requirements": {
       "main": [
@@ -466,7 +496,6 @@
     }
   },
   {
-    "icon": "Lil'viathan",
     "name": "Lil'viathan",
     "requirements": {
       "main": [
@@ -498,8 +527,7 @@
     }
   },
   {
-    "icon": "Lil' zik",
-    "name": "Lil'zik",
+    "name": "Lil' zik",
     "requirements": {
       "main": [
         {
@@ -534,7 +562,6 @@
     }
   },
   {
-    "icon": "Little nightmare",
     "name": "Little nightmare",
     "requirements": {
       "main": [
@@ -569,7 +596,6 @@
     }
   },
   {
-    "icon": "Moxi",
     "name": "Moxi",
     "requirements": {
       "main": [
@@ -617,7 +643,6 @@
     }
   },
   {
-    "icon": "Nexling",
     "name": "Nexling",
     "requirements": {
       "main": [
@@ -652,7 +677,6 @@
     }
   },
   {
-    "icon": "Nid",
     "name": "Nid",
     "requirements": {
       "main": [
@@ -673,7 +697,6 @@
     }
   },
   {
-    "icon": "Noon",
     "name": "Noon",
     "requirements": {
       "main": [
@@ -710,7 +733,6 @@
     }
   },
   {
-    "icon": "Olmlet",
     "name": "Olmlet",
     "requirements": {
       "main": [
@@ -744,7 +766,6 @@
     }
   },
   {
-    "icon": "Pet chaos elemental",
     "name": "Pet chaos elemental",
     "requirements": {
       "main": [
@@ -785,7 +806,6 @@
     }
   },
   {
-    "icon": "Pet dagannoth prime",
     "name": "Pet dagannoth prime",
     "requirements": {
       "main": [
@@ -817,7 +837,6 @@
     }
   },
   {
-    "icon": "Pet dagannoth rex",
     "name": "Pet dagannoth rex",
     "requirements": {
       "main": [
@@ -849,7 +868,6 @@
     }
   },
   {
-    "icon": "Pet dagannoth supreme",
     "name": "Pet dagannoth supreme",
     "requirements": {
       "main": [
@@ -882,7 +900,6 @@
     }
   },
   {
-    "icon": "Pet dark core",
     "name": "Pet dark core",
     "requirements": {
       "main": [
@@ -924,7 +941,6 @@
     }
   },
   {
-    "icon": "Pet general graardor",
     "name": "Pet general graardor",
     "requirements": {
       "main": [
@@ -962,7 +978,6 @@
     }
   },
   {
-    "icon": "Pet k'ril tsutsaroth",
     "name": "Pet k'ril tsutsaroth",
     "requirements": {
       "main": [
@@ -971,9 +986,21 @@
             {
               "combat": true,
               "skills": {
+                "all": {
+                  "Hitpoints": 70
+                }
+              }
+            }
+          ]
+        },
+        {
+          "description": "Enter the God Wars Dungeon",
+          "required": [
+            {
+              "skills": {
                 "any": {
-                  "Strength": 60,
-                  "Agility": 60
+                  "Agility": 60,
+                  "Strength": 60
                 }
               }
             }
@@ -1001,7 +1028,6 @@
     }
   },
   {
-    "icon": "Pet kraken",
     "name": "Pet kraken",
     "requirements": {
       "main": [
@@ -1038,7 +1064,6 @@
     }
   },
   {
-    "icon": "Pet kree'arra",
     "name": "Pet kree'arra",
     "requirements": {
       "main": [
@@ -1049,10 +1074,19 @@
               "skills": {
                 "all": {
                   "Ranged": 70
-                },
+                }
+              }
+            }
+          ]
+        },
+        {
+          "description": "Enter the God Wars Dungeon",
+          "required": [
+            {
+              "skills": {
                 "any": {
-                  "Strength": 60,
-                  "Agility": 60
+                  "Agility": 60,
+                  "Strength": 60
                 }
               }
             }
@@ -1104,7 +1138,6 @@
     }
   },
   {
-    "icon": "Pet penance queen",
     "name": "Pet penance queen",
     "requirements": {
       "main": [
@@ -1119,7 +1152,6 @@
     }
   },
   {
-    "icon": "Pet smoke devil",
     "name": "Pet smoke devil",
     "requirements": {
       "main": [
@@ -1155,7 +1187,6 @@
     }
   },
   {
-    "icon": "Pet snakeling",
     "name": "Pet snakeling",
     "requirements": {
       "main": [
@@ -1211,7 +1242,6 @@
     }
   },
   {
-    "icon": "Pet zilyana",
     "name": "Pet zilyana",
     "requirements": {
       "main": [
@@ -1247,7 +1277,6 @@
     }
   },
   {
-    "icon": "Phoenix",
     "name": "Phoenix",
     "requirements": {
       "main": [
@@ -1267,7 +1296,6 @@
     }
   },
   {
-    "icon": "Prince black dragon",
     "name": "Prince black dragon",
     "requirements": {
       "main": [
@@ -1310,7 +1338,6 @@
     }
   },
   {
-    "icon": "Quetzin",
     "name": "Quetzin",
     "requirements": {
       "main": [
@@ -1348,7 +1375,6 @@
     }
   },
   {
-    "icon": "Rock golem",
     "name": "Rock golem",
     "requirements": {
       "main": [
@@ -1367,7 +1393,6 @@
     }
   },
   {
-    "icon": "Rocky",
     "name": "Rocky",
     "requirements": {
       "main": [
@@ -1386,7 +1411,6 @@
     }
   },
   {
-    "icon": "Scorpia's offspring",
     "name": "Scorpia's offspring",
     "requirements": {
       "main": [
@@ -1416,7 +1440,20 @@
     }
   },
   {
-    "icon": "Skotos",
+    "name": "Scurry",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "name": "Skotos",
     "requirements": {
       "main": [
@@ -1448,7 +1485,6 @@
     }
   },
   {
-    "icon": "Smolcano",
     "name": "Smolcano",
     "requirements": {
       "main": [
@@ -1469,7 +1505,21 @@
     }
   },
   {
-    "icon": "Sraracha",
+    "name": "Smol heredit",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "quests": ["Children of the Sun"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "name": "Sraracha",
     "requirements": {
       "main": [
@@ -1504,7 +1554,6 @@
     }
   },
   {
-    "icon": "Tangleroot",
     "name": "Tangleroot",
     "requirements": {
       "main": [
@@ -1523,7 +1572,6 @@
     }
   },
   {
-    "icon": "Tiny tempor",
     "name": "Tiny tempor",
     "requirements": {
       "main": [
@@ -1542,7 +1590,6 @@
     }
   },
   {
-    "icon": "Tumeken's guardian",
     "name": "Tumeken's guardian",
     "requirements": {
       "main": [
@@ -1578,7 +1625,6 @@
     }
   },
   {
-    "icon": "Tzrek-jad",
     "name": "Tzrek-jad",
     "requirements": {
       "main": [
@@ -1610,7 +1656,6 @@
     }
   },
   {
-    "icon": "Venenatis spiderling",
     "name": "Venenatis spiderling",
     "requirements": {
       "main": [
@@ -1657,7 +1702,6 @@
     }
   },
   {
-    "icon": "Vet'ion jr.",
     "name": "Vet'ion Jr.",
     "requirements": {
       "main": [
@@ -1691,7 +1735,6 @@
     }
   },
   {
-    "icon": "Vorki",
     "name": "Vorki",
     "requirements": {
       "main": [
@@ -1733,7 +1776,6 @@
     }
   },
   {
-    "icon": "Wisp",
     "name": "Wisp",
     "requirements": {
       "main": [
@@ -1765,7 +1807,21 @@
     }
   },
   {
-    "icon": "Youngllef",
+    "name": "Yami",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "quests": ["A Kingdom Divided"]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "name": "Youngllef",
     "requirements": {
       "main": [

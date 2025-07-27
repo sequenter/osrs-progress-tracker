@@ -14,7 +14,7 @@ const createSkillStore = () => {
   const store = createStore<Skill>('data/skills', SKILL, skillsJson, (localSkills, parsedSkills) =>
     parsedSkills.map(
       (parsedSkill) =>
-        localSkills.find(({ name }) => name === parsedSkill.name) ?? {
+        localSkills?.find(({ name }) => name === parsedSkill.name) ?? {
           ...parsedSkill,
           currentLevel: parsedSkill.minLevel,
           isComplete: false,
@@ -40,6 +40,9 @@ const createSkillStore = () => {
 
   // Unlocked skills by skill name
   const unlockedSkillsByName = $derived(Object.keys(unlockedSkills) as Array<SkillLiteral>);
+
+  // Current total level
+  const totalLevel = $derived(Object.values(unlockedSkills).reduce((acc, level) => acc + level, 0));
 
   /**
    * Increments a skill by a given increment value and updates the complete state if required.
@@ -114,6 +117,9 @@ const createSkillStore = () => {
   return {
     get skills() {
       return store.value;
+    },
+    get totalLevel() {
+      return totalLevel;
     },
     get totalSkills() {
       return store.total;

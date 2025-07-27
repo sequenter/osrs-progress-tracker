@@ -78,7 +78,8 @@ const ANY_REQUIREMENT = z.object({
   combatLevel: z.number().optional(),
   QP: z.number().optional(),
   quests: z.array(z.string()).optional(),
-  skills: SKILLS_REQUIREMENT.optional()
+  skills: SKILLS_REQUIREMENT.optional(),
+  totalLevel: z.number().optional()
 });
 
 /**
@@ -206,7 +207,7 @@ export const QUEST = z.object({
  * }
  */
 export const PET = z.object({
-  icon: z.string(),
+  icon: z.string().optional(),
   name: z.string(),
   requirements: REQUIREMENTS
 });
@@ -217,11 +218,13 @@ export const PET = z.object({
  * An object containing the icon and name of a collection item.
  * icon: The name of the icon from the wiki
  * name: The name of the collection item
+ * shared: Other collections the item is shared with
  * @example { "icon": "Graceful boots (Agility Arena)", "name": "Graceful boots" }
  */
-const ITEM = z.object({
-  icon: z.string(),
-  name: z.string()
+export const ITEM = z.object({
+  icon: z.string().optional(),
+  name: z.string(),
+  shared: z.array(z.string()).optional()
 });
 
 /**
@@ -232,6 +235,7 @@ const ITEM = z.object({
  * requirements: A record of {@link REQUIREMENTS}
  */
 export const COLLECTION = z.object({
+  collection: z.string().optional(),
   icon: z.string(),
   items: z.array(ITEM),
   name: z.string(),

@@ -62,6 +62,7 @@ export const isFulfilled = (
   completeQuests: Array<string>,
   questPoints: number,
   combatLevel: number,
+  totalLevel: number,
   combat: boolean,
   ironman: boolean
 ) => {
@@ -73,6 +74,7 @@ export const isFulfilled = (
         (req) =>
           (!req.combat || combat) &&
           (!req.combatLevel || combatLevel >= req.combatLevel) &&
+          (!req.totalLevel || totalLevel >= req.totalLevel) &&
           (!req.QP || questPoints >= req.QP) &&
           (!req.skills || isSkillsFulfilled(unlockedSkills, req.skills)) &&
           (!req.quests || req.quests.every((quest) => completeQuests.includes(quest)))

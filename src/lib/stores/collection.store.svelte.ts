@@ -15,7 +15,7 @@ import { COLLECTION } from '$lib/util/schema';
 const createCollectionStore = () => {
   const store = createStore<Collection>('data/collections', COLLECTION, collectionsJson, (localCollections, parsedCollections) =>
     parsedCollections.map(({ items, ...rest }) => {
-      const localCollection = localCollections.find(({ name }) => name === rest.name);
+      const localCollection = localCollections?.find(({ name }) => name === rest.name);
 
       if (localCollection) {
         const mappedItems = items.map((item) => ({
@@ -30,16 +30,19 @@ const createCollectionStore = () => {
     })
   );
 
-  const { unlockedSkills } = $derived(skillStore);
+  const { totalLevel, unlockedSkills } = $derived(skillStore);
   const { completeQuestsByName, currentQuestPoints } = $derived(questStore);
   const { combat, combatLevel, ironman } = $derived(userStore);
 
   // Locked and unlocked collections
   const [lockedCollections, unlockedCollections] = $derived(
     bifilter(store.incomplete, ({ requirements }) =>
-      isFulfilled(requirements, unlockedSkills, completeQuestsByName, currentQuestPoints, combatLevel, combat, ironman)
+      isFulfilled(requirements, unlockedSkills, completeQuestsByName, currentQuestPoints, combatLevel, totalLevel, combat, ironman)
     )
   );
+
+  // Get total amount of unique collections
+  const totalCollections = [...new Set(store.value.map(({ collection, name }) => collection ?? name))].length;
 
   /**
    * Updates the main complete state, and every item complete state.
@@ -64,17 +67,33 @@ const createCollectionStore = () => {
    * @param itemName The name of the item
    * @param isComplete Whether or not the item is complete
    */
-  const setItemComplete = (collectionName: string, itemName: string, isComplete: boolean) => {
+  const setItemComplete = (collectionName: string, itemName: string, isComplete: boolean, updateSharedCollection = true) => {
     if (collectionName in store.map) {
       const itemIndex = store.value[store.map[collectionName]].items.findIndex(({ name }) => name === itemName);
 
       if (itemIndex > -1) {
         // Set item complete state
+        console.log('Updating item: ', store.value[store.map[collectionName]].items[itemIndex].name);
         store.value[store.map[collectionName]].items[itemIndex].isComplete = isComplete;
 
         // Set collection complete state if all items are complete
         store.value[store.map[collectionName]].isComplete =
           isComplete && store.value[store.map[collectionName]].items.every(({ isComplete }) => isComplete);
+
+        // Update shared collections
+        if (updateSharedCollection) {
+          store.value[store.map[collectionName]].items[itemIndex].shared?.forEach((sharedCollection) => {
+            const sharedIndex = store.value.findIndex(
+              ({ name, items }) =>
+                name.startsWith(sharedCollection) && items.some(({ name: sharedItemName }) => sharedItemName === itemName)
+            );
+
+            if (sharedIndex > -1) {
+              console.log(`Shared collection: ${sharedCollection} from ${collectionName}: ${store.value[sharedIndex].name}`);
+              setItemComplete(store.value[sharedIndex].name, itemName, isComplete, false);
+            }
+          });
+        }
 
         store.storeValue();
       }
@@ -92,7 +111,7 @@ const createCollectionStore = () => {
       return lockedCollections;
     },
     get totalCollections() {
-      return store.total;
+      return totalCollections;
     },
     get totalCollectionsComplete() {
       return store.totalComplete;

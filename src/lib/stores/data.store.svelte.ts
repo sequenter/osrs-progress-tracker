@@ -25,7 +25,7 @@ export const createStore = <T extends { name: string; isComplete: boolean }>(
   const value = $state(
     mapItems
       ? mapItems(localItems, parsedItems)
-      : (parsedItems.map((item) => ({ ...item, isComplete: !!localItems.find(({ name }) => name === item.name)?.isComplete })) as Array<T>)
+      : (parsedItems.map((item) => ({ ...item, isComplete: !!localItems?.find(({ name }) => name === item.name)?.isComplete })) as Array<T>)
   );
 
   // Split the store into complete and incomplete arrays

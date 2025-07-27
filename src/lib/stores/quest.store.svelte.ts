@@ -14,7 +14,7 @@ import { QUEST } from '$lib/util/schema';
 const createQuestStore = () => {
   const store = createStore<Quest>('data/quests', QUEST, questsJson);
 
-  const { unlockedSkills, unlockedSkillsByName } = $derived(skillStore);
+  const { totalLevel, unlockedSkills, unlockedSkillsByName } = $derived(skillStore);
   const { combat, combatLevel, ironman } = $derived(userStore);
 
   // Completed quests by quest name
@@ -31,7 +31,7 @@ const createQuestStore = () => {
     bifilter(
       store.incomplete,
       ({ requirements, rewards }) =>
-        isFulfilled(requirements, unlockedSkills, completeQuestsByName, currentQuestPoints, combatLevel, combat, ironman) &&
+        isFulfilled(requirements, unlockedSkills, completeQuestsByName, currentQuestPoints, combatLevel, totalLevel, combat, ironman) &&
         isRewardsFulfilled(rewards, unlockedSkillsByName)
     )
   );

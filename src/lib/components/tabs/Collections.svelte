@@ -25,10 +25,10 @@
   });
 </script>
 
-{#snippet snippet({ icon, items, name, requirements }: Collection, state: ItemState)}
+{#snippet snippet({ collection, icon, items, name, requirements }: Collection, state: ItemState)}
   <TabSectionItem
-    dialogTitle={name}
-    title={name}
+    dialogTitle={collection || name}
+    title={collection || name}
     oncomplete={(isComplete: boolean) => setCollectionComplete(name, isComplete)}
     difficulty={`${items.filter(({ isComplete }) => isComplete).length}/${items.length}`}
     {icon}
@@ -39,7 +39,9 @@
       {#each items as { icon, isComplete, name: itemName } (itemName)}
         <div class="flex items-center justify-between p-1 gap-2 rounded-md w-full bg-background-200 dark:bg-background-900">
           <div class={clsx('flex items-center gap-2 min-w-0', isComplete && 'opacity-30')}>
-            <div class="flex justify-center w-6"><IconWiki {icon} /></div>
+            <div class="flex justify-center w-6">
+              <IconWiki icon={icon || itemName} />
+            </div>
 
             <span class="text-lg overflow-hidden text-ellipsis whitespace-nowrap text-black dark:text-yellow-300">{itemName}</span>
           </div>

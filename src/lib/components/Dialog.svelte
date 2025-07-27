@@ -35,7 +35,7 @@ A dialog component rendered within a portal in the body to display requirements.
   const { icon, title, requirements, rewards }: Props = $props();
 
   const { completeQuestsByName, currentQuestPoints } = $derived(questStore);
-  const { unlockedSkills } = $derived(skillStore);
+  const { totalLevel, unlockedSkills } = $derived(skillStore);
   const { combat, combatLevel, ironman } = $derived(userStore);
 
   let isOpen = $state(false);
@@ -113,6 +113,10 @@ A dialog component rendered within a portal in the body to display requirements.
 
                 {#if rest.combatLevel}
                   {@render chip('Combat level', combatLevel >= rest.combatLevel, rest.combatLevel)}
+                {/if}
+
+                {#if rest.totalLevel}
+                  {@render chip('Total level', totalLevel >= rest.totalLevel, rest.totalLevel)}
                 {/if}
 
                 {#if rest.QP}
@@ -211,7 +215,7 @@ A dialog component rendered within a portal in the body to display requirements.
           <hr class="h-px border-0 bg-background-300 dark:bg-background-600" />
 
           <div class="flex flex-col gap-4">
-            {#if Object.keys(requirements).length || (rewards && rewards.skills)}
+            {#if (Object.keys(requirements).length && (requirements.main || (requirements.ironman && ironman))) || (rewards && rewards.skills)}
               {#if requirements.main}
                 <div class="flex flex-col">
                   <div class="flex items-center gap-4 mb-2 text-amber-600 dark:text-amber-400">

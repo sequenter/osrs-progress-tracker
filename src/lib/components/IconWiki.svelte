@@ -32,6 +32,8 @@ A component utilised to display an icon from the wiki, which defaults to an erro
   const handleError = () => {
     iconSrc = WIKI_IMAGES_ERROR;
     title = `${icon} not found`;
+
+    console.warn(`Wiki icon '${icon}' not found`);
   };
 </script>
 

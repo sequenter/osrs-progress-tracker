@@ -15,14 +15,14 @@ import { ACHIEVEMENT } from '$lib/util/schema';
 const createAchievementStore = () => {
   const store = createStore<Achievement>('data/achievements', ACHIEVEMENT, achievementsJson);
 
-  const { unlockedSkills } = $derived(skillStore);
+  const { totalLevel, unlockedSkills } = $derived(skillStore);
   const { completeQuestsByName, currentQuestPoints } = $derived(questStore);
   const { combat, combatLevel, ironman } = $derived(userStore);
 
   // Locked and unlocked achievements
   const [lockedAchievements, unlockedAchievements] = $derived(
     bifilter(store.incomplete, ({ requirements }) =>
-      isFulfilled(requirements, unlockedSkills, completeQuestsByName, currentQuestPoints, combatLevel, combat, ironman)
+      isFulfilled(requirements, unlockedSkills, completeQuestsByName, currentQuestPoints, combatLevel, totalLevel, combat, ironman)
     )
   );
 

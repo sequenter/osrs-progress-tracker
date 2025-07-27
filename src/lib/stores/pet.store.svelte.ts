@@ -15,14 +15,14 @@ import { PET } from '$lib/util/schema';
 const createPetStore = () => {
   const store = createStore<Pet>('data/pets', PET, petsJson);
 
-  const { unlockedSkills } = $derived(skillStore);
+  const { totalLevel, unlockedSkills } = $derived(skillStore);
   const { completeQuestsByName, currentQuestPoints } = $derived(questStore);
   const { combat, combatLevel, ironman } = $derived(userStore);
 
   // Locked and unlocked pets
   const [lockedPets, unlockedPets] = $derived(
     bifilter(store.incomplete, ({ requirements }) =>
-      isFulfilled(requirements, unlockedSkills, completeQuestsByName, currentQuestPoints, combatLevel, combat, ironman)
+      isFulfilled(requirements, unlockedSkills, completeQuestsByName, currentQuestPoints, combatLevel, totalLevel, combat, ironman)
     )
   );
 

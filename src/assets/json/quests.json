@@ -4790,6 +4790,38 @@
   },
   {
     "difficulty": "Intermediate",
+    "icon": "Egg (Humphrey Dumphrey)",
+    "length": "Short",
+    "name": "Scrambled!",
+    "release": "23 July 2025",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "quests": ["Children of the Sun"],
+              "skills": {
+                "all": {
+                  "Cooking": 36,
+                  "Construction": 38,
+                  "Smithing": 35
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "rewards": {
+      "QP": 1,
+      "skills": {
+        "all": ["Cooking", "Construction", "Smithing"]
+      }
+    }
+  },
+  {
+    "difficulty": "Intermediate",
     "icon": "Sluglings",
     "length": "Short",
     "name": "Sea Slug",
@@ -4907,6 +4939,39 @@
       "QP": 1,
       "skills": {
         "any": ["Attack", "Strength", "Defence", "Ranged", "Magic", "Hitpoints"]
+      }
+    }
+  },
+  {
+    "difficulty": "Experienced",
+    "icon": "Antler guard",
+    "length": "Short",
+    "name": "Shadows of Custodia",
+    "release": "23 July 2025",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "quests": ["Children of the Sun"],
+              "skills": {
+                "all": {
+                  "Construction": 41,
+                  "Fishing": 45,
+                  "Hunter": 36,
+                  "Slayer": 54
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "rewards": {
+      "QP": 2,
+      "skills": {
+        "all": ["Construction", "Fishing", "Hunter", "Slayer"]
       }
     }
   },
@@ -5773,6 +5838,38 @@
       "QP": 2,
       "skills": {
         "all": ["Magic", "Woodcutting", "Runecraft", "Construction"]
+      }
+    }
+  },
+  {
+    "difficulty": "Master",
+    "icon": "Arkan blade",
+    "length": "Long",
+    "name": "The Final Dawn",
+    "release": "23 July 2025",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true,
+              "quests": ["The Heart of Darkness", "Perilous Moons"],
+              "skills": {
+                "all": {
+                  "Fletching": 52,
+                  "Runecraft": 52,
+                  "Thieving": 66
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "rewards": {
+      "QP": 3,
+      "skills": {
+        "all": ["Fletching", "Runecraft", "Thieving"]
       }
     }
   },
@@ -6880,6 +6977,30 @@
         "all": ["Agility", "Attack"]
       }
     }
+  },
+  {
+    "difficulty": "Novice",
+    "icon": "Fletching knife",
+    "length": "Very Short",
+    "name": "Vale Totems",
+    "release": "23 July 2025",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "quests": ["Children of the Sun"],
+              "skills": {
+                "all": {
+                  "Fletching": 20
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "rewards": {}
   },
   {
     "difficulty": "Intermediate",

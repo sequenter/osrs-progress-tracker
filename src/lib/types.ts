@@ -5,6 +5,7 @@ import type {
   ACHIEVEMENT,
   ALL_REQUIREMENT,
   COLLECTION,
+  ITEM,
   PET,
   QUEST,
   REQUIREMENTS,
@@ -37,11 +38,7 @@ export type Achievement = z.infer<typeof ACHIEVEMENT> & { isComplete: boolean };
 
 /* COLLECTIONS */
 
-interface CollectionItem {
-  icon: string;
-  isComplete: boolean;
-  name: string;
-}
+export type CollectionItem = z.infer<typeof ITEM> & { isComplete: boolean };
 
 export type Collection = { items: Array<CollectionItem> } & Omit<z.infer<typeof COLLECTION>, 'items'> & { isComplete: boolean };
 
