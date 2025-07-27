@@ -11,7 +11,6 @@
   import { petStore } from '$lib/stores/pet.store.svelte';
   import { questStore } from '$lib/stores/quest.store.svelte';
   import { skillStore } from '$lib/stores/skill.store.svelte';
-  import { userStore } from '$lib/stores/user.store.svelte';
   import { progressIcon } from '$lib/util/icon';
 
   let { totalAchievements, totalAchievementsComplete } = $derived(achievementStore);
