@@ -48,7 +48,15 @@ const createCollectionStore = () => {
   const totalItems = [...new Set(store.value.map(({ items }) => items.map(({ name }) => name)).flat())].length;
 
   // Total amount of complete unique items within collections
-  const totalCompleteItems = $derived([...new Set(store.complete.map(({ items }) => items.map(({ name }) => name)).flat())].length);
+  const totalCompleteItems = $derived(
+    [
+      ...new Set(
+        store.value
+          .map(({ items }) => items.reduce((acc, { name, isComplete }) => (isComplete ? [...acc, name] : acc), [] as Array<string>))
+          .flat()
+      )
+    ].length
+  );
 
   /**
    * Updates the main complete state, and every item complete state.
