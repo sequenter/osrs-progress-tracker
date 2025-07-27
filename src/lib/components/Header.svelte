@@ -125,6 +125,7 @@ An app bar header component that displays the app name and toggle button control
               id="user-input"
               class="text-lg h-6 grow border rounded-md px-2 focus:outline-none border-background-50 dark:border-background-800"
               placeholder="Add a user..."
+              maxlength={12}
             />
 
             <IconButton
