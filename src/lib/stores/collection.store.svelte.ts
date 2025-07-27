@@ -30,9 +30,9 @@ const createCollectionStore = () => {
     })
   );
 
-  const { totalLevel, unlockedSkills } = $derived(skillStore);
+  const { combatLevel, totalLevel, unlockedSkills } = $derived(skillStore);
   const { completeQuestsByName, currentQuestPoints } = $derived(questStore);
-  const { combat, combatLevel, ironman } = $derived(userStore);
+  const { combat, ironman } = $derived(userStore);
 
   // Locked and unlocked collections
   const [lockedCollections, unlockedCollections] = $derived(
@@ -73,7 +73,6 @@ const createCollectionStore = () => {
 
       if (itemIndex > -1) {
         // Set item complete state
-        console.log('Updating item: ', store.value[store.map[collectionName]].items[itemIndex].name);
         store.value[store.map[collectionName]].items[itemIndex].isComplete = isComplete;
 
         // Set collection complete state if all items are complete
@@ -89,7 +88,6 @@ const createCollectionStore = () => {
             );
 
             if (sharedIndex > -1) {
-              console.log(`Shared collection: ${sharedCollection} from ${collectionName}: ${store.value[sharedIndex].name}`);
               setItemComplete(store.value[sharedIndex].name, itemName, isComplete, false);
             }
           });

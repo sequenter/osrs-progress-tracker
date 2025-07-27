@@ -1,5 +1,4 @@
 import { createStore } from './data.store.svelte';
-import { userStore } from './user.store.svelte';
 
 import { default as skillsJson } from '$assets/json/skills.json';
 
@@ -23,8 +22,6 @@ const createSkillStore = () => {
     )
   );
 
-  const { setCombatLevel } = $derived(userStore);
-
   // Unlocked skills as an object
   const unlockedSkills: SkillsLevel = $derived(
     store.value.reduce((acc, { currentLevel, name, isUnlocked }) => (isUnlocked ? { ...acc, [name]: currentLevel } : acc), {})
@@ -40,6 +37,16 @@ const createSkillStore = () => {
 
   // Unlocked skills by skill name
   const unlockedSkillsByName = $derived(Object.keys(unlockedSkills) as Array<SkillLiteral>);
+
+  // Current combat level
+  // https://oldschool.runescape.wiki/w/Combat_level
+  const combatLevel = $derived(
+    (({ Attack, Defence, Hitpoints, Magic, Prayer, Ranged, Strength }) =>
+      Math.floor(
+        (Defence + Hitpoints + Math.floor(Prayer * 0.5)) * 0.25 +
+          Math.max((Attack + Strength) * 0.325, Ranged * 1.5 * 0.325, Magic * 1.5 * 0.325)
+      ))(store.value.reduce((acc, { currentLevel, name }) => ({ ...acc, [name]: currentLevel }), {} as Record<SkillLiteral, number>))
+  );
 
   // Current total level
   const totalLevel = $derived(Object.values(unlockedSkills).reduce((acc, level) => acc + level, 0));
@@ -63,19 +70,6 @@ const createSkillStore = () => {
 
     // Update complete state
     store.value[store.map[name]].isComplete = store.value[store.map[name]].currentLevel === store.value[store.map[name]].maxLevel;
-
-    // Update combat level
-    if (store.value[store.map[name]].isCombat) {
-      setCombatLevel(
-        store.value[store.map['Attack']].currentLevel,
-        store.value[store.map['Defence']].currentLevel,
-        store.value[store.map['Hitpoints']].currentLevel,
-        store.value[store.map['Magic']].currentLevel,
-        store.value[store.map['Prayer']].currentLevel,
-        store.value[store.map['Ranged']].currentLevel,
-        store.value[store.map['Strength']].currentLevel
-      );
-    }
 
     store.storeValue();
   };
@@ -115,6 +109,9 @@ const createSkillStore = () => {
   };
 
   return {
+    get combatLevel() {
+      return combatLevel;
+    },
     get skills() {
       return store.value;
     },

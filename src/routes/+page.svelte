@@ -18,8 +18,7 @@
   let { totalCollections, totalCollectionsComplete } = $derived(collectionStore);
   let { totalPets, totalPetsComplete } = $derived(petStore);
   let { currentQuestPoints, totalQuestPoints, totalQuests, totalQuestsComplete } = $derived(questStore);
-  let { totalSkills, totalSkillsComplete } = $derived(skillStore);
-  let { combatLevel } = $derived(userStore);
+  let { combatLevel, totalSkills, totalSkillsComplete } = $derived(skillStore);
 </script>
 
 <div class="flex flex-col h-screen w-full overflow-y-scroll">
