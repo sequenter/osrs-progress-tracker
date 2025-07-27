@@ -28,24 +28,40 @@
     />
 
     
-		<link rel="modulepreload" href="/osrs-progress-tracker/_app/immutable/entry/start.BjNwkEdq.js">
-		<link rel="modulepreload" href="/osrs-progress-tracker/_app/immutable/chunks/B2JM9SwW.js">
-		<link rel="modulepreload" href="/osrs-progress-tracker/_app/immutable/chunks/CnC7MXTt.js">
-		<link rel="modulepreload" href="/osrs-progress-tracker/_app/immutable/chunks/g7QaVxDS.js">
-		<link rel="modulepreload" href="/osrs-progress-tracker/_app/immutable/chunks/BsaB2T7M.js">
-		<link rel="modulepreload" href="/osrs-progress-tracker/_app/immutable/entry/app.D4H0Y0s-.js">
+		<link rel="modulepreload" href="/osrs-progress-tracker/_app/immutable/entry/start.C0ZV9WWk.js">
+		<link rel="modulepreload" href="/osrs-progress-tracker/_app/immutable/chunks/CkeIyboK.js">
+		<link rel="modulepreload" href="/osrs-progress-tracker/_app/immutable/chunks/B2k-tLs4.js">
+		<link rel="modulepreload" href="/osrs-progress-tracker/_app/immutable/chunks/Dh160OXw.js">
+		<link rel="modulepreload" href="/osrs-progress-tracker/_app/immutable/chunks/hFDOBvW2.js">
+		<link rel="modulepreload" href="/osrs-progress-tracker/_app/immutable/entry/app.Bkd_xD4p.js">
 		<link rel="modulepreload" href="/osrs-progress-tracker/_app/immutable/chunks/CWj6FrbW.js">
-		<link rel="modulepreload" href="/osrs-progress-tracker/_app/immutable/chunks/Crq3orK_.js">
+		<link rel="modulepreload" href="/osrs-progress-tracker/_app/immutable/chunks/BRppB1O0.js">
 
     <script>
       // FEATURE FLAG: Update localStorage achievements task -> name
-      const LOCALSTORAGE_KEY = 'data/achievements';
+      const achievementStore = localStorage.getItem('data/achievements');
 
-      const achievements = JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY) ?? '[]');
-      localStorage.setItem(
-        LOCALSTORAGE_KEY,
-        JSON.stringify(achievements.map((item) => ({ ...item, name: item.task ?? item.id ?? item.name })))
-      );
+      if (achievementStore) {
+        const achievements = JSON.parse(achievementStore);
+
+        localStorage.setItem(
+          'data/achievements',
+          JSON.stringify(achievements.map((item) => ({ ...item, name: item.task ?? item.id ?? item.name })))
+        );
+      }
+    </script>
+
+    <script>
+      // FEATURE FLAG: Remove no longer used localStorage entries
+      localStorage.removeItem('store');
+
+      const userStore = localStorage.getItem('data/user');
+
+      if (userStore) {
+        const { combatLevel, ...rest } = JSON.parse(userStore);
+
+        localStorage.setItem('data/user', JSON.stringify(rest));
+      }
     </script>
   </head>
   <body
@@ -55,7 +71,7 @@
     <div style="display: contents">
 			<script>
 				{
-					__sveltekit_1o1531s = {
+					__sveltekit_tn13u8 = {
 						base: "/osrs-progress-tracker",
 						assets: "/osrs-progress-tracker"
 					};
@@ -63,8 +79,8 @@
 					const element = document.currentScript.parentElement;
 
 					Promise.all([
-						import("/osrs-progress-tracker/_app/immutable/entry/start.BjNwkEdq.js"),
-						import("/osrs-progress-tracker/_app/immutable/entry/app.D4H0Y0s-.js")
+						import("/osrs-progress-tracker/_app/immutable/entry/start.C0ZV9WWk.js"),
+						import("/osrs-progress-tracker/_app/immutable/entry/app.Bkd_xD4p.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element);
 					});
