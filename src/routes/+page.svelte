@@ -14,7 +14,7 @@
   import { progressIcon } from '$lib/util/icon';
 
   let { totalAchievements, totalAchievementsComplete } = $derived(achievementStore);
-  let { totalCollections, totalCollectionsComplete } = $derived(collectionStore);
+  let { totalCollections, totalCollectionsComplete, totalCompleteItems, totalItems } = $derived(collectionStore);
   let { totalPets, totalPetsComplete } = $derived(petStore);
   let { currentQuestPoints, totalQuestPoints, totalQuests, totalQuestsComplete } = $derived(questStore);
   let { combatLevel, totalSkills, totalSkillsComplete } = $derived(skillStore);
@@ -73,6 +73,13 @@
           complete={totalPetsComplete}
           total={totalPets}
           title="Pets"
+        />
+
+        <Progress
+          colour={{ dark: 'bg-indigo-400', light: 'bg-indigo-200' }}
+          complete={totalCompleteItems + totalPetsComplete}
+          total={totalItems + totalPets}
+          title="Items"
         />
       </div>
     </aside>

@@ -320,6 +320,9 @@
         "name": "Ahrim's staff"
       },
       {
+        "name": "Ahrim's hood"
+      },
+      {
         "name": "Ahrim's robetop"
       },
       {
@@ -1560,6 +1563,9 @@
     "icon": "Reward casket (easy)",
     "name": "Easy Treasure Trails",
     "items": [
+      {
+        "name": "Black platebody (t)"
+      },
       {
         "name": "Black platelegs (t)"
       },
@@ -3085,23 +3091,23 @@
         "name": "Hallowed token"
       },
       {
-        "name": "Mysterious page 1",
+        "name": "Mysterious page (first floor)",
         "icon": "Mysterious page"
       },
       {
-        "name": "Mysterious page 2",
+        "name": "Mysterious page (second floor)",
         "icon": "Mysterious page"
       },
       {
-        "name": "Mysterious page 3",
+        "name": "Mysterious page (third floor)",
         "icon": "Mysterious page"
       },
       {
-        "name": "Mysterious page 4",
+        "name": "Mysterious page (fourth floor)",
         "icon": "Mysterious page"
       },
       {
-        "name": "Mysterious page 5",
+        "name": "Mysterious page (fifth floor)",
         "icon": "Mysterious page"
       },
       {
@@ -3706,6 +3712,10 @@
     "items": [
       {
         "name": "Bottomless compost bucket"
+      },
+      {
+        "icon": "Attas seed 5",
+        "name": "Attas seed"
       },
       {
         "icon": "Iasor seed 5",
@@ -6876,7 +6886,8 @@
         "name": "White firelighter"
       },
       {
-        "name": "Purple sweets 100"
+        "icon": "Purple sweets 100",
+        "name": "Purple sweets"
       },
       {
         "name": "Nardah teleport"

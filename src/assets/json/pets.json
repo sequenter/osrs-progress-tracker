@@ -169,6 +169,32 @@
     }
   },
   {
+    "name": "Bloodhound",
+    "requirements": {
+      "ironman": [
+        {
+          "description": "Obtain a master clue scroll",
+          "required": [
+            {
+              "combat": true
+            },
+            {
+              "skills": {
+                "any": {
+                  "Fishing": 1,
+                  "Hunter": 17,
+                  "Mining": 1,
+                  "Thieving": 15,
+                  "Woodcutting": 1
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
     "name": "Bran",
     "requirements": {
       "main": [
@@ -241,6 +267,37 @@
                 "any": {
                   "Ranged": 90,
                   "Magic": 94
+                }
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "name": "Chompy chick",
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combatLevel": 40,
+              "quests": ["Mourning's End Part I"],
+              "skills": {
+                "all": {
+                  "Agility": 85,
+                  "Attack": 42,
+                  "Defence": 42,
+                  "Farming": 75,
+                  "Fletching": 85,
+                  "Hitpoints": 42,
+                  "Magic": 42,
+                  "Prayer": 22,
+                  "Ranged": 42,
+                  "Slayer": 93,
+                  "Strength": 42,
+                  "Thieving": 85
                 }
               }
             }
@@ -1346,7 +1403,7 @@
             {
               "skills": {
                 "all": {
-                  "Hunter": 46
+                  "Hunter": 72
                 }
               }
             }

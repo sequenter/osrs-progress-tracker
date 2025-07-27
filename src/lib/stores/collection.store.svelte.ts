@@ -41,8 +41,14 @@ const createCollectionStore = () => {
     )
   );
 
-  // Get total amount of unique collections
+  // Total amount of unique collections
   const totalCollections = [...new Set(store.value.map(({ collection, name }) => collection ?? name))].length;
+
+  // Total amount of unique items within collections
+  const totalItems = [...new Set(store.value.map(({ items }) => items.map(({ name }) => name)).flat())].length;
+
+  // Total amount of complete unique items within collections
+  const totalCompleteItems = $derived([...new Set(store.complete.map(({ items }) => items.map(({ name }) => name)).flat())].length);
 
   /**
    * Updates the main complete state, and every item complete state.
@@ -113,6 +119,12 @@ const createCollectionStore = () => {
     },
     get totalCollectionsComplete() {
       return store.totalComplete;
+    },
+    get totalCompleteItems() {
+      return totalCompleteItems;
+    },
+    get totalItems() {
+      return totalItems;
     },
     get unlockedCollections() {
       return unlockedCollections;
