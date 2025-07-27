@@ -8,16 +8,24 @@
  * @param key The key of the object to store
  * @param value The object to store
  */
-export function setJSONObject<T>(key: string, value: T) {
+export const setJSONObject = <T>(key: string, value: T) => {
   localStorage.setItem(key, JSON.stringify(value));
-}
+};
 
 /**
- * Get an object from local storage utilising a key, and parse it as JSON.
+ * Get an object from localStorage utilising a key, and parse it as JSON.
  * @param key The key of the object to get
  * @returns Parsed object from the store
  */
-export function getJSONObject<T>(key: string): T | null {
+export const getJSONObject = <T>(key: string): T | null => {
   const value = localStorage.getItem(key);
   return value && JSON.parse(value);
-}
+};
+
+/**
+ * Remove a key from localStorage.
+ * @param key The key of the object to remove
+ */
+export const removeJSONObject = (key: string) => {
+  localStorage.removeItem(key);
+};

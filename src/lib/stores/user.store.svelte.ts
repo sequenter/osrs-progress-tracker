@@ -1,9 +1,11 @@
-import { getJSONObject, setJSONObject } from '$lib/util/localStorage';
+import { getJSONObject, removeJSONObject, setJSONObject } from '$lib/util/localStorage';
 
 interface UserStore {
   combat: boolean;
+  currentUser: string;
   darkMode: boolean;
   ironman: boolean;
+  users: Array<string>;
 }
 
 /**
@@ -11,13 +13,16 @@ interface UserStore {
  * @returns User store accessors
  */
 const createUserStore = () => {
-  const store: UserStore = $state(
-    getJSONObject('data/user') ?? {
-      combat: false,
-      darkMode: !!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),
-      ironman: false
-    }
-  );
+  const localStore = getJSONObject<UserStore>('data/user');
+
+  const store: UserStore = $state({
+    combat: false,
+    currentUser: '',
+    darkMode: !!(window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches),
+    ironman: false,
+    users: [],
+    ...localStore
+  });
 
   /**
    * Set the localStorage user store.
@@ -25,11 +30,50 @@ const createUserStore = () => {
   const storeValue = () => setJSONObject('data/user', store);
 
   /**
+   * Add a user to the user list.
+   * @param {string} value
+   */
+  const addUser = (value: string) => {
+    if (value && !store.users.includes(value)) {
+      store.users = [...store.users, value];
+
+      storeValue();
+    }
+  };
+
+  /**
+   * Remove a user from the users list.
+   * @param {string} value
+   */
+  const removeUser = (value: string) => {
+    if (value && store.users.includes(value)) {
+      store.users = store.users.filter((user) => user !== value);
+
+      // Remove stores from localStorage
+      ['data/achievements', 'data/collections', 'data/pets', 'data/quests', 'data/skills'].forEach((key) =>
+        removeJSONObject(`${value}${key}`)
+      );
+
+      storeValue();
+    }
+  };
+
+  /**
    * Set the combat state.
    * @param {boolean} value
    */
   const setCombat = (value: boolean) => {
     store.combat = value;
+
+    storeValue();
+  };
+
+  /**
+   * Set the current user.
+   * @param {string} value
+   */
+  const setCurrentUser = (value: string) => {
+    store.currentUser = value === 'default' ? '' : value;
 
     storeValue();
   };
@@ -58,14 +102,29 @@ const createUserStore = () => {
     get combat() {
       return store.combat;
     },
+    get currentUser() {
+      return store.currentUser;
+    },
     get darkMode() {
       return store.darkMode;
     },
     get ironman() {
       return store.ironman;
     },
+    get users() {
+      return ['default', ...store.users];
+    },
+    get addUser() {
+      return addUser;
+    },
+    get removeUser() {
+      return removeUser;
+    },
     get setCombat() {
       return setCombat;
+    },
+    get setCurrentUser() {
+      return setCurrentUser;
     },
     get setDarkMode() {
       return setDarkMode;

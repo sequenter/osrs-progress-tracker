@@ -2,6 +2,7 @@ import { createStore } from './data.store.svelte';
 
 import { default as skillsJson } from '$assets/json/skills.json';
 
+import { userStore } from '$lib/stores/user.store.svelte';
 import type { Skill, SkillLiteral, SkillsLevel } from '$lib/types';
 import { SKILL } from '$lib/util/schema';
 
@@ -10,17 +11,21 @@ import { SKILL } from '$lib/util/schema';
  * @returns Skill store accessors
  */
 const createSkillStore = () => {
-  const store = createStore<Skill>(
-    'data/skills',
-    SKILL,
-    skillsJson,
-    ({ currentLevel, isComplete, isUnlocked }, parsedSkill) => ({
-      ...parsedSkill,
-      currentLevel,
-      isComplete: !!isComplete,
-      isUnlocked: !!isUnlocked
-    }),
-    (parsedSkill) => ({ ...parsedSkill, currentLevel: parsedSkill.minLevel, isComplete: false, isUnlocked: false })
+  const { currentUser } = $derived(userStore);
+
+  const store = $derived(
+    createStore<Skill>(
+      `${currentUser}data/skills`,
+      SKILL,
+      skillsJson,
+      ({ currentLevel, isComplete, isUnlocked }, parsedSkill) => ({
+        ...parsedSkill,
+        currentLevel,
+        isComplete: !!isComplete,
+        isUnlocked: !!isUnlocked
+      }),
+      (parsedSkill) => ({ ...parsedSkill, currentLevel: parsedSkill.minLevel, isComplete: false, isUnlocked: false })
+    )
   );
 
   // Unlocked skills as an object

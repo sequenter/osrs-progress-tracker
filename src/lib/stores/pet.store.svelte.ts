@@ -13,11 +13,11 @@ import { PET } from '$lib/util/schema';
  * @returns Pet store accessors
  */
 const createPetStore = () => {
-  const store = createStore<Pet>('data/pets', PET, petsJson);
-
   const { combatLevel, totalLevel, unlockedSkills } = $derived(skillStore);
   const { completeQuestsByName, currentQuestPoints } = $derived(questStore);
-  const { combat, ironman } = $derived(userStore);
+  const { combat, currentUser, ironman } = $derived(userStore);
+
+  const store = $derived(createStore<Pet>(`${currentUser}data/pets`, PET, petsJson));
 
   // Locked and unlocked pets
   const [lockedPets, unlockedPets] = $derived(

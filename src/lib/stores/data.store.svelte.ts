@@ -25,14 +25,12 @@ export const createStore = <T extends { name: string; isComplete: boolean; isOnH
 
   const value = $state(
     parsedItems.map((item) => {
-      if (localItems) {
-        const localItem = localItems.find(({ name }) => name === item.name);
+      const localItem = localItems?.find(({ name }) => name === item.name);
 
-        if (localItem) {
-          return getLocalMappedItem
-            ? getLocalMappedItem(localItem, item)
-            : { ...item, isComplete: !!localItem.isComplete, isOnHold: !!localItem.isOnHold };
-        }
+      if (localItem) {
+        return getLocalMappedItem
+          ? getLocalMappedItem(localItem, item)
+          : { ...item, isComplete: !!localItem.isComplete, isOnHold: !!localItem.isOnHold };
       }
 
       return getMappedItem ? getMappedItem(item) : { ...item, isComplete: false, isOnHold: false };

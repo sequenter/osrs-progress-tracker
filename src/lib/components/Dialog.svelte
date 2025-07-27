@@ -35,8 +35,8 @@ A dialog component rendered within a portal in the body to display requirements.
   const { icon, title, requirements, rewards }: Props = $props();
 
   const { completeQuestsByName, currentQuestPoints } = $derived(questStore);
-  const { totalLevel, unlockedSkills } = $derived(skillStore);
-  const { combat, combatLevel, ironman } = $derived(userStore);
+  const { combatLevel, totalLevel, unlockedSkills } = $derived(skillStore);
+  const { combat, ironman } = $derived(userStore);
 
   let isOpen = $state(false);
 

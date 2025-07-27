@@ -13,11 +13,11 @@ import { ACHIEVEMENT } from '$lib/util/schema';
  * @returns Achievement store accessors
  */
 const createAchievementStore = () => {
-  const store = createStore<Achievement>('data/achievements', ACHIEVEMENT, achievementsJson);
-
   const { combatLevel, totalLevel, unlockedSkills } = $derived(skillStore);
   const { completeQuestsByName, currentQuestPoints } = $derived(questStore);
-  const { combat, ironman } = $derived(userStore);
+  const { combat, currentUser, ironman } = $derived(userStore);
+
+  const store = $derived(createStore<Achievement>(`${currentUser}data/achievements`, ACHIEVEMENT, achievementsJson));
 
   // Locked and unlocked achievements
   const [lockedAchievements, unlockedAchievements] = $derived(

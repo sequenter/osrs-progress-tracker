@@ -31,13 +31,29 @@
 
     <script>
       // FEATURE FLAG: Update localStorage achievements task -> name
-      const LOCALSTORAGE_KEY = 'data/achievements';
+      const achievementStore = localStorage.getItem('data/achievements');
 
-      const achievements = JSON.parse(localStorage.getItem(LOCALSTORAGE_KEY) ?? '[]');
-      localStorage.setItem(
-        LOCALSTORAGE_KEY,
-        JSON.stringify(achievements.map((item) => ({ ...item, name: item.task ?? item.id ?? item.name })))
-      );
+      if (achievementStore) {
+        const achievements = JSON.parse(achievementStore);
+
+        localStorage.setItem(
+          'data/achievements',
+          JSON.stringify(achievements.map((item) => ({ ...item, name: item.task ?? item.id ?? item.name })))
+        );
+      }
+    </script>
+
+    <script>
+      // FEATURE FLAG: Remove no longer used localStorage entries
+      localStorage.removeItem('store');
+
+      const userStore = localStorage.getItem('data/user');
+
+      if (userStore) {
+        const { combatLevel, ...rest } = JSON.parse(userStore);
+
+        localStorage.setItem('data/user', JSON.stringify(rest));
+      }
     </script>
   </head>
   <body

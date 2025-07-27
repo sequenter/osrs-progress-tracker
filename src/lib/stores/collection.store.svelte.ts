@@ -13,27 +13,29 @@ import { COLLECTION } from '$lib/util/schema';
  * @returns Collection store accessors
  */
 const createCollectionStore = () => {
-  const store = createStore<Collection>(
-    'data/collections',
-    COLLECTION,
-    collectionsJson,
-    ({ items, isComplete, isOnHold }, parsedCollection) => ({
-      ...parsedCollection,
-      isComplete: !!isComplete,
-      isOnHold: !!isOnHold,
-      items: parsedCollection.items.map((item) => ({ ...item, isComplete: !!items.find(({ name }) => name === item.name)?.isComplete }))
-    }),
-    (parsedCollection) => ({
-      ...parsedCollection,
-      isComplete: false,
-      isOnHold: false,
-      items: parsedCollection.items.map((item) => ({ ...item, isComplete: false }))
-    })
-  );
-
   const { combatLevel, totalLevel, unlockedSkills } = $derived(skillStore);
   const { completeQuestsByName, currentQuestPoints } = $derived(questStore);
-  const { combat, ironman } = $derived(userStore);
+  const { combat, currentUser, ironman } = $derived(userStore);
+
+  const store = $derived(
+    createStore<Collection>(
+      `${currentUser}data/collections`,
+      COLLECTION,
+      collectionsJson,
+      ({ items, isComplete, isOnHold }, parsedCollection) => ({
+        ...parsedCollection,
+        isComplete: !!isComplete,
+        isOnHold: !!isOnHold,
+        items: parsedCollection.items.map((item) => ({ ...item, isComplete: !!items.find(({ name }) => name === item.name)?.isComplete }))
+      }),
+      (parsedCollection) => ({
+        ...parsedCollection,
+        isComplete: false,
+        isOnHold: false,
+        items: parsedCollection.items.map((item) => ({ ...item, isComplete: false }))
+      })
+    )
+  );
 
   // Locked and unlocked collections
   const [lockedCollections, unlockedCollections] = $derived(

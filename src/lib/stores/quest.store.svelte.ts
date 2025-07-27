@@ -12,10 +12,10 @@ import { QUEST } from '$lib/util/schema';
  * @returns Quest store accessors
  */
 const createQuestStore = () => {
-  const store = createStore<Quest>('data/quests', QUEST, questsJson);
-
   const { combatLevel, totalLevel, unlockedSkills, unlockedSkillsByName } = $derived(skillStore);
-  const { combat, ironman } = $derived(userStore);
+  const { combat, currentUser, ironman } = $derived(userStore);
+
+  const store = $derived(createStore<Quest>(`${currentUser}data/quests`, QUEST, questsJson));
 
   // Completed quests by quest name
   const completeQuestsByName = $derived(store.complete.map(({ name }) => name));
