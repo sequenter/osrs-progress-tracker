@@ -10,10 +10,10 @@
 
   const { onUnlocked }: Props = $props();
 
-  const { completePets, lockedPets, unlockedPets, setPetComplete } = $derived(petStore);
+  const { completePets, lockedPets, unlockedPets, setPetComplete, setPetOnHold } = $derived(petStore);
 
   $effect(() => {
-    onUnlocked(unlockedPets.length);
+    onUnlocked(unlockedPets.filter(({ isOnHold }) => !isOnHold).length);
   });
 </script>
 
@@ -22,7 +22,8 @@
     dialogTitle={name}
     icon={icon || name}
     title={name}
-    oncomplete={(isComplete: boolean) => setPetComplete(name, isComplete)}
+    oncomplete={(isComplete) => setPetComplete(name, isComplete)}
+    onhold={(isOnHold) => setPetOnHold(name, isOnHold)}
     {requirements}
     {state}
   />

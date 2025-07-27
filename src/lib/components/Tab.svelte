@@ -12,12 +12,13 @@ A generic component that renders the three unlocked, locked, and complete sectio
 
 <script
   lang="ts"
-  generics="T extends { name: string }"
+  generics="T extends { name: string, isOnHold: boolean }"
 >
   import type { Snippet } from 'svelte';
 
   import TabSection from '$lib/components/TabSection.svelte';
   import type { ItemState } from '$lib/types';
+  import { bifilter } from '$lib/util/array';
 
   interface Props {
     complete: Array<T>;
@@ -27,35 +28,41 @@ A generic component that renders the three unlocked, locked, and complete sectio
   }
 
   interface Section {
-    title: ItemState;
+    itemState: ItemState;
     items: Array<T>;
   }
 
   let { complete, locked, unlocked, snippet }: Props = $props();
 
+  const [unlockedItems, onHoldItems] = $derived(bifilter(unlocked, ({ isOnHold }) => isOnHold));
+
   const sections: Array<Section> = $derived([
     {
-      title: 'unlocked',
-      items: unlocked
+      itemState: 'unlocked',
+      items: unlockedItems
     },
     {
-      title: 'locked',
+      itemState: 'onhold',
+      items: onHoldItems
+    },
+    {
+      itemState: 'locked',
       items: locked
     },
     {
-      title: 'complete',
+      itemState: 'complete',
       items: complete
     }
   ]);
 </script>
 
-{#each sections as { title, items } (title)}
+{#each sections as { itemState, items } (itemState)}
   <TabSection
     count={items.length}
-    {title}
+    {itemState}
   >
     {#each items as item (item.name)}
-      {@render snippet(item, title)}
+      {@render snippet(item, itemState)}
     {/each}
   </TabSection>
 {/each}

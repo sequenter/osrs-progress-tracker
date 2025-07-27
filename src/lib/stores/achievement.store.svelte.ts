@@ -26,13 +26,6 @@ const createAchievementStore = () => {
     )
   );
 
-  /**
-   * Sets the complete state of an achievement.
-   * @param task The achievement task
-   * @param isComplete Whether or not the achievement is complete
-   */
-  const setComplete = (task: string, isComplete: boolean) => store.setComplete(task, isComplete);
-
   return {
     get completeAchievements() {
       return store.complete;
@@ -53,7 +46,10 @@ const createAchievementStore = () => {
       return unlockedAchievements;
     },
     get setAchievementComplete() {
-      return setComplete;
+      return store.setComplete;
+    },
+    get setAchievementOnHold() {
+      return store.setOnHold;
     }
   };
 };

@@ -36,13 +36,6 @@ const createQuestStore = () => {
     )
   );
 
-  /**
-   * Sets the complete state of a quest.
-   * @param name The name of the quest
-   * @param isComplete Whether or not the quest is complete
-   */
-  const setComplete = (name: string, isComplete: boolean) => store.setComplete(name, isComplete);
-
   return {
     get completeQuests() {
       return store.complete;
@@ -69,7 +62,10 @@ const createQuestStore = () => {
       return unlockedQuests;
     },
     get setQuestComplete() {
-      return setComplete;
+      return store.setComplete;
+    },
+    get setQuestOnHold() {
+      return store.setOnHold;
     }
   };
 };

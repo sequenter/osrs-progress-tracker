@@ -17,11 +17,17 @@
 
   const { onUnlocked }: Props = $props();
 
-  const { completeCollections, lockedCollections, unlockedCollections, setCollectionComplete, setCollectionItemComplete } =
-    $derived(collectionStore);
+  const {
+    completeCollections,
+    lockedCollections,
+    unlockedCollections,
+    setCollectionComplete,
+    setCollectionItemComplete,
+    setCollectionOnHold
+  } = $derived(collectionStore);
 
   $effect(() => {
-    onUnlocked(unlockedCollections.length);
+    onUnlocked(unlockedCollections.filter(({ isOnHold }) => !isOnHold).length);
   });
 </script>
 
@@ -29,7 +35,8 @@
   <TabSectionItem
     dialogTitle={collection || name}
     title={collection || name}
-    oncomplete={(isComplete: boolean) => setCollectionComplete(name, isComplete)}
+    oncomplete={(isComplete) => setCollectionComplete(name, isComplete)}
+    onhold={(isOnHold) => setCollectionOnHold(name, isOnHold)}
     difficulty={`${items.filter(({ isComplete }) => isComplete).length}/${items.length}`}
     {icon}
     {requirements}

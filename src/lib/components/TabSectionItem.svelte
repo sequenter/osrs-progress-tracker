@@ -26,7 +26,7 @@ A component that renders an item card within a tab section.
   import { difficultyColourMap } from '$lib/constants';
   import type { ItemState, QuestRewards, Requirements } from '$lib/types';
 
-  import { mdiCheckCircle, mdiCloseCircle, mdiHelpCircle } from '@mdi/js';
+  import { mdiCheckCircle, mdiCloseCircle, mdiHelpCircle, mdiPauseCircle, mdiPlayCircle } from '@mdi/js';
 
   interface Props {
     icon: string;
@@ -39,9 +39,10 @@ A component that renders an item card within a tab section.
     title: string;
     children?: Snippet;
     oncomplete: (isComplete: boolean) => void;
+    onhold: (isOnHold: boolean) => void;
   }
 
-  const { description, dialogTitle, difficulty, icon, requirements, rewards, state, title, children, oncomplete }: Props = $props();
+  const { description, dialogTitle, difficulty, icon, requirements, rewards, state, title, children, oncomplete, onhold }: Props = $props();
 
   let dialog: Dialog;
 </script>
@@ -72,19 +73,39 @@ A component that renders an item card within a tab section.
   {/if}
 
   <div class={clsx('flex flex-row items-center', state === 'locked' ? 'justify-end' : 'justify-between')}>
-    {#if state === 'complete'}
-      <IconButton
-        path={mdiCloseCircle}
-        label="Mark as incomplete"
-        onclick={() => oncomplete(false)}
-      />
-    {:else if state === 'unlocked'}
-      <IconButton
-        path={mdiCheckCircle}
-        label="Mark as complete"
-        onclick={() => oncomplete(true)}
-      />
-    {/if}
+    <div class="flex items-center gap-2">
+      {#if state === 'complete'}
+        <IconButton
+          path={mdiCloseCircle}
+          label="Mark as incomplete"
+          onclick={() => oncomplete(false)}
+        />
+      {:else if state === 'onhold'}
+        <IconButton
+          path={mdiCheckCircle}
+          label="Mark as complete"
+          onclick={() => oncomplete(true)}
+        />
+
+        <IconButton
+          path={mdiPlayCircle}
+          label="Mark as available"
+          onclick={() => onhold(false)}
+        />
+      {:else if state === 'unlocked'}
+        <IconButton
+          path={mdiCheckCircle}
+          label="Mark as complete"
+          onclick={() => oncomplete(true)}
+        />
+
+        <IconButton
+          path={mdiPauseCircle}
+          label="Mark as on hold"
+          onclick={() => onhold(true)}
+        />
+      {/if}
+    </div>
 
     <IconButton
       path={mdiHelpCircle}

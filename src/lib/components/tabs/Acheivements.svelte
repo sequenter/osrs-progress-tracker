@@ -10,10 +10,11 @@
 
   const { onUnlocked }: Props = $props();
 
-  const { completeAchievements, lockedAchievements, unlockedAchievements, setAchievementComplete } = $derived(achievementStore);
+  const { completeAchievements, lockedAchievements, unlockedAchievements, setAchievementComplete, setAchievementOnHold } =
+    $derived(achievementStore);
 
   $effect(() => {
-    onUnlocked(unlockedAchievements.length);
+    onUnlocked(unlockedAchievements.filter(({ isOnHold }) => !isOnHold).length);
   });
 </script>
 
@@ -22,7 +23,8 @@
     description={name}
     dialogTitle={name}
     title={diary}
-    oncomplete={(isComplete: boolean) => setAchievementComplete(name, isComplete)}
+    oncomplete={(isComplete) => setAchievementComplete(name, isComplete)}
+    onhold={(isOnHold) => setAchievementOnHold(name, isOnHold)}
     {difficulty}
     {icon}
     {requirements}

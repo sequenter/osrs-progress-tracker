@@ -13,7 +13,7 @@ import { parseJSONArray } from '$lib/util/schema';
  * @param mapItems Optional callback to map the local and parsed items from localStorage/json
  * @returns Store accessors
  */
-export const createStore = <T extends { name: string; isComplete: boolean }>(
+export const createStore = <T extends { name: string; isComplete: boolean; isOnHold: boolean }>(
   key: string,
   schema: ZodObject,
   json: Array<object>,
@@ -29,11 +29,13 @@ export const createStore = <T extends { name: string; isComplete: boolean }>(
         const localItem = localItems.find(({ name }) => name === item.name);
 
         if (localItem) {
-          return getLocalMappedItem ? getLocalMappedItem(localItem, item) : { ...item, isComplete: localItem.isComplete };
+          return getLocalMappedItem
+            ? getLocalMappedItem(localItem, item)
+            : { ...item, isComplete: !!localItem.isComplete, isOnHold: !!localItem.isOnHold };
         }
       }
 
-      return getMappedItem ? getMappedItem(item) : { ...item, isComplete: false };
+      return getMappedItem ? getMappedItem(item) : { ...item, isComplete: false, isOnHold: false };
     })
   );
 
@@ -63,6 +65,13 @@ export const createStore = <T extends { name: string; isComplete: boolean }>(
     }
   };
 
+  const setOnHold = (name: string, isOnHold: boolean) => {
+    if (name in map) {
+      value[map[name]].isOnHold = isOnHold;
+      storeValue();
+    }
+  };
+
   return {
     get complete() {
       return complete;
@@ -82,6 +91,9 @@ export const createStore = <T extends { name: string; isComplete: boolean }>(
     value,
     get setComplete() {
       return setComplete;
+    },
+    get setOnHold() {
+      return setOnHold;
     },
     get storeValue() {
       return storeValue;

@@ -10,10 +10,10 @@
 
   const { onUnlocked }: Props = $props();
 
-  const { completeQuests, lockedQuests, unlockedQuests, setQuestComplete } = $derived(questStore);
+  const { completeQuests, lockedQuests, unlockedQuests, setQuestComplete, setQuestOnHold } = $derived(questStore);
 
   $effect(() => {
-    onUnlocked(unlockedQuests.length);
+    onUnlocked(unlockedQuests.filter(({ isOnHold }) => !isOnHold).length);
   });
 </script>
 
@@ -22,7 +22,8 @@
     description={`${release}, ${length}`}
     dialogTitle={name}
     title={name}
-    oncomplete={(isComplete: boolean) => setQuestComplete(name, isComplete)}
+    oncomplete={(isComplete) => setQuestComplete(name, isComplete)}
+    onhold={(isOnHold) => setQuestOnHold(name, isOnHold)}
     {difficulty}
     {icon}
     {requirements}

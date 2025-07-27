@@ -17,14 +17,16 @@ const createCollectionStore = () => {
     'data/collections',
     COLLECTION,
     collectionsJson,
-    ({ items, isComplete }, parsedCollection) => ({
+    ({ items, isComplete, isOnHold }, parsedCollection) => ({
       ...parsedCollection,
       isComplete: !!isComplete,
+      isOnHold: !!isOnHold,
       items: parsedCollection.items.map((item) => ({ ...item, isComplete: !!items.find(({ name }) => name === item.name)?.isComplete }))
     }),
     (parsedCollection) => ({
       ...parsedCollection,
       isComplete: false,
+      isOnHold: false,
       items: parsedCollection.items.map((item) => ({ ...item, isComplete: false }))
     })
   );
@@ -141,6 +143,9 @@ const createCollectionStore = () => {
     },
     get setCollectionItemComplete() {
       return setItemComplete;
+    },
+    get setCollectionOnHold() {
+      return store.setOnHold;
     }
   };
 };

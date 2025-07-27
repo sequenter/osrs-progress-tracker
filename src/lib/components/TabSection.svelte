@@ -15,23 +15,24 @@ control to hide/show the section.
   import type { Snippet } from 'svelte';
 
   import IconButton from '$lib/components/IconButton.svelte';
+  import type { ItemState } from '$lib/types';
 
   import { mdiChevronDownCircle, mdiChevronUpCircle } from '@mdi/js';
 
   interface Props {
     count: number;
-    title: string;
+    itemState: ItemState;
     children: Snippet;
   }
 
-  const { count, title, children }: Props = $props();
+  const { count, itemState, children }: Props = $props();
 
   let isHidden = $state(false);
 </script>
 
 <div class="flex flex-col gap-4">
   <div class="flex items-center justify-between pb-4 border-b border-background-300 dark:border-background-700">
-    <span class="capitalize text-2xl">{title}</span>
+    <span class="capitalize text-2xl">{itemState === 'onhold' ? 'On Hold' : itemState}</span>
 
     <div class="flex items-center gap-4">
       <span class="text-base px-2 rounded-full text-black dark:text-white bg-gray-300 dark:bg-gray-800">{count}</span>

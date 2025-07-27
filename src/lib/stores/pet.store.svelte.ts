@@ -26,13 +26,6 @@ const createPetStore = () => {
     )
   );
 
-  /**
-   * Sets the complete state of a pet.
-   * @param name The name of the pet
-   * @param isComplete Whether or not the pet is complete
-   */
-  const setComplete = (name: string, isComplete: boolean) => store.setComplete(name, isComplete);
-
   return {
     get completePets() {
       return store.complete;
@@ -53,7 +46,10 @@ const createPetStore = () => {
       return unlockedPets;
     },
     get setPetComplete() {
-      return setComplete;
+      return store.setComplete;
+    },
+    get setPetOnHold() {
+      return store.setOnHold;
     }
   };
 };
