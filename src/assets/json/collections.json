@@ -9478,7 +9478,17 @@
         "name": "Obsidian cape"
       }
     ],
-    "requirements": {}
+    "requirements": {
+      "main": [
+        {
+          "required": [
+            {
+              "combat": true
+            }
+          ]
+        }
+      ]
+    }
   },
   {
     "collection": "Tzhaar",

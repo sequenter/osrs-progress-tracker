@@ -25,7 +25,7 @@
 
   <div class="flex flex-col grow lg:flex-row">
     <aside
-      class="flex flex-col gap-4 p-4 shadow-elevation shrink-0 whitespace-nowrap z-30 lg:h-[calc(100vh-64px)] lg:sticky lg:top-16 lg:w-96 bg-background-50 dark:bg-background-800"
+      class="flex flex-col gap-4 p-4 overflow-y-auto shadow-elevation shrink-0 whitespace-nowrap z-30 lg:h-[calc(100vh-64px)] lg:sticky lg:top-16 lg:w-96 bg-background-50 dark:bg-background-800"
     >
       <div class="flex items-center gap-4">
         <Icon

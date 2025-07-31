@@ -30,16 +30,21 @@ levels.
 >
   <div class="grid grid-cols-4 gap-4 h-full">
     {#each skills as { currentLevel, isUnlocked, name } (name)}
-      <div class="flex flex-col items-center justify-between p-2 rounded-md shadow-elevation text-xl grow bg-white dark:bg-background-700">
-        <div class={clsx('flex flex-col items-center grow transition-opacity', isUnlocked ? 'opacity-100' : 'opacity-40 dark:opacity-20')}>
+      <div
+        class="flex flex-col items-center justify-between p-2 rounded-md shadow-elevation text-xl grow gap-2 bg-white dark:bg-background-700"
+      >
+        <div
+          class={clsx(
+            'flex flex-col items-center grow transition-opacity w-full',
+            isUnlocked ? 'opacity-100' : 'opacity-40 dark:opacity-20'
+          )}
+        >
           <span>{name}</span>
 
-          <img
-            alt={`${name} icon`}
-            height="56"
-            width="56"
-            src={skillIconMap[name]}
-          />
+          <div
+            class="w-full h-full bg-no-repeat bg-center bg-contain"
+            style={`background-image: url(${skillIconMap[name]});`}
+          ></div>
         </div>
 
         {#if isUnlocked}
