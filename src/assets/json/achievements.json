@@ -7680,7 +7680,6 @@
         {
           "required": [
             {
-              "quests": ["Lost City"],
               "skills": {
                 "all": {
                   "Hunter": 42
