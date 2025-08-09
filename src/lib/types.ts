@@ -18,7 +18,7 @@ import type {
 
 type ItemStates = { isComplete: boolean; isOnHold: boolean };
 
-export type ItemState = 'complete' | 'locked' | 'unlocked';
+export type ItemState = 'complete' | 'locked' | 'onhold' | 'unlocked';
 
 export type Requirements = z.infer<typeof REQUIREMENTS>;
 

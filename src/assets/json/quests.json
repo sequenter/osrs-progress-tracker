@@ -67,11 +67,63 @@
     "name": "A Porcine of Interest",
     "release": "10 September 2020",
     "requirements": {
-      "main": [
+      "ironman": [
         {
+          "description": "Defeat the Sourhog",
           "required": [
             {
               "combat": true
+            },
+            {
+              "skills": {
+                "all": {
+                  "Hunter": 65
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Magic": 7,
+                  "Crafting": 20,
+                  "Woodcutting": 1,
+                  "Firemaking": 50,
+                  "Smithing": 40
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Magic": 7,
+                  "Crafting": 20,
+                  "Smithing": 40
+                },
+                "any": {
+                  "Hunter": 36,
+                  "Thieving": 72,
+                  "Mining": 40
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Crafting": 20,
+                  "Firemaking": 16,
+                  "Magic": 33,
+                  "Thieving": 14
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Firemaking": 50,
+                  "Mining": 42,
+                  "Woodcutting": 42
+                }
+              }
             }
           ]
         }
@@ -540,7 +592,9 @@
               "quests": ["Plague City"]
             }
           ]
-        },
+        }
+      ],
+      "ironman": [
         {
           "description": "Obtain the key from the mourner",
           "required": [
@@ -586,6 +640,15 @@
                   "Firemaking": 16,
                   "Magic": 33,
                   "Thieving": 14
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Firemaking": 50,
+                  "Mining": 42,
+                  "Woodcutting": 42
                 }
               }
             }
@@ -1030,7 +1093,6 @@
         {
           "required": [
             {
-              "combat": true,
               "quests": ["Children of the Sun"],
               "skills": {
                 "all": {
@@ -1191,11 +1253,63 @@
     "name": "Demon Slayer",
     "release": "4 January 2001",
     "requirements": {
-      "main": [
+      "ironman": [
         {
+          "description": "Defeat delrith",
           "required": [
             {
               "combat": true
+            },
+            {
+              "skills": {
+                "all": {
+                  "Hunter": 65
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Magic": 7,
+                  "Crafting": 20,
+                  "Woodcutting": 1,
+                  "Firemaking": 50,
+                  "Smithing": 40
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Magic": 7,
+                  "Crafting": 20,
+                  "Smithing": 40
+                },
+                "any": {
+                  "Hunter": 36,
+                  "Thieving": 72,
+                  "Mining": 40
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Crafting": 20,
+                  "Firemaking": 16,
+                  "Magic": 33,
+                  "Thieving": 14
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Firemaking": 50,
+                  "Mining": 42,
+                  "Woodcutting": 42
+                }
+              }
             }
           ]
         }
@@ -1751,12 +1865,72 @@
         {
           "required": [
             {
-              "combat": true,
               "skills": {
                 "all": {
                   "Mining": 20,
                   "Smithing": 20,
                   "Crafting": 20
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "ironman": [
+        {
+          "description": "Defeat the earth elemental",
+          "required": [
+            {
+              "combat": true
+            },
+            {
+              "skills": {
+                "all": {
+                  "Hunter": 65
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Magic": 7,
+                  "Crafting": 20,
+                  "Woodcutting": 1,
+                  "Firemaking": 50,
+                  "Smithing": 40
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Magic": 7,
+                  "Crafting": 20,
+                  "Smithing": 40
+                },
+                "any": {
+                  "Hunter": 36,
+                  "Thieving": 72,
+                  "Mining": 40
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Crafting": 20,
+                  "Firemaking": 16,
+                  "Magic": 33,
+                  "Thieving": 14
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Firemaking": 50,
+                  "Mining": 42,
+                  "Woodcutting": 42
                 }
               }
             }
@@ -2675,7 +2849,6 @@
         {
           "required": [
             {
-              "combat": true,
               "quests": ["Gertrude's Cat"]
             }
           ]
@@ -2700,6 +2873,65 @@
                 "all": {
                   "Woodcutting": 1,
                   "Firemaking": 50
+                }
+              }
+            }
+          ]
+        },
+        {
+          "description": "Defeat the apparition and posessed priest",
+          "required": [
+            {
+              "combat": true
+            },
+            {
+              "skills": {
+                "all": {
+                  "Hunter": 65
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Magic": 7,
+                  "Crafting": 20,
+                  "Woodcutting": 1,
+                  "Firemaking": 50,
+                  "Smithing": 40
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Magic": 7,
+                  "Crafting": 20,
+                  "Smithing": 40
+                },
+                "any": {
+                  "Hunter": 36,
+                  "Thieving": 72,
+                  "Mining": 40
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Crafting": 20,
+                  "Firemaking": 16,
+                  "Magic": 33,
+                  "Thieving": 14
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Firemaking": 50,
+                  "Mining": 42,
+                  "Woodcutting": 42
                 }
               }
             }
@@ -3186,11 +3418,71 @@
         {
           "required": [
             {
-              "combat": true,
               "skills": {
                 "all": {
                   "Crafting": 31,
                   "Woodcutting": 36
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "ironman": [
+        {
+          "description": "Defeat the dramen tree spirit",
+          "required": [
+            {
+              "combat": true
+            },
+            {
+              "skills": {
+                "all": {
+                  "Hunter": 65
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Magic": 7,
+                  "Crafting": 20,
+                  "Woodcutting": 1,
+                  "Firemaking": 50,
+                  "Smithing": 40
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Magic": 7,
+                  "Crafting": 20,
+                  "Smithing": 40
+                },
+                "any": {
+                  "Hunter": 36,
+                  "Thieving": 72,
+                  "Mining": 40
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Crafting": 20,
+                  "Firemaking": 16,
+                  "Magic": 33,
+                  "Thieving": 14
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Firemaking": 50,
+                  "Mining": 42,
+                  "Woodcutting": 42
                 }
               }
             }
@@ -3808,8 +4100,7 @@
     "rewards": {
       "QP": 2,
       "skills": {
-        "all": ["Crafting"],
-        "any": ["Attack", "Strength", "Hitpoints", "Defence"]
+        "all": ["Crafting"]
       }
     }
   },
@@ -4316,7 +4607,6 @@
         {
           "required": [
             {
-              "combat": true,
               "quests": ["Recipe for Disaster: Another Cook's Quest"],
               "skills": {
                 "all": {
@@ -4351,6 +4641,65 @@
               "skills": {
                 "all": {
                   "Crafting": 42
+                }
+              }
+            }
+          ]
+        },
+        {
+          "description": "Defeat the crab and mudskippers",
+          "required": [
+            {
+              "combat": true
+            },
+            {
+              "skills": {
+                "all": {
+                  "Hunter": 65
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Magic": 7,
+                  "Crafting": 20,
+                  "Woodcutting": 1,
+                  "Firemaking": 50,
+                  "Smithing": 40
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Magic": 7,
+                  "Crafting": 20,
+                  "Smithing": 40
+                },
+                "any": {
+                  "Hunter": 36,
+                  "Thieving": 72,
+                  "Mining": 40
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Crafting": 20,
+                  "Firemaking": 16,
+                  "Magic": 33,
+                  "Thieving": 14
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Firemaking": 50,
+                  "Mining": 42,
+                  "Woodcutting": 42
                 }
               }
             }
@@ -4540,8 +4889,68 @@
         {
           "required": [
             {
-              "combat": true,
               "quests": ["Recipe for Disaster: Another Cook's Quest", "Fishing Contest"]
+            }
+          ]
+        }
+      ],
+      "ironman": [
+        {
+          "description": "Defeat the Icefiend",
+          "required": [
+            {
+              "combat": true
+            },
+            {
+              "skills": {
+                "all": {
+                  "Hunter": 65
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Magic": 7,
+                  "Crafting": 20,
+                  "Woodcutting": 1,
+                  "Firemaking": 50,
+                  "Smithing": 40
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Magic": 7,
+                  "Crafting": 20,
+                  "Smithing": 40
+                },
+                "any": {
+                  "Hunter": 36,
+                  "Thieving": 72,
+                  "Mining": 40
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Crafting": 20,
+                  "Firemaking": 16,
+                  "Magic": 33,
+                  "Thieving": 14
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Firemaking": 50,
+                  "Mining": 42,
+                  "Woodcutting": 42
+                }
+              }
             }
           ]
         }
@@ -5368,7 +5777,6 @@
         {
           "required": [
             {
-              "combat": true,
               "quests": ["Jungle Potion"],
               "skills": {
                 "all": {
@@ -5568,11 +5976,63 @@
     "name": "The Corsair Curse",
     "release": "7 December 2017",
     "requirements": {
-      "main": [
+      "ironman": [
         {
+          "description": "Defeat ithoi the navigator",
           "required": [
             {
               "combat": true
+            },
+            {
+              "skills": {
+                "all": {
+                  "Hunter": 65
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Magic": 7,
+                  "Crafting": 20,
+                  "Woodcutting": 1,
+                  "Firemaking": 50,
+                  "Smithing": 40
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Magic": 7,
+                  "Crafting": 20,
+                  "Smithing": 40
+                },
+                "any": {
+                  "Hunter": 36,
+                  "Thieving": 72,
+                  "Mining": 40
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Crafting": 20,
+                  "Firemaking": 16,
+                  "Magic": 33,
+                  "Thieving": 14
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Firemaking": 50,
+                  "Mining": 42,
+                  "Woodcutting": 42
+                }
+              }
             }
           ]
         }
@@ -5661,7 +6121,9 @@
               }
             }
           ]
-        },
+        }
+      ],
+      "ironman": [
         {
           "description": "Defeat the sand snake",
           "required": [
@@ -5707,6 +6169,15 @@
                   "Firemaking": 16,
                   "Magic": 33,
                   "Thieving": 14
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Firemaking": 50,
+                  "Mining": 42,
+                  "Woodcutting": 42
                 }
               }
             }
@@ -5884,10 +6355,70 @@
         {
           "required": [
             {
-              "combat": true,
               "skills": {
                 "all": {
                   "Thieving": 30
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "ironman": [
+        {
+          "description": "Defeat the tough guy and bandit champion",
+          "required": [
+            {
+              "combat": true
+            },
+            {
+              "skills": {
+                "all": {
+                  "Hunter": 65
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Magic": 7,
+                  "Crafting": 20,
+                  "Woodcutting": 1,
+                  "Firemaking": 50,
+                  "Smithing": 40
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Magic": 7,
+                  "Crafting": 20,
+                  "Smithing": 40
+                },
+                "any": {
+                  "Hunter": 36,
+                  "Thieving": 72,
+                  "Mining": 40
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Crafting": 20,
+                  "Firemaking": 16,
+                  "Magic": 33,
+                  "Thieving": 14
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Firemaking": 50,
+                  "Mining": 42,
+                  "Woodcutting": 42
                 }
               }
             }
@@ -6609,11 +7140,71 @@
         {
           "required": [
             {
-              "combat": true,
               "quests": ["Children of the Sun"],
               "skills": {
                 "all": {
                   "Woodcutting": 15
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "ironman": [
+        {
+          "description": "Defeat Cuthbert, Lord of Dread",
+          "required": [
+            {
+              "combat": true
+            },
+            {
+              "skills": {
+                "all": {
+                  "Hunter": 65
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Magic": 7,
+                  "Crafting": 20,
+                  "Woodcutting": 1,
+                  "Firemaking": 50,
+                  "Smithing": 40
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Magic": 7,
+                  "Crafting": 20,
+                  "Smithing": 40
+                },
+                "any": {
+                  "Hunter": 36,
+                  "Thieving": 72,
+                  "Mining": 40
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Crafting": 20,
+                  "Firemaking": 16,
+                  "Magic": 33,
+                  "Thieving": 14
+                }
+              }
+            },
+            {
+              "skills": {
+                "all": {
+                  "Firemaking": 50,
+                  "Mining": 42,
+                  "Woodcutting": 42
                 }
               }
             }
